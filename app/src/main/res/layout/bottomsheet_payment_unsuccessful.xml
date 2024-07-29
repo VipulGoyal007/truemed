@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.PaymentOptionsViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parent_payment_mode_coupon_applied_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bottomsheet_all_radius"
+           >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgClose"
+                android:layout_width="@dimen/d48"
+                android:layout_height="@dimen/d48"
+                android:layout_marginEnd="4dp"
+                android:paddingVertical="@dimen/d2"
+                android:paddingStart="@dimen/d6"
+                android:paddingEnd="@dimen/d10"
+                android:elevation="1dp"
+                android:onClick="@{() -> viewModel.paymentAgain()}"
+                android:src="@drawable/ic_close_black_with_white_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCouponSuccess"
+                android:layout_width="116dp"
+                android:layout_height="116dp"
+                android:layout_marginTop="26dp"
+                android:elevation="1dp"
+                android:padding="20dp"
+                android:src="@drawable/ic_unsuccessful"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvCouponCodeSuccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                app:bodyTextStyle="BodyXLargeSemiBold"
+                android:singleLine="true"
+                android:text="@string/payment_unsuccessful"
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivCouponSuccess"
+                tools:text="Payment Unsuccessful" />
+
+            <com.intellihealth.salt.views.TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/tvPaymentModeChanged"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                app:bodyTextStyle="BodyMediumRegular"
+                android:gravity="center"
+                android:text="@string/unable_to_process"
+                android:textColor="@color/tm_semantic_color_content_main_secondary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCouponCodeSuccess" />
+
+            <com.intellihealth.salt.views.buttons.Button
+                android:onClick="@{() -> viewModel.paymentAgain()}"
+                android:id="@+id/btnTryAgain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="4dp"
+                android:stateListAnimator="@null"
+                app:title="@string/try_again"
+                app:buttonSizeType="Large"
+                android:gravity="center"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="PrimaryButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPaymentModeChanged" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

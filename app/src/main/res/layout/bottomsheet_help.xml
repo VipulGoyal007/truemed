@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_bottomsheet_top_left_right_rounded">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/helpTopHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottomsheet_header"
+            android:elevation="@dimen/d2"
+            android:padding="@dimen/d16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvSubCategoryTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/how_do_you_wish_to_contact_us"
+                android:textColor="@color/tm_core_color_gray_800"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivClose"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/d32"
+                android:layout_height="@dimen/d32"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:srcCompat="@drawable/close_button" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/helpCallView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/helpTopHeader">
+
+            <androidx.appcompat.widget.AppCompatImageView
+
+                android:id="@+id/ivCall"
+                android:layout_width="@dimen/d24"
+                android:layout_height="@dimen/d24"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:srcCompat="@drawable/ic_helpline" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvHelpline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d8"
+                android:text="@string/helpline"
+                android:textColor="@color/tm_core_color_gray_800"
+                app:bodyTextStyle="BodyMediumSemiBold"
+                app:layout_constraintEnd_toStartOf="@+id/tvContactNo"
+                app:layout_constraintStart_toEndOf="@+id/ivCall"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvWorkingHours"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/working_hours"
+                android:textColor="@color/color_help_bottom_sheet_working_hours_text"
+                app:bodyTextStyle="BodySmallRegular"
+                app:layout_constraintEnd_toEndOf="@+id/tvHelpline"
+                app:layout_constraintStart_toStartOf="@+id/tvHelpline"
+                app:layout_constraintTop_toBottomOf="@+id/tvHelpline" />
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/tvContactNo"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text=""
+                android:textColor="@color/tm_core_color_blue_500"
+                app:buttonSizeType="ExtraSmall"
+                app:buttonTextStyle="ButtonXs"
+                app:buttonType="GhostButton"
+                app:layout_constraintBottom_toBottomOf="@+id/tvWorkingHours"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvHelpline"
+                app:removePadding="true" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:layout_marginHorizontal="@dimen/d16"
+            android:background="@color/tm_core_color_gray_100"
+            app:layout_constraintEnd_toEndOf="@+id/helpCallView"
+            app:layout_constraintStart_toStartOf="@+id/helpCallView"
+            app:layout_constraintTop_toBottomOf="@+id/helpCallView" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/helpMailView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d16"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivMail"
+                android:layout_width="@dimen/d24"
+                android:layout_height="@dimen/d24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:srcCompat="@drawable/ic_mail_blue" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvMail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d8"
+                android:text="@string/mail"
+                android:textColor="@color/tm_core_color_gray_800"
+                app:bodyTextStyle="BodyMediumSemiBold"
+                app:layout_constraintEnd_toStartOf="@+id/tvEmail"
+                app:layout_constraintStart_toEndOf="@+id/ivMail"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/expect_reply_msg"
+                android:textColor="@color/color_help_bottom_sheet_working_hours_text"
+                app:bodyTextStyle="BodySmallRegular"
+                app:layout_constraintEnd_toEndOf="@+id/tvMail"
+                app:layout_constraintStart_toStartOf="@+id/tvMail"
+                app:layout_constraintTop_toBottomOf="@+id/tvMail" />
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text=""
+                android:textColor="@color/tm_core_color_blue_500"
+                app:buttonSizeType="ExtraSmall"
+                app:buttonTextStyle="ButtonXs"
+                app:buttonType="GhostButton"
+                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvMail"
+                app:removePadding="true" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:layout_marginTop="@dimen/d8"
+            app:layout_constraintEnd_toEndOf="@+id/helpMailView"
+            app:layout_constraintStart_toStartOf="@+id/helpMailView"
+            app:layout_constraintTop_toBottomOf="@+id/helpMailView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

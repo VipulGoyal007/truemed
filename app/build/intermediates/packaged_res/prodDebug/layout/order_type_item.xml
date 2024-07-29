@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                            
+                                                                                          
+
+                 
+                               
+                             
+
+           
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraitMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d8"
+        android:layout_marginStart="@dimen/d8"
+        android:layout_marginEnd="@dimen/d8"
+         android:tag="layout/order_type_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.intellihealth.salt.views.radiofield.RadioFieldLayout
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/customRadioOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="start"
+            app:radioLabel=""
+            android:tag="binding_1"                                                  
+            app:radioPosition="right"
+            app:selected="false" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+         

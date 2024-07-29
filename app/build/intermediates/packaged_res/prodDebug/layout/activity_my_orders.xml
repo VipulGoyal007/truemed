@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                            
+                                                                                        
+
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".presentation.activity.MyOrdersActivity" android:tag="layout/activity_my_orders_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.intellihealth.salt.views.MobileSectionHeaders
+            android:id="@+id/tmTopHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:translationZ="@dimen/d6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mobileSectionHeadersViewType="DefaultWithoutFill" />
+
+        <FrameLayout
+            android:id="@+id/containerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tmTopHeader" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

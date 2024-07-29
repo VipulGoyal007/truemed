@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="shadowTheme" parent="Theme.MaterialComponents.Light">
+        <item name="android:ambientShadowAlpha">0.2</item>
+        <item name="android:spotShadowAlpha">@integer/material_motion_duration_long_1</item>
+<!--        <item name="android:outlineAmbientShadowColor">@color/tm_core_color_red_500</item>-->
+        <item name="android:outlineSpotShadowColor">@color/tm_custom</item>
+    </style>
+
+    <style name="baseShadowThemeGrey" parent="Theme.MaterialComponents.Light">
+        <item name="android:ambientShadowAlpha">0.2</item>
+        <item name="android:spotShadowAlpha">@integer/material_motion_duration_long_1</item>
+        <item name="android:outlineAmbientShadowColor">@color/tm_core_color_red_500</item>
+        <item name="android:outlineSpotShadowColor">@color/tm_custom</item>
+    </style>
+
+</resources>

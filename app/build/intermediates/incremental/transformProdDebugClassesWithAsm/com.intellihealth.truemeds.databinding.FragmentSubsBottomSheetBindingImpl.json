@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.databinding.FragmentSubsBottomSheetBindingImpl","classAnnotations":[],"interfaces":["androidx.databinding.Observable","androidx.viewbinding.ViewBinding"],"superClasses":["com.intellihealth.truemeds.databinding.FragmentSubsBottomSheetBinding","androidx.databinding.ViewDataBinding","androidx.databinding.BaseObservable","java.lang.Object"]}

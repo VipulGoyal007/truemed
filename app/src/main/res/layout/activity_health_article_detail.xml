@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="java.util.List" />
+
+        <variable
+            name="chipData"
+            type="List&lt;String>" />
+        <!--
+                <variable
+                    name="chipData"
+                    type="String" />
+        -->
+
+        <variable
+            name="healthArticlesViewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.HealthArticlesViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        tools:context=".presentation.activity.HealthArticleDetailActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.intellihealth.salt.views.MobileSectionHeaders
+                    android:id="@+id/healthArticleHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:translationZ="@dimen/d8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:mobileSectionHeadersViewType="DefaultWithoutFill" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/healthArticleHeader" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d20"
+                    android:text="@{healthArticlesViewModel.title}"
+                    app:bodyTextStyle="BodyLargeSemiBold"
+                    app:layout_constraintEnd_toStartOf="@+id/imgShare"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgCover" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgShare"
+                    android:layout_width="@dimen/d25"
+                    android:layout_height="@dimen/d25"
+                    android:layout_margin="@dimen/d20"
+                    android:src="@drawable/ic_share"
+                    android:visibility="@{ healthArticlesViewModel.loaderValue ? View.GONE : View.VISIBLE }"
+                    app:layout_constraintBottom_toTopOf="@+id/txtSubTitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgCover" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/txtSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d20"
+                    android:visibility="@{ healthArticlesViewModel.loaderValue ? View.GONE : View.VISIBLE }"
+                    app:bodyTextStyle="BodyMediumRegular"
+                    app:healthArticlesViewModel="@{ healthArticlesViewModel }"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTitle"
+                    app:setSubTitle="@{healthArticlesViewModel.author}" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/chipRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d20"
+                    android:orientation="horizontal"
+                    android:scrollbars="none"
+                    android:visibility="visible"
+                    app:healthArticlesViewModel="@{healthArticlesViewModel}"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSubTitle"
+                    app:setHealthArticleChipCategoryList="@{healthArticlesViewModel.categoryChipList}"
+                    tools:listitem="@layout/health_article_chip_item" />
+
+                <WebView
+                    android:id="@+id/wvContainer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d20"
+                    android:scrollbars="none"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chipRecyclerView" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/healthArticleList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d10"
+                    android:scrollbars="horizontal"
+                    android:visibility="visible"
+                    app:healthArticlesViewModel="@{ healthArticlesViewModel }"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/wvContainer"
+                    app:setHealthArticleSuggestionList="@{healthArticlesViewModel.healthArticleBlogModel}" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="@{ healthArticlesViewModel.loaderValue ? View.VISIBLE : View.GONE }"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

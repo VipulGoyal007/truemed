@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.di.OkHttpClientModule$httpLoggingInterceptor$httpLoggingInterceptor$1","classAnnotations":[],"interfaces":["okhttp3.logging.HttpLoggingInterceptor$Logger"],"superClasses":["java.lang.Object"]}

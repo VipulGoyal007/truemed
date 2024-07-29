@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="d312">312dp</dimen>
+    <dimen name="d184">184dp</dimen>
+    <dimen name="d285">285dp</dimen>
+    <dimen name="d188">188dp</dimen>
+    <dimen name="d126">126dp</dimen>
+    <dimen name="d109">109dp</dimen>
+    <dimen name="d169">169dp</dimen>
+    <dimen name="d17">17dp</dimen>
+    <dimen name="d30">30dp</dimen>
+    <dimen name="d84">84dp</dimen>
+    <dimen name="d46">46dp</dimen>
+    <dimen name="d24">24dp</dimen>
+    <dimen name="d20">20dp</dimen>
+    <dimen name="d54">54dp</dimen>
+    <dimen name="d108">108dp</dimen>
+    <dimen name="d154">154dp</dimen>
+    <dimen name="d118">118dp</dimen>
+    <dimen name="d275">275dp</dimen>
+    <dimen name="d223">223dp</dimen>
+    <dimen name="d260">260dp</dimen>
+    <dimen name="d211">211dp</dimen>
+    <dimen name="d229">229dp</dimen>
+    <dimen name="d174">174dp</dimen>
+    <dimen name="d90">90dp</dimen>
+    <dimen name="d58">58dp</dimen>
+    <dimen name="d146">146dp</dimen>
+    <dimen name="d85">85dp</dimen>
+    <dimen name="d110">110dp</dimen>
+    <dimen name="d112">112dp</dimen>
+    <dimen name="d14">14dp</dimen>
+    <dimen name="d253">253dp</dimen>
+    <dimen name="d75">75dp</dimen>
+    <dimen name="d176">176dp</dimen>
+    <dimen name="d89">89dp</dimen>
+    <dimen name="d177">177dp</dimen>
+    <dimen name="d304">304dp</dimen>
+    <dimen name="d235">235dp</dimen>
+    <dimen name="d15">15dp</dimen>
+    <dimen name="d52">52dp</dimen>
+    <dimen name="d270">270dp</dimen>
+    <dimen name="d13">13dp</dimen>
+    <dimen name="d226">226dp</dimen>
+    <dimen name="d157">157dp</dimen>
+    <dimen name="d227">227dp</dimen>
+    <dimen name="d328">328dp</dimen>
+    <dimen name="d106">106dp</dimen>
+    <dimen name="d116">116dp</dimen>
+    <dimen name="d107">107dp</dimen>
+    <dimen name="d123">123dp</dimen>
+    <dimen name="d129">129dp</dimen>
+    <dimen name="d144">144dp</dimen>
+    <dimen name="d207">207dp</dimen>
+    <dimen name="d66">66dp</dimen>
+    <dimen name="d98">98dp</dimen>
+    <dimen name="d28">28dp</dimen>
+    <dimen name="d430">430dp</dimen>
+
+
+
+</resources>

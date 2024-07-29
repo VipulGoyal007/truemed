@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.databinding.ActivityOrderStatusBindingImpl","classAnnotations":[],"interfaces":["androidx.databinding.Observable","androidx.viewbinding.ViewBinding"],"superClasses":["com.intellihealth.truemeds.databinding.ActivityOrderStatusBinding","androidx.databinding.ViewDataBinding","androidx.databinding.BaseObservable","java.lang.Object"]}

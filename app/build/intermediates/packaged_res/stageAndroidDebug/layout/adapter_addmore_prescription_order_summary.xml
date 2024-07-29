@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+                 
+                            
+                                                                                             
+                 
+                           
+                             
+
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/d132"
+        android:layout_height="@dimen/d132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" android:tag="layout/adapter_addmore_prescription_order_summary_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/clAddMorePrescription"
+            android:layout_width="@dimen/d124"
+            android:layout_height="@dimen/d124"
+            android:background="@drawable/bg_saved_addresses"
+            android:layout_marginTop="@dimen/d6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/baseShadowThemeGrey"
+            app:cardElevation="@dimen/d4"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="@dimen/d12"
+            app:strokeColor="@color/tm_core_color_gray_200"
+            app:strokeWidth="@dimen/d2"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="@dimen/d11"
+                android:paddingVertical="@dimen/d18">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAddMorePrescription"
+                android:layout_width="@dimen/d24"
+                android:layout_height="@dimen/d24"
+                android:src="@drawable/plus"
+                android:tint="@color/tm_semantic_color_content_ghost_default"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvAddMorePrescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d7"
+                android:gravity="center"
+                android:text="@string/add_more_prescription"
+                android:textColor="@color/tm_semantic_color_content_ghost_default"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivAddMorePrescription" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+         

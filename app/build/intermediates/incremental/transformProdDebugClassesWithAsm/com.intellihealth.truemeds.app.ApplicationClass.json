@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.app.ApplicationClass","classAnnotations":["dagger.hilt.android.HiltAndroidApp"],"interfaces":["android.content.ComponentCallbacks","android.content.ComponentCallbacks2"],"superClasses":["androidx.multidex.MultiDexApplication","android.app.Application","android.content.ContextWrapper","android.content.Context","java.lang.Object"]}

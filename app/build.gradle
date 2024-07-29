@@ -1,0 +1,322 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.gms.google-services'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'com.google.dagger.hilt.android'
+    // Add the Performance Monitoring Gradle plugin
+    id 'com.google.firebase.firebase-perf'
+    //id 'embrace-swazzler'
+}
+
+android {
+    namespace 'com.intellihealth.truemeds'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.intellihealth.truemeds"
+        minSdk 21
+        targetSdk 34
+        versionCode 732
+        versionName "7.2.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('DebugKey.jks')
+            storePassword 'Truemeds@2019'
+            keyAlias 'TrueMeds'
+            keyPassword 'Truemeds@2019'
+        }
+        release {
+            storeFile file('DebugKey.jks')
+            storePassword 'Truemeds@2019'
+            keyAlias 'TrueMeds'
+            keyPassword 'Truemeds@2019'
+        }
+        /*release {
+            storeFile file('Key.jks')
+            storePassword 'Truemeds@2019'
+            keyAlias 'TrueMeds'
+            keyPassword 'Truemeds@2019'
+        }*/
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            debuggable true
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+
+            //this need to keep false as we are using resource name from service end
+            shrinkResources false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    flavorDimensions "appInstance"
+    productFlavors {
+        stageAndroid {
+            dimension "appInstance"
+
+            applicationIdSuffix ".stage"
+            // manifestPlaceholders = [ activityLabel:"AppName.STAGE"]
+
+            buildConfigField 'String', 'baseUrl', BASE_URL_STAGE_SERVICE_ANDROID
+
+            buildConfigField 'boolean', 'ENABLE_MIX_PANEL', 'true'
+            buildConfigField 'String', 'MIX_PANEL_TOKEN', MIX_PANEL_TOKEN_DEV
+            buildConfigField 'String', 'APPS_FLYER_TOKEN', APPS_FLYER_SDK_KEY_STAGE
+            buildConfigField 'String', 'userExperiorSDKKey', USER_EXPERIOR_SDK_KEY_STAGE
+        }
+        stageService {
+            dimension "appInstance"
+
+            applicationIdSuffix ".stage"
+            // manifestPlaceholders = [ activityLabel:"AppName.STAGE"]
+
+            buildConfigField 'String', 'baseUrl', BASE_URL_STAGE_SERVICE
+
+            buildConfigField 'boolean', 'ENABLE_MIX_PANEL', 'true'
+            buildConfigField 'String', 'MIX_PANEL_TOKEN', MIX_PANEL_TOKEN_DEV
+            buildConfigField 'String', 'APPS_FLYER_TOKEN', APPS_FLYER_SDK_KEY_STAGE
+            buildConfigField 'String', 'userExperiorSDKKey', USER_EXPERIOR_SDK_KEY_STAGE
+        }
+        stageMum {
+            dimension "appInstance"
+
+            applicationIdSuffix ".stage"
+            // manifestPlaceholders = [ activityLabel:"AppName.STAGE"]
+
+            buildConfigField 'String', 'baseUrl', BASE_URL_STAGE_MUM
+
+            buildConfigField 'boolean', 'ENABLE_MIX_PANEL', 'true'
+            buildConfigField 'String', 'MIX_PANEL_TOKEN', MIX_PANEL_TOKEN_DEV
+            buildConfigField 'String', 'APPS_FLYER_TOKEN', APPS_FLYER_SDK_KEY_STAGE
+            buildConfigField 'String', 'userExperiorSDKKey', USER_EXPERIOR_SDK_KEY_STAGE
+        }
+        uat {
+            dimension "appInstance"
+
+            applicationIdSuffix ".stage"
+            // manifestPlaceholders = [ activityLabel:"AppName.UAT"]
+
+            buildConfigField 'String', 'baseUrl', BASE_URL_UAT
+
+            buildConfigField 'boolean', 'ENABLE_MIX_PANEL', 'true'
+            buildConfigField 'String', 'MIX_PANEL_TOKEN', MIX_PANEL_TOKEN_DEV
+            buildConfigField 'String', 'APPS_FLYER_TOKEN', APPS_FLYER_SDK_KEY_UAT
+            buildConfigField 'String', 'userExperiorSDKKey', USER_EXPERIOR_SDK_KEY_UAT
+
+        }
+        prod {
+            dimension "appInstance"
+
+            buildConfigField 'String', 'baseUrl', BASE_URL_PROD
+
+            buildConfigField 'boolean', 'ENABLE_MIX_PANEL', 'true'
+            buildConfigField 'String', 'MIX_PANEL_TOKEN', MIX_PANEL_TOKEN_PROD
+            buildConfigField 'String', 'APPS_FLYER_TOKEN', APPS_FLYER_SDK_KEY_PROD
+            buildConfigField 'String', 'userExperiorSDKKey', USER_EXPERIOR_SDK_KEY_PROD
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+//    kotlinOptions {
+//        jvmTarget = '17'
+//    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def variantName = variant.name
+            def versionName = variant.versionName
+            def versionCode = variant.versionCode
+            outputFileName = "v${versionName}(${versionCode})_Truemeds_${variantName}.apk"
+        }
+    }
+
+    buildFeatures {
+        buildConfig true
+        dataBinding true
+        viewBinding true
+    }
+
+    kapt {
+        generateStubs = true
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/core_release.kotlin_module'
+    }
+}
+
+dependencies {
+    //Unit Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation fileTree(dir: "libs", include: ["*.aar"])
+
+    //multidex
+    implementation 'com.android.support:multidex:1.0.3'
+
+    /*------------ core libraries --------------*/
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    //implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-process:2.7.0'
+    implementation 'androidx.databinding:databinding-runtime:8.2.1'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
+    /*implementation 'androidx.work:work-runtime:2.9.0'
+    implementation 'androidx.work:work-runtime-ktx:2.9.0'*/
+
+    //google play service
+    implementation 'com.google.android.gms:play-services-location:21.3.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.1.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:18.1.0'
+    implementation 'com.google.android.gms:play-services-auth:21.2.0'
+    implementation 'com.google.android.gms:play-services-tagmanager-v4-impl:18.1.0'
+
+    //kotlin coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1'
+    //implementation 'androidx.core:core-ktx:1.12.0'
+    //implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.0"
+
+    /*------------ TrueCaller Sdk --------------*/
+    implementation files('libs/truecallersdk-3.0.0-releasePartner.aar')
+
+    /*------------ Network call --------------*/
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.6.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
+    //chucker
+    debugImplementation "com.github.chuckerteam.chucker:library:3.5.2"
+//    releaseImplementation "com.github.chuckerteam.chucker:library-no-op:3.5.2"
+    releaseImplementation "com.github.chuckerteam.chucker:library:3.5.2"
+
+
+    /*------------ Dependency Injection --------------*/
+    implementation "com.google.dagger:hilt-android:2.48"
+    kapt "com.google.dagger:hilt-compiler:2.48"
+
+    /*------------ Payment SDK --------------*/
+    implementation 'com.cashfree.pg:api:2.1.13'
+
+
+    /*------------ Image loading --------------*/
+    implementation "com.github.bumptech.glide:glide:4.16.0"
+
+    /*------------ UI components --------------*/
+    //shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    //flexbox
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+
+    //exoplayer
+    implementation 'com.google.android.exoplayer:exoplayer:2.19.1'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.19.1'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.19.1'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.19.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.19.1'
+
+    //navigation component
+    implementation "androidx.navigation:navigation-fragment-ktx:2.7.7"
+    implementation "androidx.navigation:navigation-ui-ktx:2.7.7"
+
+    /*------------ Firebase --------------*/
+    // Import the Firebase BoM (see: https://firebase.google.com/docs/android/learn-more#bom)
+    implementation platform('com.google.firebase:firebase-bom:33.1.1')
+    // Firebase Cloud Messaging (Java)
+    implementation 'com.google.firebase:firebase-messaging'
+    // Firebase Cloud Messaging (Kotlin)
+    //implementation 'com.google.firebase:firebase-messaging-ktx'
+    // For an optimal experience using FCM, add the Firebase SDK
+    // for Google Analytics. This is recommended, but not required.
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-config'
+
+    // Add the dependency for the Performance Monitoring library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation("com.google.firebase:firebase-perf")
+
+    // this dependency is used for In app update
+    implementation 'com.google.android.play:app-update-ktx:2.1.0'
+
+    implementation 'com.google.android.play:review-ktx:2.0.1'
+
+
+    /*------------ LogEvents SDK --------------*/
+    //user experior
+    implementation 'com.userexperior:userexperior-android:7.3.1'
+    //facebook library
+    implementation 'com.facebook.android:facebook-android-sdk:latest.release'/*16.0.1*/
+    implementation 'com.facebook.android:facebook-marketing:latest.release'/*7.0.1*/
+
+    //mixpanel
+    implementation 'com.mixpanel.android:mixpanel-android:7.+'
+
+    //appsflyer
+    implementation 'com.appsflyer:af-android-sdk:6.13.0'
+    implementation 'com.appsflyer:lvl:6.13.0'
+
+    //clevertap
+    implementation 'com.clevertap.android:clevertap-android-sdk:6.2.1'
+    //implementation "com.clevertap.android:clevertap-rendermax-sdk:1.0.3"
+    implementation "com.clevertap.android:push-templates:1.0.9"
+    //Mandatory for CleverTap Android SDK v3.6.4 and above add the following -
+    implementation 'com.android.installreferrer:installreferrer:2.2'
+    //clevertap-xiaomi
+    //implementation files('libs/MiPush_SDK_Client_5_1_1-G_3rd.aar')
+    //implementation 'com.clevertap.android:clevertap-xiaomi-sdk:1.5.2'
+    /*implementation "com.clevertap.android:push-templates:1.0.7"*/
+    /*------------ offline db --------------*/
+
+    implementation 'androidx.room:room-runtime:2.6.1'
+    kapt 'androidx.room:room-compiler:2.6.1'
+
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.7.1'
+
+    implementation 'com.google.android.material:material:1.11.0'
+
+    /*------------ Security-App-Authenticator -----------*/
+    //implementation "androidx.security:security-crypto:1.0.0"
+
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'com.airbnb.android:lottie:6.3.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
+
+    //implementation 'io.embrace:embrace-android-sdk:6.5.0'
+}

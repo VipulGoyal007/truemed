@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.intellihealth.truemeds"
+    android:versionCode="732"
+    android:versionName="7.2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="34" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="com.intellihealth.truemeds.permission.MIPUSH_RECEIVE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <permission
+        android:name="com.intellihealth.truemeds.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.truecaller.permission.sdk.internal.read_account_state" />
+    <!--
+         To resolve package visibility issue on Android 11 & above with targetSdkVersion >=30, <queries> element
+         needs to be added with the package name
+    -->
+    <queries>
+        <package android:name="com.truecaller" />
+        <package android:name="com.truecaller.debug" />
+
+        <intent>
+            <action android:name="android.intent.action.CREATE_DOCUMENT" />
+
+            <data android:mimeType="*/*" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <data
+                android:host="pay"
+                android:scheme="upi" />
+        </intent>
+
+        <package android:name="com.android.chrome" />
+        <package android:name="com.facebook.katana" />
+
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER" />
+        </intent>
+
+        <package android:name="com.instagram.android" />
+    </queries>
+
+    <uses-permission
+        android:name="android.permission.NFC"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" /> <!-- Required runtime permission to display notifications on Android 13 -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- It's a normal permission required in android 9 pie -->
+    <!-- <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/> -->
+    <!-- It's a normal permission required for JobIntentService -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.intellihealth.truemeds.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <permission
+        android:name="com.intellihealth.truemeds.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+
+    <application
+        android:name="com.intellihealth.truemeds.app.ApplicationClass"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:configChanges="orientation"
+        android:debuggable="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.SubstitutesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.OtcCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.CartActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.PaymentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.WebBrowser"
+            android:exported="false" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.ReturnRefundWebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.WalletActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.CouponActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.EditProfileActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.AddAddressActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.PolicyDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.PoliciesPageActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.SearchSuggestionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.SearchResultActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.ManagePatientActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.LoginActivity"
+            android:exported="false"
+            android:fitsSystemWindows="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- //this is working -->
+        <!--
+            <activity
+            android:name=".presentation.activity.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        -->
+
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.HomePageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.ReferAndEarnActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.FaqViewAllActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.BaseActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.PatientReminderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.ProductDetailActivity"
+            android:configChanges="uiMode"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.OrderStatusActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.SplashScreen"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="truemeds" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="truemedsapp" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="truemeds.onelink.me"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="truemedsotc.onelink.me"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/firebase_payment_link_domain"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.NonActiveOrderStatusActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.HelpActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.HelpSubCategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.CancelOrderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.CancelOrderSubActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.HelpSubCategoryDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.MyOrdersActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.AddPatientActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.OrderSummaryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.PaymentOptionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.ManageAddressActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.PrescriptionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.WalletTransactionsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.VideoFaqActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.DeliveryDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.HealthArticlesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.ProductListViewAllActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.intellihealth.truemeds.presentation.activity.HealthArticleDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.intellihealth.truemeds.presentation.services.TmFirebaseMessagingService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.intellihealth.truemeds.presentation.broadcastreceiver.SmsReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.intellihealth.truemeds.presentation.broadcastreceiver.InstallReferralTracker"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.intellihealth.truemeds.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <!--
+            <receiver
+            android:name=".presentation.broadcastreceiver.CleverTapXiaomiMessageReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        -->
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.facebook.sdk.CodelessDebugLogEnabled"
+            android:value="true" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- CleverTap Xiaomi Push -->
+        <!--
+            <meta-data
+            android:name="CLEVERTAP_XIAOMI_APP_KEY"
+            android:value="@string/xiaomi_app_key" />
+        -->
+        <!--
+            <meta-data
+            android:name="CLEVERTAP_XIAOMI_APP_ID"
+            android:value="@string/xiaomi_app_id" />
+        -->
+        <meta-data
+            android:name="CLEVERTAP_NOTIFICATION_ICON"
+            android:value="notification_icon" />
+
+        <!--
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+        <service
+            android:name="com.xiaomi.push.service.XMJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":pushservice" /> &lt;!&ndash; Note：This service must be added to the version 3.0.1 or later（including version 3.0.1） &ndash;&gt;
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" /> &lt;!&ndash; Note：this service must be added to version 2.2.5 or later （includes version 2.2.5） &ndash;&gt;
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        -->
+        <!-- CleverTap Xiaomi Push -->
+
+
+        <!--
+            <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher_round" />
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" /> <!-- CleverTap Metadata -->
+        <meta-data
+            android:name="CLEVERTAP_ACCOUNT_ID"
+            android:value="@string/clevertap_acc_id" />
+        <meta-data
+            android:name="CLEVERTAP_TOKEN"
+            android:value="@string/clevertap_token" />
+        <meta-data
+            android:name="CLEVERTAP_REGION"
+            android:value="in1" />
+        <!--
+ IMPORTANT: To force use Google AD ID to uniquely identify  users, use the following meta tag.
+        GDPR mandates that if you are using this tag, there is prominent disclousure to your end customer in their application.
+        Read more about GDPR here - https://clevertap.com/blog/in-preparation-of-gdpr-compliance/
+        -->
+        <!--
+<meta-data
+            android:name="CLEVERTAP_USE_GOOGLE_AD_ID"
+            android:value="1" />
+        -->
+        <meta-data
+            android:name="CLEVERTAP_BACKGROUND_SYNC"
+            android:value="1" />
+        <meta-data
+            android:name="CLEVERTAP_INAPP_EXCLUDE"
+            android:value="SplashScreen" />
+
+        <service
+            android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundJobService"
+            android:enabled="false"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.clevertap.android.sdk.pushnotification.CTNotificationIntentService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.clevertap.PUSH_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.intellihealth.truemeds.data.utils.MyFileContentProvider"
+            android:authorities="com.intellihealth.truemeds"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+
+        <meta-data
+            android:name="com.truecaller.android.sdk.ClientId"
+            android:value="@string/truecaller_client_id" />
+
+        <activity
+            android:name="com.chuckerteam.chucker.internal.ui.MainActivity"
+            android:label="@string/chucker_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.chuckerteam.chucker.task"
+            android:theme="@style/Chucker.Theme" />
+        <activity
+            android:name="com.chuckerteam.chucker.internal.ui.transaction.TransactionActivity"
+            android:parentActivityName="com.chuckerteam.chucker.internal.ui.MainActivity"
+            android:theme="@style/Chucker.Theme" />
+        <activity
+            android:name="com.chuckerteam.chucker.internal.ui.throwable.ThrowableActivity"
+            android:parentActivityName="com.chuckerteam.chucker.internal.ui.MainActivity"
+            android:theme="@style/Chucker.Theme" />
+
+        <service
+            android:name="com.chuckerteam.chucker.internal.support.ClearDatabaseService"
+            android:exported="false" />
+
+        <provider
+            android:name="com.chuckerteam.chucker.internal.support.ChuckerFileProvider"
+            android:authorities="com.intellihealth.truemeds.com.chuckerteam.chucker.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/chucker_provider_paths" />
+        </provider>
+        <provider
+            android:name="com.cashfree.pg.api.CashfreeCoreContentProvider"
+            android:authorities="com.intellihealth.truemeds.cashfreecorecontentprovider"
+            android:exported="false" />
+
+        <meta-data
+            android:name="cashfree_pg_core_auto_initialization_enabled"
+            android:value="@bool/cashfree_pg_core_auto_initialize_enabled" />
+        <meta-data
+            android:name="cashfree_pg_core_reporting_enabled"
+            android:value="@bool/cashfree_pg_core_reporting_enabled" />
+
+        <activity
+            android:name="com.cashfree.pg.ui.hidden.checkout.CashfreeNativeCheckoutActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/CFUITheme"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cashfree.pg.ui.hidden.seamless.CFDropSeamlessActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/CFSeamlessStyle" />
+
+        <meta-data
+            android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="true" />
+
+        <activity
+            android:name="com.cashfree.pg.core.api.ui.CFCoreUPIPaymentActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/CFCoreUPIStyle" />
+        <activity
+            android:name="com.cashfree.pg.core.api.ui.CFCoreModalActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/CFCoreUPIStyle" />
+        <activity
+            android:name="com.cashfree.pg.core.api.ui.CashfreeCoreNativeVerificationActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/CFCoreTheme" />
+
+        <meta-data
+            android:name="cashfree_pg_logging_level"
+            android:value="@integer/cashfree_pg_logging_level" />
+
+        <receiver
+            android:name="com.cashfree.pg.core.api.ui.receiver.CFSMSBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.phone.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.clevertap.android.sdk.InAppNotificationActivity"
+            android:configChanges="keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.clevertap.android.sdk.inbox.CTInboxActivity"
+            android:configChanges="keyboardHidden"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+
+        <receiver
+            android:name="com.clevertap.android.sdk.pushnotification.fcm.CTFirebaseMessagingReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter android:priority="-1" >
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.clevertap.android.pushtemplates.PTPushNotificationReceiver"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="com.clevertap.android.pushtemplates.PushTemplateReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <meta-data
+            android:name="cashfree_custom_analytics_subscriber_enabled"
+            android:value="@bool/cashfree_custom_analytics_subscriber_enabled" />
+        <meta-data
+            android:name="cashfree_pg_core_encrypt_pref_enabled"
+            android:value="@bool/cashfree_pg_core_encrypt_pref_enabled" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/com_facebook_activity_theme" />
+        <activity android:name="com.facebook.CustomTabMainActivity" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="cct.com.intellihealth.truemeds"
+                    android:scheme="fbconnect" />
+            </intent-filter>
+        </activity> <!-- always provide full package name for proper integration in apps -->
+        <provider
+            android:name="com.userexperior.provider.UEContentProvider"
+            android:authorities="com.intellihealth.truemeds.UEContentProvider"
+            android:exported="false"
+            android:initOrder="999999" /> <!-- always provide full package name for proper integration in apps -->
+        <activity
+            android:name="com.userexperior.ui.UEConsentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" />
+
+        <service
+            android:name="com.userexperior.services.UEUploadService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.userexperior.services.UEEventSession"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="com.userexperior.services.UEScreenshotService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.intellihealth.truemeds.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:visibleToInstantApps="true" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+                android:value="true" />
+        </receiver>
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             but set to not exported to explicitly avoid allowing another app to call it.
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <property
+            android:name="android.adservices.AD_SERVICES_CONFIG"
+            android:resource="@xml/ga_ad_services_config" />
+
+        <service
+            android:name="com.google.firebase.sessions.SessionLifecycleService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.intellihealth.truemeds.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+        <!--
+         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+         with the application context. This config is merged in with the host app's manifest,
+         but there can only be one provider with the same authority activated at any given
+         point; so if the end user has two or more different apps that use Facebook SDK, only the
+         first one will be able to use the provider. To work around this problem, we use the
+         following placeholder in the authority to identify each host application as if it was
+         a completely different provider.
+        -->
+        <provider
+            android:name="com.facebook.internal.FacebookInitProvider"
+            android:authorities="com.intellihealth.truemeds.FacebookInitProvider"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" />
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_foreground_service_default"
+            android:exported="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+        <uses-library
+            android:name="android.ext.adservices"
+            android:required="false" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+        <activity
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true"
+            android:theme="@style/Theme.PlayCore.Transparent" />
+    </application>
+
+</manifest>

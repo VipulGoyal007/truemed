@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/d16"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d253"
+            android:layout_marginTop="@dimen/d24"
+            android:background="@color/white"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cardCornerRadius="@dimen/d16"
+            app:cardElevation="@dimen/d1"
+            app:cardPreventCornerOverlap="true"
+            app:strokeColor="@color/shimmerGray"
+            app:strokeWidth="@dimen/d1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d12"
+                android:layout_marginTop="@dimen/d24"
+                android:orientation="vertical">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/d109"
+                        android:layout_height="@dimen/d10"
+                        android:background="@drawable/shimmer_grey_tube"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/d75"
+                        android:layout_height="@dimen/d10"
+                        android:background="@drawable/shimmer_grey_tube"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/d109"
+                    android:layout_height="@dimen/d24"
+                    android:layout_marginTop="@dimen/d17"
+                    android:background="@drawable/shimmer_grey_tube" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d84"
+                    android:layout_marginTop="@dimen/d19"
+                    android:background="@drawable/shimmer_grey_box_8_curve" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginTop="@dimen/d19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivTopTube"
+                        android:layout_width="@dimen/d109"
+                        android:layout_height="@dimen/d10"
+                        android:background="@drawable/shimmer_grey_tube"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/d75"
+                        android:layout_height="@dimen/d10"
+                        android:background="@drawable/shimmer_grey_tube"
+                        android:layout_marginTop="@dimen/d8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivTopTube" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/d142"
+                        android:layout_height="@dimen/d40"
+                        android:background="@drawable/shimmer_grey_box_12_curve"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d253"
+            android:layout_marginTop="@dimen/d24"
+            android:background="@color/white"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cardCornerRadius="@dimen/d16"
+            app:cardElevation="@dimen/d1"
+            app:cardPreventCornerOverlap="true"
+            app:strokeColor="@color/shimmerGray"
+            app:strokeWidth="@dimen/d1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d12"
+                android:layout_marginTop="@dimen/d24"
+                android:orientation="vertical">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/d109"
+                        android:layout_height="@dimen/d10"
+                        android:background="@drawable/shimmer_grey_tube"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/d75"
+                        android:layout_height="@dimen/d10"
+                        android:background="@drawable/shimmer_grey_tube"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/d109"
+                    android:layout_height="@dimen/d24"
+                    android:layout_marginTop="@dimen/d17"
+                    android:background="@drawable/shimmer_grey_tube" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d84"
+                    android:layout_marginTop="@dimen/d19"
+                    android:background="@drawable/shimmer_grey_box_8_curve" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginTop="@dimen/d19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivTopTube2"
+                        android:layout_width="@dimen/d109"
+                        android:layout_height="@dimen/d10"
+                        android:background="@drawable/shimmer_grey_tube"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/d75"
+                        android:layout_height="@dimen/d10"
+                        android:background="@drawable/shimmer_grey_tube"
+                        android:layout_marginTop="@dimen/d8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivTopTube2" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/d142"
+                        android:layout_height="@dimen/d40"
+                        android:background="@drawable/shimmer_grey_box_12_curve"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d253"
+            android:layout_marginTop="@dimen/d24"
+            android:background="@color/white"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cardCornerRadius="@dimen/d16"
+            app:cardElevation="@dimen/d1"
+            app:cardPreventCornerOverlap="true"
+            app:strokeColor="@color/shimmerGray"
+            app:strokeWidth="@dimen/d1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d12"
+                android:layout_marginTop="@dimen/d24"
+                android:orientation="vertical">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/d109"
+                        android:layout_height="@dimen/d10"
+                        android:background="@drawable/shimmer_grey_tube"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/d75"
+                        android:layout_height="@dimen/d10"
+                        android:background="@drawable/shimmer_grey_tube"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/d109"
+                    android:layout_height="@dimen/d24"
+                    android:layout_marginTop="@dimen/d17"
+                    android:background="@drawable/shimmer_grey_tube" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d84"
+                    android:layout_marginTop="@dimen/d19"
+                    android:background="@drawable/shimmer_grey_box_8_curve" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginTop="@dimen/d19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivTopTube3"
+                        android:layout_width="@dimen/d109"
+                        android:layout_height="@dimen/d10"
+                        android:background="@drawable/shimmer_grey_tube"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/d75"
+                        android:layout_height="@dimen/d10"
+                        android:background="@drawable/shimmer_grey_tube"
+                        android:layout_marginTop="@dimen/d8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivTopTube3" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/d142"
+                        android:layout_height="@dimen/d40"
+                        android:background="@drawable/shimmer_grey_box_12_curve"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                   
+                                               
+
+    
+
+
+                 
+                            
+                                                                                     
+           
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:background="#EFF8FF"
+    android:layout_height="wrap_content" android:tag="layout/adapter_footer_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/footerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_footer_image" />
+
+    <View
+        android:id="@+id/affordableDynamicHeightView"
+        android:layout_width="match_parent"
+        android:tag="binding_1"           
+                                                      
+                                                                    
+        android:layout_height="@dimen/cf_dimen_18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/footerItem"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+         

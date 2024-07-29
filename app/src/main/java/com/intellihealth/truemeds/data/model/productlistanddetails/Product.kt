@@ -1,0 +1,31 @@
+package com.intellihealth.truemeds.data.model.productlistanddetails
+
+data class Product(
+    val availabilityStatus: String,
+    val available: Boolean,
+    val composition: String,
+    val cxAcceptedSubs: Boolean,
+    val discount: Double? = null,
+    val manufacturerName: String? = null,
+    val maxCappedQty: Int? = null,
+    val mrp: Double? = null,
+    val packForm: String? = null,
+    val packSize: String? = null,
+    val preSubsProductCode: Any,
+    val preSubsSkuName: Any,
+    val pricePerUnitLabel: String? = null,
+    val productCode: String? = null,
+    val productImageUrl: String? = null,
+    val qty: Int? = null,
+    val sellingPrice: Double? = null,
+    val skuName: String? = null,
+    val subsAddedAsOrg: Boolean? = null,
+    val subsFound: Boolean? = null,
+    val subsSavingPercentage: String? = null,
+    val suppliedByTm: Boolean? = null,
+    val switchBackImageUrl: Any,
+    val switchBackProductCode: Any,
+    val switchBackSkuName: Any,
+    val unit: String? = null,
+    val usersAlsoBoughtCount: Int
+)

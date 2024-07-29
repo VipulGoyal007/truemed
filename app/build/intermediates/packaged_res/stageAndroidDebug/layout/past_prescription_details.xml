@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                            
+                                                                                             
+
+                 
+                        
+                                                                                 
+
+                 
+                        
+                             
+
+                 
+                             
+                             
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/past_prescription_details_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/d2"
+            android:layout_marginVertical="@dimen/d2"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:cardCornerRadius="@dimen/d12"
+            app:cardElevation="@dimen/d4"
+            style="@style/baseShadowThemeBlue"
+            app:cardUseCompatPadding="true">
+
+            <!-- android:background="@drawable/past_prescription_oval_bg"-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/uploadPreascriptionDetailCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/uploadPrescriptionImgCard"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/d140"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/d12"
+                    android:layout_marginTop="@dimen/d12"
+                    android:layout_marginEnd="@dimen/d12"
+                    android:layout_marginBottom="@dimen/d8"
+                    android:backgroundTint="@color/tm_semantic_color_bg_main"
+                    app:cardCornerRadius="@dimen/d8"
+                    app:cardElevation="@dimen/d0"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeColor="@color/upload_prescription_img_stoke_color">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/uploadPrescriptionImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gallary_img"
+                        android:tag="binding_1"            />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!--    </androidx.cardview.widget.CardView>-->
+
+
+                <com.intellihealth.salt.views.CheckFieldLayout
+                    android:id="@+id/customCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/d12"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginBottom="@dimen/d12"
+                    android:visibility="gone"
+                    app:checkFieldLabel="Select"
+                    app:checkFieldPosition="right"
+                    app:checkFieldSelected="unselected"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/uploadPrescriptionImgCard"
+                    app:layout_constraintTop_toBottomOf="@+id/uploadPrescriptionImgCard" />
+                <!-- android:onClick="@{() -> viewmodel.onPastCheckboxClicked(model, index, childIndex) }"
+     -->
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/uploadedTxt"
+                    style="@style/TextAppearance.Compat.Notification.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginBottom="@dimen/d12"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    app:bodyTextStyle="BodySmallRegular"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/uploadPrescriptionImgCard"
+                    app:layout_constraintTop_toBottomOf="@+id/uploadPrescriptionImgCard"
+                    tools:text="@string/uploaded" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/uploadedImageIdTxt"
+                    style="@style/TextAppearance.Compat.Notification.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginBottom="@dimen/d12"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    android:visibility="gone"
+                    app:bodyTextStyle="BodySmallRegular"
+                    app:layout_constraintStart_toStartOf="@+id/customCheckBox"
+                    app:layout_constraintTop_toBottomOf="@+id/customCheckBox"
+                    tools:text="" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

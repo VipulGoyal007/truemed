@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.data.repository.datasourceimpl.remote.HelpFaqAndTnCRemoteDataSourceImpl","classAnnotations":["kotlin.jvm.internal.SourceDebugExtension"],"interfaces":["com.intellihealth.truemeds.data.repository.datasource.remote.HelpFaqAndTnCRemoteDataSource"],"superClasses":["java.lang.Object"]}

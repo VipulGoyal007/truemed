@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+                                          
+                 
+                      
+                            
+
+                 
+                                    
+                             
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMain"
+        android:paddingEnd="@dimen/d6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:tag="layout/adapter_doctor_prescription_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/d124"
+            android:layout_height="@dimen/d124"
+            android:paddingEnd="@dimen/d6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/d124"
+                android:layout_height="@dimen/d124"
+                app:strokeColor="@color/tm_semantic_color_border_selection_no"
+                app:strokeWidth="@dimen/d1"
+                app:cardCornerRadius="@dimen/d8"
+                android:elevation="0dp"
+                android:layout_marginTop="@dimen/d6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                style="@style/baseShadowThemeGrey"
+                app:cardElevation="@dimen/d4"
+                app:cardUseCompatPadding="true"
+
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivPrescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg_white_curve"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                                           android:tag="binding_1"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/d24"
+            android:layout_height="@dimen/d24"
+            android:tag="binding_2"                                             
+            android:src="@drawable/ic_close_black_with_white_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                            
+                                                                                     
+
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottomsheet_top_left_right_rounded" android:tag="layout/bottomsheet_item_no_longer_available_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d16"
+            android:background="@drawable/bg_bottomsheet_header"
+            android:elevation="@dimen/constraint_shadow_height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <View
+                android:id="@+id/viewDragHandle"
+                android:layout_width="@dimen/d50"
+                android:layout_height="@dimen/d4"
+                android:background="@color/tm_core_color_gray_300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvSubCategoryTitle"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/d12"
+                android:layout_height="wrap_content"
+                android:tag="binding_1"                                                                                                                                                                                                                                                     
+                android:textColor="@color/tm_core_color_gray_800"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivClose"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewDragHandle" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/d32"
+                android:layout_height="@dimen/d32"
+                android:layout_marginTop="@dimen/d12"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:srcCompat="@drawable/close_button" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCart"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/topHeader"
+            tools:listitem="@layout/adapter_order_summary_cart_item"
+            android:tag="binding_2"                                               
+                                           />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

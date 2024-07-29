@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.mvvm.viewmodel.CountDownTimerViewModel","classAnnotations":[],"interfaces":[],"superClasses":["com.intellihealth.truemeds.presentation.viewmodel.BaseViewModel","androidx.lifecycle.ViewModel","java.lang.Object"]}

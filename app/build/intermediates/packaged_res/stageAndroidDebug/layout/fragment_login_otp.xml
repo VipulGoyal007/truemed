@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+                 
+                            
+                                                                                      
+
+                 
+                              
+                                                                
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/fragment_login_otp_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.intellihealth.salt.views.cards.OtpCard
+            android:id="@+id/login_OTP_View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d24"
+            android:layout_marginHorizontal="@dimen/d16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:tag="binding_1"          />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/flexboxLoginTermsConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d16"
+            android:paddingBottom="@dimen/d20"
+            app:alignContent="flex_start"
+            app:flexWrap="wrap"
+            android:layout_marginTop="@dimen/d43"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_OTP_View"
+            app:layout_constraintVertical_bias="1"
+            >
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvSigning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/d4"
+                android:paddingTop="@dimen/d12"
+                android:text="By signing up, I agree to the"
+                android:textColor="@color/tm_semantic_color_content_main_tertiary"
+                app:bodyTextStyle="BodySmallRegular" />
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/tvTermsConditions"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d40"
+                android:text="Terms and Conditions"
+                app:buttonTextStyle="ButtonXs"
+                app:buttonType="GhostButton"
+                app:buttonSizeType="WrapHeight"
+                app:iconPaddingStart="2"
+                app:iconPaddingEnd="16"
+                app:iconPaddingTop="7"
+                app:iconPaddingBottom="7"
+                app:removePadding="false" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:indeterminate="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

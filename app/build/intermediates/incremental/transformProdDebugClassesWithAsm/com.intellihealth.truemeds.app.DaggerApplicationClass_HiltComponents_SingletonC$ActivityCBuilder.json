@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.app.DaggerApplicationClass_HiltComponents_SingletonC$ActivityCBuilder","classAnnotations":[],"interfaces":["com.intellihealth.truemeds.app.ApplicationClass_HiltComponents$ActivityC$Builder","dagger.hilt.android.internal.builders.ActivityComponentBuilder"],"superClasses":["java.lang.Object"]}

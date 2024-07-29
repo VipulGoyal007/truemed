@@ -1,0 +1,40 @@
+{
+  "frequencyList": [
+    {
+      "isSelected": false,
+      "frequency": 15,
+      "frequencyText": "Every 15 Days",
+      "nextReminderDate": "24 January 2024"
+    },
+    {
+      "isSelected": false,
+      "frequency": 30,
+      "frequencyText": "Every 30 Days",
+      "nextReminderDate": "08 February 2024"
+    },
+    {
+      "isSelected": false,
+      "frequency": 45,
+      "frequencyText": "Every 45 Days",
+      "nextReminderDate": "23 February 2024"
+    },
+    {
+      "isSelected": false,
+      "frequency": 60,
+      "frequencyText": "Every 60 Days",
+      "nextReminderDate": "24 January 2024"
+    },
+    {
+      "isSelected": false,
+      "frequency": 75,
+      "frequencyText": "Every 75 Days",
+      "nextReminderDate": "08 February 2024"
+    },
+    {
+      "isSelected": false,
+      "frequency": 90,
+      "frequencyText": "Every 90 Days",
+      "nextReminderDate": "23 February 2024"
+    }
+  ]
+}

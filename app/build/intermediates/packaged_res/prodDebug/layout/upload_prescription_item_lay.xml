@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="108dp"
+        android:layout_height="110dp" android:tag="layout/upload_prescription_item_lay_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/d100"
+            android:layout_height="@dimen/d100"
+            android:backgroundTint="@color/tm_semantic_color_bg_main"
+            app:cardCornerRadius="@dimen/d8"
+            app:cardElevation="@dimen/d0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/upload_prescription_img_stoke_color"
+            app:strokeWidth="@dimen/d1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/uploadPrescriptionImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/d20"
+            android:layout_height="@dimen/d20"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/close_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

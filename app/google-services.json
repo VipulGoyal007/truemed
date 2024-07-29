@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "877511862618",
+    "firebase_url": "https://truemeds-cf191.firebaseio.com",
+    "project_id": "truemeds-cf191",
+    "storage_bucket": "truemeds-cf191.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877511862618:android:811149aab9b21bf6",
+        "android_client_info": {
+          "package_name": "com.intellihealth.truemeds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877511862618-6v7bt65m0trtjgc08ovqu110pohep6lp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.intellihealth.truemeds",
+            "certificate_hash": "ebd5948205a91c5d977664764bd1419e34900a98"
+          }
+        },
+        {
+          "client_id": "877511862618-30ihvv2o702d31j08idojm5155p3e7h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsAmVlkEsRNnN1HQlcTMfTOVQdkMo_Zkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "877511862618-30ihvv2o702d31j08idojm5155p3e7h4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "877511862618-qjjrgc1ri2s73fpffatnq5955h519lr8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.IntelliHealthSolutions.TrueMeds",
+                "app_store_id": "1462882409"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877511862618:android:76cd1ed6497b2bf5",
+        "android_client_info": {
+          "package_name": "com.simpli5infotech.truemeds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877511862618-l5e334lhmbi7gs1fh6sii32q8cc2diif.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.simpli5infotech.truemeds",
+            "certificate_hash": "ebd5948205a91c5d977664764bd1419e34900a98"
+          }
+        },
+        {
+          "client_id": "877511862618-30ihvv2o702d31j08idojm5155p3e7h4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsAmVlkEsRNnN1HQlcTMfTOVQdkMo_Zkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "877511862618-30ihvv2o702d31j08idojm5155p3e7h4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "877511862618-qjjrgc1ri2s73fpffatnq5955h519lr8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.IntelliHealthSolutions.TrueMeds",
+                "app_store_id": "1462882409"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

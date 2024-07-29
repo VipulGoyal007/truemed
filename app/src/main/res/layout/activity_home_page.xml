@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.HomeViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        tools:context=".presentation.activity.HomePageActivity">
+
+        <FrameLayout
+            android:id="@+id/containerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="-10dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.intellihealth.salt.views.Carts
+            android:id="@+id/tmCarts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:paddingHorizontal="@dimen/d16"
+            android:paddingTop="@dimen/d12"
+            android:paddingBottom="@dimen/d12"
+            android:visibility="gone"
+            app:cartType="viewCart"
+            app:layout_constraintBottom_toTopOf="@+id/clFooter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:setUpCartData="@{viewModel.cartModel}"
+            tools:visibility="visible" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                style="@style/baseShadowThemeGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:shadowDy="@integer/material_motion_duration_medium_2"
+                app:itemBackground="@color/tm_semantic_color_primary_white"
+                app:itemHorizontalTranslationEnabled="false"
+                app:itemIconTint="@drawable/bottom_nav_color_tint"
+                app:itemRippleColor="@null"
+                app:itemPaddingBottom="@dimen/d10"
+                app:itemPaddingTop="@dimen/d10"
+                app:itemTextAppearanceActive="@style/BottomNavigation.ActiveItemTextAppearance"
+                app:itemTextAppearanceInactive="@style/BottomNavigationViewTextStyle"
+                app:itemTextColor="@drawable/bottom_nav_color_tint"
+                app:labelVisibilityMode="labeled"
+                android:elevation="@dimen/d14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/bottom_app_bar_menu"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView">
+
+            <com.intellihealth.salt.views.orders.OrderTracking
+                android:id="@+id/orderTracking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/ftcCouponNotification"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="v" />
+
+            <com.intellihealth.salt.views.StickyNonStickyNotification
+                android:id="@+id/ftcCouponNotification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="@{ viewModel.loaderValue ? View.VISIBLE : View.GONE }"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/vwClickBlocker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:elevation="@dimen/d8"
+            android:focusable="true"
+            android:visibility="@{viewModel.showShimmerHome &amp;&amp; viewModel.showBlockerVw20 ? View.VISIBLE : View.GONE}"
+            tools:background="@color/transparent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="savedAddressData"
+            type="com.intellihealth.truemeds.data.model.user.GetAllAddressResponse.ResponseObj" />
+    </data>
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="@dimen/d12">-->
+    <com.google.android.material.card.MaterialCardView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/d2"
+        app:rippleColor="@android:color/transparent"
+        style="@style/baseShadowThemeGrey"
+        app:cardCornerRadius="@dimen/d12"
+        android:layout_marginBottom="@dimen/d12"
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_saved_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d12">
+
+        <!--<com.intellihealth.salt.views.radiofield.RadioFieldLayout
+            android:id="@+id/radioHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:removePadding="true"
+            app:radioLabel="@{ savedAddressData.addressType+ ` (`+savedAddressData.pincode+`)`}"
+            app:radioPosition="right"
+            app:selected="false" />-->
+
+        <com.intellihealth.salt.views.radiofield.Radio
+            android:id="@+id/radioHeader"
+            android:layout_width="@dimen/d16"
+            android:layout_height="@dimen/d16"
+            android:layout_gravity="center"
+            android:alpha="@{ savedAddressData.isServicable == null || savedAddressData.isServicable ? 1f : .6f }"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvLabelRight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/d8"
+            android:layout_marginBottom="@dimen/d8"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:alpha="@{ savedAddressData.isServicable == null || savedAddressData.isServicable ? 1f : .6f }"
+            android:text="@{savedAddressData.addressType+ ` (`+savedAddressData.pincode+`)`}"
+            android:textColor="@color/tm_core_color_gray_800"
+            app:bodyTextStyle="BodyMediumSemiBold"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintRight_toLeftOf="@+id/ivEditSavedAddress"
+            app:layout_constraintStart_toEndOf="@+id/radioHeader"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Label"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivEditSavedAddress"
+            android:layout_width="@dimen/d24"
+            android:layout_height="@dimen/d24"
+            android:src="@drawable/ic_edit"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible"/>
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d4"
+            android:alpha="@{ savedAddressData.isServicable == null || savedAddressData.isServicable ? 1f : .6f }"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:text="@{savedAddressData.clubbedAddress}"
+            android:textColor="@color/tm_semantic_color_content_main_secondary"
+            app:bodyTextStyle="BodyMediumRegular"
+            app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintRight_toLeftOf="@+id/ivEditSavedAddress"
+            app:layout_constraintStart_toStartOf="@+id/tvLabelRight"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabelRight"
+            tools:text="B1 1601, The Address by Wadhwa, Ghatkopar, Mumbai 411004"
+            tools:visibility="visible" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvPinCodeUnserviceable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d24"
+            android:text="Pincode unserviceable"
+            android:textColor="@color/tm_semantic_color_content_warning_default"
+            android:visibility="gone"
+            app:bodyTextStyle="BodySmallSemiBold"
+            app:layout_constraintBottom_toBottomOf="@+id/ivEditInfo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/radioHeader"
+            app:layout_constraintTop_toTopOf="@+id/ivEditInfo"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivEditInfo"
+            android:layout_width="@dimen/d18"
+            android:layout_height="@dimen/d18"
+            android:layout_marginLeft="@dimen/d4"
+            android:layout_marginTop="@dimen/d8"
+            android:src="@drawable/ic_info"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/tvPinCodeUnserviceable"
+            app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+</layout>

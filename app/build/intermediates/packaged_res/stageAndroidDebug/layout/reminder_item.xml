@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                            
+
+
+    
+                 
+                                    
+                                                                      
+
+                 
+                                   
+                                                                            
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingHorizontal="@dimen/d16"
+        android:layout_marginTop="@dimen/d16"
+        android:layout_marginBottom="@dimen/d16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+         android:tag="layout/reminder_item_0" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.intellihealth.salt.views.ReferralStage
+            android:id="@+id/referralReminder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:tag="binding_1"                        
+                                                              
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+<!--        <com.intellihealth.salt.views.ReferralStage-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTōop_toTopOf="parent"-->
+<!--            app:setReferralStageData="@{referralStageData}"-->
+<!--            app:setTmReferralStageCallback="@{referralCallback}"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

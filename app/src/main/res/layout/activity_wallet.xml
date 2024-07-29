@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.WalletViewModel" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.activity.WalletActivity">
+
+        <com.intellihealth.salt.views.MobileSectionHeaders
+            android:id="@+id/mobileSectionHeaderWallet"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:translationZ="@dimen/d8"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mobileSectionHeadersViewType="DefaultWithoutFill" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility= "@{viewModel.loaderValue == true ? View.VISIBLE: View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/contentScroll"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:visibility= "@{viewModel.loaderValue == true ? View.GONE: View.VISIBLE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobileSectionHeaderWallet">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <com.intellihealth.salt.views.cards.WalletCard
+                    android:id="@+id/walletCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/d20"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:setWalletBalanceData="@{viewModel.walletCardData}" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_transaction_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/d16"
+                    android:layout_marginTop="-35dp"
+                    tools:visibility="visible"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/walletCard">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_reward_section"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/d8"
+                        android:background="@drawable/bg_wallet_view_transactions"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="@dimen/d12"
+                        app:layout_constraintHorizontal_weight="5"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/cl_credit_section"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/textReward"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TM Reward"
+                            android:textColor="@color/tm_semantic_color_content_main_primary"
+                            app:bodyTextStyle="BodyMediumSemiBold"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/textRewardAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d8"
+                            android:text="00.00"
+                            android:textColor="@color/tm_semantic_color_content_main_primary"
+                            app:headerTextStyle="HeadingH3"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textReward" />
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/textViewRewardTransactions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d12"
+                            android:layout_marginRight="@dimen/d4"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text="View Transactions"
+                            android:textColor="@color/tm_semantic_color_content_ghost_default"
+                            app:bodyTextStyle="BodyMediumSemiBold"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textRewardAmount" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d12"
+                            android:layout_marginStart="@dimen/d4"
+                            android:src="@drawable/ic_chevron_right"
+                            android:tint="@color/tm_semantic_color_content_ghost_default"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/textViewRewardTransactions">
+
+                        </androidx.appcompat.widget.AppCompatImageView>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_credit_section"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_wallet_view_transactions"
+                        android:padding="@dimen/d12"
+                        app:layout_constraintHorizontal_weight="5"
+                        app:layout_constraintLeft_toRightOf="@+id/cl_reward_section"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cl_transaction_section"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/textCredit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TM Credit"
+                            android:textColor="@color/tm_semantic_color_content_main_primary"
+                            app:bodyTextStyle="BodyMediumSemiBold"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/textCreditAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d8"
+                            android:text="00.00"
+                            android:textColor="@color/tm_semantic_color_content_main_primary"
+                            app:headerTextStyle="HeadingH3"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textCredit" />
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/textViewCreditTransactions"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d12"
+                            android:layout_marginRight="@dimen/d4"
+                            android:text="View Transactions"
+                            android:textColor="@color/tm_semantic_color_content_ghost_default"
+                            app:bodyTextStyle="BodyMediumSemiBold"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textCreditAmount" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d12"
+                            android:layout_marginStart="@dimen/d4"
+                            android:src="@drawable/ic_chevron_right"
+                            android:tint="@color/tm_semantic_color_content_ghost_default"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@+id/textViewCreditTransactions">
+
+                        </androidx.appcompat.widget.AppCompatImageView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/textEarnRewardHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:text="Earn TM Reward"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    app:headerTextStyle="HeadingH2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_transaction_section"/>
+
+                <com.intellihealth.salt.views.cards.ActionCard
+                    android:id="@+id/tmActionWalletCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d16"
+                    app:actionCardButtonRight="@drawable/ic_chevron_right"
+                    app:actionCardButtonText="Share code"
+                    app:actionCardDescription="Earn ₹200"
+                    app:actionCardImageDrawable="@drawable/ic_group_refer"
+                    app:actionCardTitle="Refer a friend to"
+                    app:actionCardType="Wallet"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textEarnRewardHeader" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/textFAQHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d24"
+                    android:layout_marginBottom="@dimen/d16"
+                    android:text="Frequently asked questions"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    app:headerTextStyle="HeadingH2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tmActionWalletCard" />
+
+                <com.intellihealth.salt.views.cards.Faq
+                    android:id="@+id/faqList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textFAQHeader" />
+
+                <com.intellihealth.salt.views.buttons.ButtonLite
+                    android:id="@+id/textViewTermsAndConditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d36"
+                    android:layout_marginBottom="@dimen/d30"
+                    android:text="Terms &amp; Conditions"
+                    android:textColor="@color/tm_semantic_color_content_main_tertiary"
+                    app:buttonSizeType="ExtraSmall"
+                    app:buttonTextStyle="ButtonXs"
+                    app:buttonType="LinkButton"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/faqList"
+                    app:removePadding="true"
+                    app:title="Terms &amp; Conditions" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

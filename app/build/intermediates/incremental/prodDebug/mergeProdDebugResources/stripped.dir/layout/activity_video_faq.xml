@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+                                                           
+                                                       
+
+        
+
+                                               
+
+                     
+                                
+                                                                                          
+               
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".presentation.activity.VideoFaqActivity" android:tag="layout/activity_video_faq_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:translationZ="8dp"
+                android:tag="binding_1"                                                  
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:tag="binding_2"                               
+                    android:paddingVertical="@dimen/d16"
+                    android:paddingStart="@dimen/d16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/back_arrow_icon"
+                    tools:ignore="RtlSymmetry" />
+
+                <com.intellihealth.salt.views.TextView
+                    app:bodyTextStyle="BodyMediumSemiBold"
+                    android:id="@+id/tvTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:singleLine="true"
+                    android:text="@string/learn_about_substitutes"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/toggleButton"
+                    app:layout_constraintStart_toEndOf="@+id/ivBack"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible" />
+
+
+                <!--<androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="14dp"
+                    android:background="@drawable/button_gray_border1"
+                    android:padding="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/tvHindi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@{ viewmodel._isHindiSelected ? @drawable/bg_video_language_selected : null }"
+                        android:onClick="@{ () -> viewmodel.onLanguageChange(true) }"
+                        android:paddingStart="11dp"
+                        android:paddingTop="3dp"
+                        android:paddingEnd="9dp"
+                        android:paddingBottom="3dp"
+                        android:text="@string/hindi_hi"
+                        android:textColor="@{ viewmodel._isHindiSelected ? @color/white : @color/text_color_en_selected}"
+                        android:textSize="13sp"
+                        tools:background="#0071BD"
+                        tools:textColor="#fff" />
+
+                    <TextView
+                        android:id="@+id/tvEnglish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@{ viewmodel._isHindiSelected ? null : @drawable/bg_video_language_selected}"
+                        android:onClick="@{ () -> viewmodel.onLanguageChange(false) }"
+                        android:paddingStart="9dp"
+                        android:paddingTop="3dp"
+                        android:paddingEnd="11dp"
+                        android:paddingBottom="3dp"
+                        android:text="@string/english"
+                        android:textColor="@{ viewmodel._isHindiSelected ? @color/text_color_en_selected : @color/white}"
+                        android:textSize="13sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d36"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center"
+                    android:background="@drawable/button_gray_border1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <TextView
+                        android:id="@+id/tvHindi"
+                        android:layout_width="@dimen/d36"
+                        android:layout_height="@dimen/d28"
+                        android:tag="binding_3"                                                                           
+                                                                                     
+                        android:text="@string/hindi_hi"
+                                                                                                                         
+                        android:textSize="13sp"
+                        tools:background="@drawable/bg_video_language_selected"
+                        tools:textColor="#fff"
+                        android:layout_marginTop="@dimen/d4"
+                        android:layout_marginBottom="@dimen/d4"
+                        android:layout_marginStart="@dimen/d4"
+                        android:layout_marginEnd="@dimen/d2"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/tvEnglish"
+                        android:layout_width="@dimen/d36"
+                        android:layout_height="@dimen/d28"
+                        android:tag="binding_4"                                                                          
+                                                                                      
+                        android:layout_marginTop="@dimen/d4"
+                        android:layout_marginBottom="@dimen/d4"
+                        android:layout_marginEnd="@dimen/d4"
+                        android:layout_marginStart="@dimen/d2"
+                        android:gravity="center"
+                        android:text="@string/english"
+                                                                                                                         
+                        android:textSize="13sp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/playerConstrain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000"
+                android:minHeight="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clToolbar">
+
+                <com.google.android.exoplayer2.ui.PlayerView
+                    android:id="@+id/playerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#000"
+                    android:minHeight="200dp"
+                    android:tag="binding_5"                                                        
+                    app:auto_show="false"
+                    app:controller_layout_id="@layout/custom_exo_controller_view"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:resize_mode="fit"
+                    app:show_buffering="never"
+                    app:show_shuffle_button="false"
+                    app:show_subtitle_button="false" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivThumbnail"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:tag="binding_6"                                                   
+                    app:layout_constraintBottom_toBottomOf="@+id/playerView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/playerView"
+                                                              
+                    tools:visibility="visible" />
+
+                <View
+                    android:id="@+id/playerBottomView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/playerConstrain"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="#99000000"
+                    android:tag="binding_7"                                                   
+                    app:layout_constraintBottom_toBottomOf="@+id/playerView"
+                    app:layout_constraintEnd_toEndOf="@+id/playerView"
+                    app:layout_constraintStart_toStartOf="@+id/playerView"
+                    app:layout_constraintTop_toTopOf="@+id/playerView" />
+
+                <!--54-->
+                <!--                android:visibility="@{viewmodel.isVideoPaused ? View.VISIBLE : View.GONE}"
+                -->
+
+
+                <com.intellihealth.salt.views.TextView
+                    app:bodyTextStyle="BodyLargeSemiBold"
+                    android:id="@+id/tvTitle2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:tag="binding_8"                  
+                    android:textColor="@color/filter_dark"
+                    android:textSize="15sp"
+                                                                                             
+                    app:layout_constraintBottom_toTopOf="@+id/llControllers"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:text="Save your money with substitutes"
+                    tools:visibility="visible" />
+                <!--isShowSecondaryTitle-->
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/llControllers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="22dp"
+                    android:layout_marginBottom="56dp"
+                    android:tag="binding_9"                                                                                             
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                    <!--android:visibility="@{ viewmodel.isSecondaryPlayFlag ? View.VISIBLE : View.GONE }"-->
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/playerPlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:tag="binding_10"                             
+                                                                                                                         
+                        tools:src="@drawable/ic_exo_play"
+                        tools:visibility="visible" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/playerForward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="binding_11"                                
+                        android:src="@drawable/ic_skip_forward"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toTopOf="@+id/exo_progress"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <com.intellihealth.salt.views.TextView
+                        app:bodyTextStyle="BodySmallSemiBold"
+                        android:id="@+id/tvVideoCurrentTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:tag="binding_12"                           
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/exo_progress"
+                        tools:text="0:00" />
+
+                    <com.intellihealth.salt.views.TextView
+                        app:bodyTextStyle="BodySmallSemiBold"
+                        android:id="@+id/tvVideoDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="4dp"
+                        android:tag="binding_13"                    
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/exo_progress"
+                        app:layout_constraintStart_toEndOf="@+id/exo_position" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivFullScreen"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="32dp"
+                    android:tag="binding_14"                              
+                    android:padding="16dp"
+                    android:src="@drawable/ic_maximize"
+                                                                                                   
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/playerView" />
+
+                <!--//////////////////////////////////////////////////////////////
+            when video is in loading state  isVideoPaused-->
+                <!--                app:thumbnailUrl="@{ viewModel.dtoVideos[position].thumbnailUrl }"
+                -->
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:indeterminate="false"
+                    android:progressDrawable="@drawable/video_progress_blue"
+                    android:tag="binding_15"                                                      
+                    app:layout_constraintBottom_toBottomOf="@+id/playerBottomView"
+                    app:layout_goneMarginBottom="200dp"
+                    app:layout_constraintEnd_toEndOf="@+id/playerView"
+                    app:layout_constraintStart_toStartOf="@+id/playerView"
+                    app:layout_constraintTop_toTopOf="@+id/playerView" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/appCompatImageView18"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:src="@drawable/ic_video_pause"
+                    android:tag="binding_16"                                                  
+                    app:layout_constraintBottom_toBottomOf="@+id/progressBar2"
+                    app:layout_constraintEnd_toEndOf="@+id/progressBar2"
+                    app:layout_constraintStart_toStartOf="@+id/progressBar2"
+                    app:layout_constraintTop_toTopOf="@+id/progressBar2" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/loadingGIF"
+                    android:layout_width="58dp"
+                    android:layout_height="58dp"
+                    android:tag="binding_17"                                           
+                    app:layout_constraintBottom_toBottomOf="@+id/progressBar2"
+                    app:layout_constraintEnd_toEndOf="@+id/progressBar2"
+                    app:layout_constraintStart_toStartOf="@+id/progressBar2"
+                    app:layout_constraintTop_toTopOf="@+id/progressBar2" />
+
+                <com.intellihealth.salt.views.TextView
+                    app:bodyTextStyle="BodySmallSemiBold"
+                    android:id="@+id/tvTextPlayingNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Playing Next"
+                    android:textColor="@color/white"
+                    android:tag="binding_18"                                                                                          
+                    app:layout_constraintEnd_toEndOf="@+id/appCompatImageView18"
+                    app:layout_constraintStart_toStartOf="@+id/appCompatImageView18"
+                    app:layout_constraintTop_toBottomOf="@+id/appCompatImageView18" />
+
+                <com.intellihealth.salt.views.TextView
+                    app:bodyTextStyle="BodyMediumSemiBold"
+                    android:id="@+id/tvPlayingNext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:gravity="center"
+                    android:tag="binding_19"                    
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                                                                                                                                      
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTextPlayingNext"
+                    tools:text="How to add substitute ?" />
+
+                <!--//////////////////////////////////////////////////////////////-->
+
+                <!--
+                            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                                android:id="@+id/ytPlayerView"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:visibility="gone"
+                                app:autoPlay="false"
+                                app:enableAutomaticInitialization="false"
+                                app:layout_constraintBottom_toBottomOf="@+id/playerView"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/playerView" />
+                -->
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--        <androidx.appcompat.widget.AppCompatImageView-->
+            <!--            android:id="@+id/ivFullScreen"-->
+            <!--            android:layout_width="20dp"-->
+            <!--            android:layout_height="20dp"-->
+            <!--            android:layout_marginTop="11dp"-->
+            <!--            android:layout_marginEnd="18dp"-->
+            <!--            android:src="@drawable/ic_full_screen"-->
+            <!--            android:visibility="@{viewmodel.isFullScreen ? View.GONE : View.VISIBLE}"-->
+            <!--            app:layout_constraintEnd_toEndOf="@+id/playerConstrain"-->
+            <!--            app:layout_constraintTop_toTopOf="@+id/playerConstrain"-->
+            <!--            tools:visibility="gone" />-->
+
+            <!--        <androidx.appcompat.widget.AppCompatImageView-->
+            <!--            android:id="@+id/ivFullScreen2"-->
+            <!--            android:layout_width="20dp"-->
+            <!--            android:layout_height="20dp"-->
+            <!--            android:layout_margin="15.88dp"-->
+            <!--            android:src="@drawable/ic_full_screen_2"-->
+            <!--            android:visibility="gone"-->
+            <!--            app:layout_constraintBottom_toTopOf="@+id/pbVideoProgress"-->
+            <!--            app:layout_constraintEnd_toEndOf="@+id/playerConstrain" />-->
+
+
+            <!--<ProgressBar
+                android:id="@+id/pbVideoProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:indeterminate="false"
+                android:progress="0"
+                android:progressDrawable="@drawable/video_progress"
+                android:scrollbarSize="2dp"
+                app:layout_constraintBottom_toBottomOf="@+id/playerConstrain" />-->
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/gpPlayList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="binding_20"                                                 
+                app:constraint_referenced_ids="tvSaveMoney,view3,rvVideoList,tvRelatedVideos"
+                tools:visibility="visible" />
+
+
+            <com.intellihealth.salt.views.TextView
+                app:bodyTextStyle="BodyLargeSemiBold"
+                android:id="@+id/tvSaveMoney"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/inter_semibold"
+                android:tag="binding_21"                 
+                android:textColor="#4F585E"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/playerConstrain"
+                tools:text="Save your money with substitutes" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#DFE8F9"
+                app:layout_constraintTop_toBottomOf="@+id/tvSaveMoney" />
+
+            <com.intellihealth.salt.views.TextView
+                app:bodyTextStyle="BodyMediumRegular"
+                android:id="@+id/tvRelatedVideos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/d16"
+                android:paddingVertical="@dimen/d12"
+                android:fontFamily="@font/inter_regular"
+                android:text="Related Videos"
+                android:textColor="#7E7E7E"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@+id/rvVideoList"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvVideoList"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRelatedVideos"
+                android:tag="binding_22"                 
+                                                         
+                 />
+
+
+            <!--app:languageSelection="@{viewmodel._isHindiSelected? `HI` : `EN`}"-->
+
+            <!--todo update this-->
+            <!--<com.intellihealth.salt.views.toggle.language.LanguageToggleView
+                android:id="@+id/toggleButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:toggleLanguage="hindi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />-->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/toggleButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d36"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:background="@drawable/button_gray_border1"
+                android:tag="binding_23"                                                 
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/tvHindi1"
+                    android:layout_width="@dimen/d36"
+                    android:layout_height="@dimen/d28"
+                    android:tag="binding_24"                                                                          
+                                                                                 
+                    android:text="@string/hindi_hi"
+                                                                                                                     
+                    android:textSize="13sp"
+                    tools:background="@drawable/bg_video_language_selected"
+                    tools:textColor="#fff"
+                    android:layout_marginTop="@dimen/d4"
+                    android:layout_marginBottom="@dimen/d4"
+                    android:layout_marginStart="@dimen/d4"
+                    android:layout_marginEnd="@dimen/d2"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tvEnglish1"
+                    android:layout_width="@dimen/d36"
+                    android:layout_height="@dimen/d28"
+                    android:tag="binding_25"                                                                         
+                                                                                  
+                    android:layout_marginTop="@dimen/d4"
+                    android:layout_marginBottom="@dimen/d4"
+                    android:layout_marginEnd="@dimen/d4"
+                    android:layout_marginStart="@dimen/d2"
+                    android:gravity="center"
+                    android:text="@string/english"
+                                                                                                                     
+                    android:textSize="13sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!--<RadioGroup
+                android:visibility="@{viewmodel.isFullScreen ? View.VISIBLE : View.GONE}"
+
+                android:id="@+id/toggleButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/button_gray_border1"
+                android:checkedButton="@+id/offer"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@{ viewmodel._isHindiSelected ? @color/color_language_selected : @color/color_language_unselected}"
+                    android:onClick="@{ () -> viewmodel.onLanguageChange(true) }"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingStart="11dp"
+                    android:textSize="12sp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="9dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/hindi_hi"
+                    android:textColor="@{ viewmodel._isHindiSelected ? @color/white : @color/text_color_en_selected}" />
+
+                <RadioButton
+                    android:textSize="12sp"
+                    android:id="@+id/offer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@{ viewmodel._isHindiSelected ? @color/color_language_unselected : @color/color_language_selected}"
+                    android:onClick="@{ () -> viewmodel.onLanguageChange(false) }"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingStart="9dp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="11dp"
+                    android:paddingBottom="3dp"
+                    android:text="@string/english"
+                    android:textColor="@{ viewmodel._isHindiSelected ? @color/text_color_en_selected : @color/white}" />
+            </RadioGroup>-->
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/d32"
+                android:layout_height="@dimen/d32"
+                android:layout_marginEnd="@dimen/d16"
+                android:tag="binding_26"                             
+                android:src="@drawable/ic_back_video"
+                                                                                         
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/toggleButton1"
+                app:layout_constraintBottom_toBottomOf="@+id/toggleButton1"/>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/gpBottomPlayList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="binding_27"                                                                                         
+                app:constraint_referenced_ids="rvVideoListVertical,pbVideoProgress2,llControllers1"
+                tools:visibility="visible" />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/llControllers1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginBottom="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/pbVideoProgress2"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <!--added-->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/playerPlay1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tag="binding_28"                             
+                                                                                                                     
+                    tools:src="@drawable/ic_exo_play" />
+
+                <!--added-->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/playerForward1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:tag="binding_29"                                
+                    android:src="@drawable/ic_skip_forward"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toTopOf="@+id/exo_progress"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <!--needed binding-->
+                <com.intellihealth.salt.views.TextView
+                    app:bodyTextStyle="BodySmallSemiBold"
+                    android:id="@+id/tvVideoCurrentTime1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:tag="binding_30"                           
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/exo_progress"
+                    tools:text="0:00" />
+
+                <com.intellihealth.salt.views.TextView
+                    app:bodyTextStyle="BodySmallSemiBold"
+                    android:id="@+id/tvVideoDuration1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:tag="binding_31"                    
+                    android:textColor="#fff"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/exo_progress"
+                    app:layout_constraintStart_toEndOf="@+id/exo_position" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <ProgressBar
+                android:id="@+id/pbVideoProgress2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="26dp"
+                android:indeterminate="false"
+                android:progress="0"
+                android:progressDrawable="@drawable/video_progress"
+                android:scrollbarSize="2dp"
+                app:layout_constraintBottom_toTopOf="@+id/rvVideoListVertical" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvVideoListVertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="@dimen/d8"
+                android:layout_marginTop="@dimen/d8"
+                android:layout_marginBottom="@dimen/d16"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toTopOf="@+id/btnViewAll"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:tag="binding_32"                         
+                                                         
+                tools:listitem="@layout/item_video_carousel"
+                tools:visibility="visible" />
+
+            <com.intellihealth.salt.views.buttons.Button
+                android:elevation="@dimen/d0"
+                android:layout_marginBottom="@dimen/d24"
+                app:iconRight="@drawable/big_right_arrow"
+                app:buttonType="SecondaryButton"
+                android:visibility="gone"
+                android:tag="binding_33"                              
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/btnViewAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:title="View all"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/pbLoading"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:background="@color/white"
+                android:tag="binding_34"                                                   
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/loading_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+             

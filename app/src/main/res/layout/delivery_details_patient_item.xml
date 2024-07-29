@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.DeliveryDetailsViewModel" />
+
+        <variable
+            name="itemPosition"
+            type="Integer" />
+        <variable
+            name="addressCardData"
+            type="com.intellihealth.salt.models.AddressPatientDetailsCardModel" />
+
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraitMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-6dp">
+
+        <com.intellihealth.salt.views.cards.AddressPatientDetailsCard
+            android:id="@+id/addressCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d3"
+            app:setUpData="@{addressCardData}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

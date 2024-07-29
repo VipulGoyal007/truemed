@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="productInfoModel"
+            type="com.intellihealth.truemeds.presentation.model.ProductInfoModel" />
+
+        <variable
+            name="viewmodel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.CartViewModel" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d4">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clProduct"
+            android:layout_width="0dp"
+            android:paddingVertical="@dimen/d12"
+            android:background="@color/tm_core_color_gray_50"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/clSuggestion">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivProduct"
+                android:layout_width="@dimen/d68"
+                android:layout_height="@dimen/d68"
+                app:imgUrlPlaceholderSupport="@{productInfoModel.product.productImageUrl}"
+                app:drugType="@{productInfoModel.product.drugType}"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/match_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:bodyTextStyle="BodyMediumSemiBold"
+                android:layout_marginTop="@dimen/d12"
+                android:lines="2"
+                android:gravity="start"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginHorizontal="@dimen/d12"
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                android:text="@{productInfoModel.product.skuName}"
+                tools:text="Telma 40mg lorem ipsum dolor si"
+                app:layout_constraintTop_toBottomOf="@+id/ivProduct"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvProductManufacturer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:bodyTextStyle="BodySmallRegular"
+                android:layout_marginTop="@dimen/d12"
+                android:lines="2"
+                android:gravity="start"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginHorizontal="@dimen/d12"
+                android:textColor="@color/tm_semantic_color_content_main_secondary"
+                android:text="@{productInfoModel.product.manufacturerName}"
+                tools:text="Abbot India Pvt Ltd"
+                app:layout_constraintTop_toBottomOf="@+id/tvProductName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvProductUnits"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:bodyTextStyle="BodySmallRegular"
+                android:layout_marginTop="@dimen/d12"
+                android:lines="2"
+                android:gravity="start"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginHorizontal="@dimen/d12"
+                android:textColor="@color/tm_semantic_color_content_main_secondary"
+                android:text="@{productInfoModel.product.pricePerUnitLabel}"
+                tools:text="10/tablet"
+                app:layout_constraintTop_toBottomOf="@+id/tvProductManufacturer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSuggestion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/tm_semantic_color_bg_accent_5"
+            android:paddingVertical="@dimen/d12"
+
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/clProduct"
+            app:layout_constraintEnd_toEndOf="parent">
+<!--android:background="@drawable/bg_semantic_color_button_success_subdued"-->
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSuggestion"
+                android:layout_width="@dimen/d68"
+                android:layout_height="@dimen/d68"
+                app:imgUrlPlaceholderSupport="@{productInfoModel.suggestion.productImageUrl}"
+                app:drugType="@{productInfoModel.suggestion.drugType}"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/match_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvSuggestionName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:bodyTextStyle="BodyMediumSemiBold"
+                android:layout_marginHorizontal="@dimen/d12"
+                android:layout_marginTop="@dimen/d12"
+                android:lines="2"
+                android:gravity="start"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                android:text="@{productInfoModel.suggestion.skuName}"
+                tools:text="Telma 40mg lorem ipsum dolor si"
+                app:layout_constraintTop_toBottomOf="@+id/ivSuggestion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvSuggestionManufacturer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:bodyTextStyle="BodySmallRegular"
+                android:layout_marginTop="@dimen/d12"
+                android:lines="2"
+                android:gravity="start"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginHorizontal="@dimen/d12"
+                android:textColor="@color/tm_semantic_color_content_main_secondary"
+                android:text="@{productInfoModel.suggestion.manufacturerName}"
+                tools:text="Abbot India Pvt Ltd"
+                app:layout_constraintTop_toBottomOf="@+id/tvSuggestionName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvSuggestionUnits"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:bodyTextStyle="BodySmallRegular"
+                android:layout_marginTop="@dimen/d12"
+                android:lines="2"
+                android:gravity="start"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginHorizontal="@dimen/d12"
+                android:textColor="@color/tm_semantic_color_content_main_secondary"
+                android:text="@{productInfoModel.suggestion.pricePerUnitLabel}"
+                tools:text="10/tablet"
+                app:layout_constraintTop_toBottomOf="@+id/tvSuggestionManufacturer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.WalletTransactionsViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_bottomsheet_header"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHeader"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_bottomsheet_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:elevation="@dimen/constraint_shadow_height"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginVertical="@dimen/d24"
+                android:clipToOutline="true"
+                android:visibility="visible"
+                android:src="@drawable/ic_arrow_left"
+                app:layout_constraintRight_toLeftOf="@+id/tvHeader"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginVertical="@dimen/d22"
+                android:ellipsize="end"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/d16"
+                android:text="Custom Dates"
+                android:textColor="@color/tm_core_color_gray_800"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintStart_toEndOf="@+id/imageBack"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:visibility="visible" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageClose"
+                android:layout_width="@dimen/d32"
+                android:layout_height="@dimen/d32"
+                android:layout_marginEnd="@dimen/d16"
+                android:visibility="visible"
+                android:clipToOutline="true"
+                android:layout_marginVertical="@dimen/d16"
+                android:src="@drawable/ic_close_black_with_white_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clHeader">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_custom_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginTop="@dimen/d24"
+                android:layout_marginBottom="@dimen/d60"
+                app:layout_constraintBottom_toTopOf="@+id/tvApplyChooseDates"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:visibility="visible">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_from_section"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintHorizontal_weight="5"
+                    android:layout_marginRight="@dimen/d16"
+                    app:layout_constraintRight_toLeftOf="@+id/cl_to_section"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent">
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/textFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="From"
+                        app:bodyTextStyle="BodyMediumSemiBold"
+                        android:textColor="@color/tm_semantic_color_content_main_primary"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <com.intellihealth.salt.views.dropdown.DropDownHeader
+                        android:id="@+id/dropDownCustomDatesFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d12"
+                        app:layout_constraintTop_toBottomOf="@+id/textFrom"
+                        android:textColor="@color/tm_semantic_color_content_main_primary"
+                        app:headerTextStyle="HeadingH3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_to_section"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintHorizontal_weight="5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/cl_from_section"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_custom_date"
+                    >
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/textTo"
+                        android:text="To"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:bodyTextStyle="BodyMediumSemiBold"
+                        android:textColor="@color/tm_semantic_color_content_main_primary"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <com.intellihealth.salt.views.dropdown.DropDownHeader
+                        android:id="@+id/dropDownCustomDatesTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d12"
+                        app:layout_constraintTop_toBottomOf="@+id/textTo"
+                        android:textColor="@color/tm_semantic_color_content_main_primary"
+                        app:headerTextStyle="HeadingH3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.intellihealth.salt.views.buttons.Button
+                android:id="@+id/tvApplyChooseDates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginBottom="@dimen/d16"
+                android:drawableStart="@color/white"
+                app:title="Apply"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="PrimaryButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

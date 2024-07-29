@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                            
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/d10"
+        android:background="@drawable/bg_bottomsheet_header"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        tools:context=".presentation.bottomsheet.managepatient.BottomSheetFragment" android:tag="layout/fragment_bottom_sheet_0" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingHorizontal="@dimen/d16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/d16"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d6"
+                android:layout_marginRight="@dimen/d152"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivClose"
+                android:text="@string/delete_patient"
+                app:bodyTextStyle="BodyLargeSemiBold"/>
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvSubTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintEnd_toStartOf="@+id/ivClose"
+                android:text="@string/selected_patient"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                android:textColor="#8E95A2"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle"
+                app:layout_constraintStart_toEndOf="@+id/tvTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:src="@drawable/ic_close_reminder_sheet"
+                />
+
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/deletePatient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="DestructiveButton"
+                android:text="@string/delete"
+                android:layout_marginTop="@dimen/d22"
+                app:layout_constraintTop_toBottomOf="@+id/tvSubTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/notDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="SecondaryButton"
+                android:text="@string/don_t_delete"
+                android:layout_marginTop="@dimen/d16"
+                app:layout_constraintTop_toBottomOf="@+id/deletePatient"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

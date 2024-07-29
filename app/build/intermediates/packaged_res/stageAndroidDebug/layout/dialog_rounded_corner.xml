@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                   
+
+    
+
+                                          
+                 
+                        
+                                                                           
+                 
+                           
+                                                                                           
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottomsheet_header"
+        android:padding="@dimen/d16" android:tag="layout/dialog_rounded_corner_0" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/d32"
+            android:layout_height="@dimen/d32"
+            android:clipToOutline="true"
+            android:tag="binding_1"                                                   
+            android:src="@drawable/ic_close_black_with_white_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPopup"
+            android:layout_width="@dimen/d116"
+            android:layout_height="@dimen/d116"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivClose"
+            tools:src="@drawable/ic_reward" />
+
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d16"
+            android:tag="binding_2"         
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:bodyTextStyle="BodyXLargeSemiBold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPopup"
+            tools:text="You have been rewarded !" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d8"
+            android:tag="binding_3"          
+            android:gravity="center_horizontal"
+                                                                                         
+            android:textColor="@color/tm_semantic_color_content_main_secondary"
+            app:bodyTextStyle="BodyMediumRegular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+            tools:text="You got ₹200 for your referral." />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvSpanMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d8"
+            android:gravity="center_horizontal"
+            android:tag="binding_4"                                                  
+            android:textColor="@color/tm_semantic_color_content_main_secondary"
+            app:bodyTextStyle="BodyMediumRegular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+            tools:text="You got ₹200 for your referral." />
+
+        <com.intellihealth.salt.views.buttons.Button
+            android:id="@+id/btnAction"
+            android:layout_width="296dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_height="wrap_content"
+            app:buttonSizeType="Large"
+            app:buttonTextStyle="ButtonLg"
+            app:buttonType="PrimaryButton"
+            android:tag="binding_5"                                                     
+            android:layout_marginTop="@dimen/d24"
+            app:layout_constraintTop_toBottomOf="@+id/tvMessage"
+                                              />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

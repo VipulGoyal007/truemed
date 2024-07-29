@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "983399446061",
+    "project_id": "stage-truemeds",
+    "storage_bucket": "stage-truemeds.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983399446061:android:48b7fda0cd52d1845deaa4",
+        "android_client_info": {
+          "package_name": "com.intellihealth.truemeds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983399446061-535466d2fkoovr0888odg2dat5ni8lti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT8sr6DwxGKu7-fFeiCGbM67MdAL-BHk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983399446061-535466d2fkoovr0888odg2dat5ni8lti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983399446061:android:67cdda9352a11b0e5deaa4",
+        "android_client_info": {
+          "package_name": "com.intellihealth.truemeds.stage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983399446061-535466d2fkoovr0888odg2dat5ni8lti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT8sr6DwxGKu7-fFeiCGbM67MdAL-BHk8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983399446061-535466d2fkoovr0888odg2dat5ni8lti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <com.intellihealth.salt.views.reorder.ReorderSection
+        android:id="@+id/reorderSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sectionHeader="Reorder your past orders 📦"  android:tag="layout/adapter_reorder_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"/>
+         

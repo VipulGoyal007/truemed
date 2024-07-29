@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.databinding.DialogCouponErrorBindingImpl","classAnnotations":[],"interfaces":["androidx.databinding.Observable","androidx.viewbinding.ViewBinding"],"superClasses":["com.intellihealth.truemeds.databinding.DialogCouponErrorBinding","androidx.databinding.ViewDataBinding","androidx.databinding.BaseObservable","java.lang.Object"]}

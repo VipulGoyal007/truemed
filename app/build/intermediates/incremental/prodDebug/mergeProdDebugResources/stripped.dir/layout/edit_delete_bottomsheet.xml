@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/d10"
+        android:background="@drawable/bg_bottomsheet_header"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior" android:tag="layout/edit_delete_bottomsheet_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/d16"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_marginTop="@dimen/d8"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivClose"
+                android:text="@string/are_you_sure_you_want_to_delete_this_reminder"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                android:gravity="start"
+                android:layout_marginStart="@dimen/d16"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/d32"
+                android:layout_height="@dimen/d32"
+                android:src="@drawable/ic_close_reminder_sheet"
+                app:layout_constraintStart_toEndOf="@+id/tvTitle"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle"
+                android:layout_marginEnd="@dimen/d16"                />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvSubTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d4"
+                android:layout_marginStart="@dimen/d16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintEnd_toStartOf="@+id/ivClose"
+                android:text="@string/are_you_sure_you_want_to_delete_this_reminder"
+                android:textColor="@color/sub_header_color"
+                app:bodyTextStyle="BodyMediumRegular"
+                />
+
+
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/goBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d16"
+                android:text="@string/no_go_back"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="SecondaryButton"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginEnd="@dimen/d16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSubTitle"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/deleteReminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="DestructiveButton"
+                android:text="@string/yes_delete"
+                android:layout_marginTop="@dimen/d12"
+                android:layout_marginBottom="@dimen/d16"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginEnd="@dimen/d16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/goBack" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

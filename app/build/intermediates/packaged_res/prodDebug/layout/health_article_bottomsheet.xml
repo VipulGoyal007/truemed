@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                                          
+                                                                                               
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottomsheet_top_left_right_rounded"
+        android:backgroundTint="@color/tm_core_color_white" android:tag="layout/health_article_bottomsheet_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <View
+            android:id="@+id/viewDragHandle"
+            android:layout_width="@dimen/d50"
+            android:layout_height="@dimen/d4"
+            android:layout_marginVertical="@dimen/d12"
+            android:background="@color/tm_core_color_gray_300"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d16"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingStart="@dimen/d16"
+            android:text="@string/categories"
+            android:textColor="@color/tm_core_color_gray_800"
+            app:bodyTextStyle="BodyLargeSemiBold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageClose"
+            app:layout_constraintEnd_toStartOf="@+id/imageClose"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageClose"
+            app:layout_goneMarginStart="@dimen/d16"
+            tools:text="Categories"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageClose"
+            android:layout_width="@dimen/d32"
+            android:layout_height="@dimen/d32"
+            android:layout_marginTop="@dimen/d28"
+            android:layout_marginEnd="@dimen/d16"
+            android:layout_marginBottom="@dimen/d16"
+            android:clipToOutline="true"
+            android:src="@drawable/ic_close_black_with_white_bg"
+            app:layout_constraintBottom_toBottomOf="@id/tvHeader"
+            app:layout_constraintBottom_toTopOf="@+id/healthArticleItemRv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivShadow"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="@dimen/d22"
+            android:background="@drawable/bg_gradient_top"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/healthArticleItemRv"
+            android:layout_width="match_parent"
+            android:layout_height="492dp"
+            android:layout_marginBottom="@dimen/d16"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false"
+            android:orientation="vertical"
+            android:overScrollMode="always"
+            android:scrollbars="vertical"
+            android:tag="binding_1"                                         
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivShadow"
+                                                                                                            
+            tools:listitem="@layout/health_article_bottomsheet_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+         

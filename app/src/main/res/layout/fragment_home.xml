@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="city"
+            type="String" />
+
+        <variable
+            name="viewmodel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.HomeViewModel" />
+    </data>
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/fragment_home_scene2"
+        tools:context=".presentation.activity.HomePageActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHeader"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:background="@color/tm_semantic_color_bg_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvSelectedCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d8"
+            android:layout_marginTop="@dimen/d18"
+            android:drawableRight="@drawable/ic_chevron_down"
+            android:drawablePadding="@dimen/d4"
+            android:gravity="center_vertical"
+            android:padding="@dimen/d8"
+            android:text="@{city}"
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:headerTextStyle="HeadingH3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Thiruvanthapuram" />
+
+        <com.intellihealth.salt.views.chip.HeaderChip
+            android:id="@+id/tmCartHeaderChip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d12"
+            android:layout_marginEnd="@dimen/d16"
+            app:headerChipExpended="Yes"
+            app:headerChipIcon="@drawable/ic_home_shopping_cart"
+            app:headerChipText="demo"
+            app:headerChipType="Cart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.intellihealth.salt.views.chip.HeaderChip
+            android:id="@+id/tmWalletHeaderChip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d12"
+            android:layout_marginEnd="@dimen/d12"
+            android:visibility="visible"
+            app:headerChipExpended="Yes"
+            app:headerChipIcon="@drawable/ic_home_wallet"
+            app:headerChipType="Wallet"
+            app:layout_constraintEnd_toStartOf="@+id/tmCartHeaderChip"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!-- app:headerChipText="@{viewmodel.tmWallet}"-->
+
+        <com.intellihealth.salt.views.SearchBar
+            android:id="@+id/tmSearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d6"
+            android:layout_marginTop="@dimen/d12"
+            android:layout_marginEnd="@dimen/d6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tmWalletHeaderChip"
+            app:searchHint="Search for medicine" />
+
+        <!--<androidx.core.widget.NestedScrollView
+            android:id="@+id/contentScroll"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="164dp"
+            android:fillViewport="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/tm_semantic_color_bg_primary"
+                android:paddingBottom="@dimen/d8">
+
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmerViewContainer"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/tm_semantic_color_primary_white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible">
+
+                    <include layout="@layout/shimmer_home_page" />
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHomePage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:nestedScrollingEnabled="true"
+            app:itemAnimator="@{null}"
+            android:background="@color/tm_semantic_color_bg_primary"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tmSearchBar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clShimmer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/tm_semantic_color_bg_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tmSearchBar">
+
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerViewContainer"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/tm_semantic_color_primary_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible">
+
+                <include layout="@layout/shimmer_home_page" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clProgressBar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="164dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <!--<variable
+            name="medCount"
+            type="Integer" />-->
+
+        <variable
+            name="saving"
+            type="Double" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_corners_background"
+        android:padding="@dimen/d16">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/d32"
+            android:layout_height="@dimen/d32"
+            android:clipToOutline="true"
+            android:src="@drawable/ic_close_black_with_white_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCouponSuccess"
+            android:layout_width="70dp"
+            android:layout_height="@dimen/d60"
+            android:layout_marginTop="48dp"
+            android:elevation="1dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_total_replace_savings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvCouponCodeSuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d16"
+            android:ellipsize="end"
+            android:lineSpacingExtra="8dp"
+            android:singleLine="true"
+            android:text="Yay, You just"
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:bodyTextStyle="BodyMediumSemiBold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivCouponSuccess" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvCouponSuccessSavings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="@dimen/d4"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@{ `Saved ₹ ` + String.valueOf(saving) }"
+            android:textColor="@color/tm_semantic_color_content_success_default"
+            app:headerTextStyle="HeadingH2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCouponCodeSuccess" />
+
+
+<!--        android:text="@{ `by replacing ` + medCount + ` medicines with substitute` }"-->
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvSaving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d8"
+            android:gravity="center"
+            android:textColor="@color/tm_semantic_color_content_main_secondary"
+            app:bodyTextStyle="BodyMediumRegular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCouponSuccessSavings" />
+
+        <com.intellihealth.salt.views.buttons.Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d16"
+            android:layout_marginBottom="4dp"
+            app:buttonSizeType="Large"
+            app:buttonType="PrimaryButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSaving"
+            app:title="Thank you!" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

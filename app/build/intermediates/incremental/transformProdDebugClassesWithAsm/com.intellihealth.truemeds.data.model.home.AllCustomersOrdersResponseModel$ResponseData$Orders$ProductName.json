@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.data.model.home.AllCustomersOrdersResponseModel$ResponseData$Orders$ProductName","classAnnotations":["kotlinx.parcelize.Parcelize"],"interfaces":["android.os.Parcelable"],"superClasses":["java.lang.Object"]}

@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.presentation.adapter.ExpandableListAdapter","classAnnotations":[],"interfaces":["android.widget.ExpandableListAdapter","android.widget.HeterogeneousExpandableList"],"superClasses":["android.widget.BaseExpandableListAdapter","java.lang.Object"]}

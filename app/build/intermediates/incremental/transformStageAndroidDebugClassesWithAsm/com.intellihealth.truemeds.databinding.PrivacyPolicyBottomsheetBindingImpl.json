@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.databinding.PrivacyPolicyBottomsheetBindingImpl","classAnnotations":[],"interfaces":["androidx.databinding.Observable","androidx.viewbinding.ViewBinding"],"superClasses":["com.intellihealth.truemeds.databinding.PrivacyPolicyBottomsheetBinding","androidx.databinding.ViewDataBinding","androidx.databinding.BaseObservable","java.lang.Object"]}

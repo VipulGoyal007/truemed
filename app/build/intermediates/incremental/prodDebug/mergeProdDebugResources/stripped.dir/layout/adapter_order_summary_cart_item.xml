@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+                 
+                        
+                                                                    
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/adapter_order_summary_cart_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.intellihealth.salt.views.cards.FullWidthProductCard
+            android:id="@+id/fullWidthProductCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/d16"
+            app:productCardType="search"
+            android:tag="binding_1"              />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

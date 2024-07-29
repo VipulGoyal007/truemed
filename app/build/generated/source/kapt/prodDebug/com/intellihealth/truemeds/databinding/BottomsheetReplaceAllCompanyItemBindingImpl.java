@@ -1,0 +1,112 @@
+package com.intellihealth.truemeds.databinding;
+import com.intellihealth.truemeds.R;
+import com.intellihealth.truemeds.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class BottomsheetReplaceAllCompanyItemBindingImpl extends BottomsheetReplaceAllCompanyItemBinding  {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = null;
+    }
+    // views
+    // variables
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+
+    public BottomsheetReplaceAllCompanyItemBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 2, sIncludes, sViewsWithIds));
+    }
+    private BottomsheetReplaceAllCompanyItemBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 0
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[0]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[1]
+            );
+        this.clRoot.setTag(null);
+        this.ivProduct.setTag(null);
+        setRootTag(root);
+        // listeners
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x2L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.imgUrl == variableId) {
+            setImgUrl((java.lang.String) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setImgUrl(@Nullable java.lang.String ImgUrl) {
+        this.mImgUrl = ImgUrl;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.imgUrl);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        java.lang.String imgUrl = mImgUrl;
+
+        if ((dirtyFlags & 0x3L) != 0) {
+        }
+        // batch finished
+        if ((dirtyFlags & 0x3L) != 0) {
+            // api target 1
+
+            com.intellihealth.salt.adapter.MainBindingAdapterKt.setImageUrl(this.ivProduct, imgUrl);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): imgUrl
+        flag 1 (0x2L): null
+    flag mapping end*/
+    //end
+}

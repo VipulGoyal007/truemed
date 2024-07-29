@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+
+        <variable
+            name="item"
+            type="com.intellihealth.truemeds.data.model.home.SuperCategoryModel" />
+
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.HomeViewModel" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clSuperMain"
+        android:layout_width="120dp"
+        android:background="@drawable/background_top_rounded_blue"
+        android:layout_height="wrap_content"
+        >
+        <!--android:onClick="@{()-> viewModel.superCategoryClick(position)}"-->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSuperImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/d12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:setUrl="@{item.image}"
+            app:placeHolder="@{@drawable/otc_placeholder}"
+            tools:src="@drawable/ic_truck_delivery" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:paddingHorizontal="@dimen/d14"
+            android:paddingBottom="@dimen/d12"
+            android:gravity="center_horizontal"
+            android:minLines="2"
+            android:text="@{item.name}"
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:bodyTextStyle="BodyMediumSemiBold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivSuperImg"
+            tools:text="Diabetes Care" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

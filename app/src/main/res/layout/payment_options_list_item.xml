@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="paymentCardData"
+            type="com.intellihealth.salt.models.PaymentOptionRadioModel" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.PaymentOptionsViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.intellihealth.salt.views.cards.PaymentOptionRadioCard
+            android:id="@+id/PaymentOptionRadioCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d10"
+            android:layout_marginTop="@dimen/d4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:setPaymentOptionRadioCardData="@{paymentCardData}" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

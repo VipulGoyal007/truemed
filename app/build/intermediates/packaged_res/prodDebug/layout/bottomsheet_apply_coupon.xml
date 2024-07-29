@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+                                           
+                 
+                                  
+                                                                                            
+
+           
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_bottomsheet_header"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        android:layout_height="wrap_content" android:tag="layout/bottomsheet_apply_coupon_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHeader"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_bottomsheet_header"
+            android:elevation="@dimen/d1"
+            android:padding="@dimen/d16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLeft"
+                android:layout_width="@dimen/d24"
+                android:layout_height="@dimen/d24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTimerApplyCoupon"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTimerApplyCoupon"
+                />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginLeft="@dimen/d8"
+                android:textColor="@color/tm_core_color_purple_500"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintTop_toTopOf="@+id/tvTimerApplyCoupon"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTimerApplyCoupon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgLeft"
+                tools:text="Vijay Chopra"
+                tools:visibility="visible" />
+
+            <com.intellihealth.salt.views.chip.Chip
+                android:id="@+id/tvTimerApplyCoupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d8"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_apply_coupon_light_yellow"
+                android:gravity="center"
+                android:textColor="@color/tm_core_color_yellow_600"
+                android:visibility="gone"
+                app:bodyTextStyle="BodySmallSemiBold"
+                app:chipSize="Small"
+                app:chipTitle="Ends in"
+                app:chipType="Warning"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageClose"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/tvHeader"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageClose"
+                android:layout_width="@dimen/d32"
+                android:layout_height="@dimen/d32"
+                android:src="@drawable/ic_close_black_with_white_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTimerApplyCoupon"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTimerApplyCoupon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_content"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/clHeader"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/d16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="0dp">
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvHeaderApplyCoupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bodyTextStyle="BodyMediumSemiBold"
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tvSubHeaderContent"
+                android:layout_marginLeft="@dimen/d16"
+                android:layout_marginBottom="@dimen/d12"
+                android:tag="binding_1"                
+                tools:text="Get 20% off on Your order" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvSubHeaderContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bodyTextStyle="BodySmallRegular"
+                android:textColor="@color/tm_semantic_color_content_main_secondary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/cl_button"
+                android:layout_marginLeft="@dimen/d16"
+                android:layout_marginTop="@dimen/d12"
+                android:layout_marginBottom="@dimen/d28"
+                tools:text="Minimum order value ₹999" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+
+                <com.intellihealth.salt.views.buttons.Button
+                    android:id="@+id/btnApplyCoupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="Apply Coupon"
+                    android:layout_marginTop="@dimen/d28"
+                    app:buttonType="PrimaryButton"
+                    app:buttonSizeType="Large"
+                    app:buttonTextStyle="ButtonLg"
+                    android:layout_marginHorizontal="@dimen/d16"
+                    android:layout_marginBottom="@dimen/d16"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:drawableStart="@color/white"
+                    tools:Text ="Apply Coupon"
+                    />
+
+            <com.intellihealth.salt.views.buttons.Button
+                android:id="@+id/btnRemoveCoupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Remove Coupon"
+                android:layout_marginTop="@dimen/d28"
+                app:buttonType="DestructiveButton"
+                android:visibility="gone"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginBottom="@dimen/d16"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:drawableStart="@color/white"
+                tools:Text ="Remove Coupon"
+                />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

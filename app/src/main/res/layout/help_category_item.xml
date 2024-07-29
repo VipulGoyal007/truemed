@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.HelpViewModel" />
+
+        <variable
+            name="itemPosition"
+            type="Integer" />
+
+        <variable
+            name="category"
+            type="com.intellihealth.truemeds.data.model.helpfaqtnc.HelpCategoryResponse.CategoryList" />
+
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraitMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clFilterHelpCategoryCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{ () -> viewModel.helpSubCategoryListItemClick(category) }"
+                android:paddingHorizontal="@dimen/d16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvSubCategoryTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/d18"
+                    android:text=""
+                    android:textColor="@color/tm_core_color_gray_800"
+                    app:bodyTextStyle="BodyMediumSemiBold"
+                    app:layout_constraintEnd_toStartOf="@+id/ivNextArrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivNextArrow"
+                    android:layout_width="@dimen/d24"
+                    android:layout_height="@dimen/d24"
+                    android:layout_marginVertical="@dimen/d16"
+                    android:src="@drawable/ic_chevron_right"
+                    android:tint="@color/tm_core_color_blue_500"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.intellihealth.salt.views.cards.Divider
+                android:id="@+id/tmDivider1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dividerColor="@color/language_border_color"
+                app:dividerThickness="@dimen/d1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clFilterHelpCategoryCard" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.intellihealth.salt.views.HelpCategories
+            android:id="@+id/helpCategoryCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/dividerHelpCategoryCard"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:background="@color/shimmerGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/helpCategoryCard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

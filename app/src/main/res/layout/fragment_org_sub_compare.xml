@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.ProductDetailViewModel" />
+
+
+        <variable
+            name="orgModel"
+            type="com.intellihealth.salt.models.ProductInfoModel" />
+
+        <variable
+            name="subsModel"
+            type="com.intellihealth.salt.models.ProductInfoModel" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/subsitute_upper_round"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        tools:context=".presentation.bottomsheet.productdetail.OrgSubCompareBottomSheet">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationZ="@dimen/d2"
+            android:background="@drawable/subsitute_upper_round"
+            android:paddingHorizontal="@dimen/d16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/d22"
+                android:text="@string/compare_and_choose"
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/closeBottomSheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close_button"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d0"
+            android:background="@color/tm_semantic_color_bg_accent_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headerLayout">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/tm_semantic_color_primary_white"
+                app:layout_constraintBottom_toBottomOf="@+id/scroll"
+                app:layout_constraintEnd_toEndOf="@+id/scroll"
+                app:layout_constraintStart_toStartOf="@+id/scroll"
+                app:layout_constraintTop_toBottomOf="@+id/scroll">
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/orgTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/d16"
+                    android:layout_marginTop="@dimen/d16"
+                    android:text="@string/selected_medicine"
+                    android:textColor="@color/tm_semantic_color_content_main_secondary"
+                    app:bodyTextStyle="BodyMediumSemiBold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.intellihealth.salt.views.cards.FullWidthProductCard
+                    android:id="@+id/orgCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/d8"
+                    android:layout_marginTop="@dimen/d4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/orgTitle"
+                    app:productCardType="search"
+                    app:setCrossSellingData="@{viewModel.orgBottomSheet}" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/d13"
+                    android:background="@color/tm_semantic_color_bg_accent_5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/orgCard">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivTriangleView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d24"
+                        android:src="@drawable/tooltip_down_social"
+                        android:tint="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <!--        android:visibility="@{  mutableMedData.replaced ? View.GONE : mutableMedData.subsQty  == 0 ? View.GONE : View.VISIBLE }"-->
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/subsIcon"
+                        android:layout_width="@dimen/d28"
+                        android:layout_height="@dimen/d28"
+                        android:layout_marginStart="@dimen/d16"
+                        android:layout_marginTop="@dimen/d12"
+                        app:srcCompat="@drawable/ic_recommended_badge_yellow_border"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivTriangleView" />
+
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/subsTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d12"
+                        android:layout_marginEnd="@dimen/d12"
+                        android:text="@string/recommended_substitute"
+                        android:textColor="@color/tm_semantic_color_content_main_primary"
+                        app:bodyTextStyle="BodyMediumSemiBold"
+                        app:layout_constraintStart_toEndOf="@+id/subsIcon"
+                        app:layout_constraintTop_toTopOf="@+id/subsIcon" />
+
+                    <com.intellihealth.salt.views.cards.FullWidthProductCard
+                        android:id="@+id/subsCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/d8"
+                        android:layout_marginVertical="@dimen/d4"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/subsIcon"
+                        app:productCardType="compare_n_choose"
+                        app:setCrossSellingData="@{viewModel.sbsBottomSheet}" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

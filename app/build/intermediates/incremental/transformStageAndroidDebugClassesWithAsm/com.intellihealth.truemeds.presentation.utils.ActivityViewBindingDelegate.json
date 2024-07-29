@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.presentation.utils.ActivityViewBindingDelegate","classAnnotations":[],"interfaces":["androidx.lifecycle.LifecycleEventObserver","androidx.lifecycle.LifecycleObserver","kotlin.properties.ReadOnlyProperty"],"superClasses":["java.lang.Object"]}

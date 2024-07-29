@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+                                           
+
+                 
+                            
+                                                                                       
+                 
+                                  
+                                                                                       
+                 
+                                  
+                                                           
+                 
+                             
+                            
+
+                 
+                                  
+                                                                                            
+
+                 
+                            
+                                                       
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.activity.SearchResultActivity" android:tag="layout/activity_search_result_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.intellihealth.salt.views.SearchBar
+            android:id="@+id/searchBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d6"
+            android:layout_marginTop="@dimen/d16"
+            app:layout_goneMarginRight="@dimen/d6"
+            app:layout_constraintEnd_toStartOf="@+id/headerChip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:searchHint="Search for medicine" />
+
+        <com.intellihealth.salt.views.chip.HeaderChip
+            android:id="@+id/headerChip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:headerChipExpended="Yes"
+            android:tag="binding_1"                                                         
+            android:layout_marginEnd="@dimen/d16"
+            app:headerChipIcon="@drawable/ic_serach_cart"
+            app:headerChipText="demo"
+            app:headerChipType="Cart"
+            app:layout_constraintBottom_toBottomOf="@+id/searchBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/searchBar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNoResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d16"
+            android:tag="binding_2"                                                   
+            app:layout_constraintTop_toBottomOf="@+id/searchBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <!--android:visibility="@{ viewModel.noResultFound &amp;&amp; viewModel.searchQuery.length() > 0 ? View.VISIBLE : View.GONE }"-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clSearchNoResultInner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d56"
+                app:layout_constraintBottom_toTopOf="@+id/actionPharmacist"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread_inside">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivSearchNoResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_search_no_result"
+                    app:layout_constraintBottom_toTopOf="@+id/tvSearchNoResultMessage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvSearchNoResultMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d20"
+                    android:gravity="center"
+                    android:tag="binding_3"                                                                                                       
+                    android:textColor="@color/tm_semantic_color_content_main_tertiary"
+                    app:bodyTextStyle="BodyLargeSemiBold"
+                    app:layout_constraintEnd_toEndOf="@+id/ivSearchNoResult"
+                    app:layout_constraintStart_toStartOf="@+id/ivSearchNoResult"
+                    app:layout_constraintTop_toBottomOf="@+id/ivSearchNoResult" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.intellihealth.salt.views.cards.ActionCard
+                android:id="@+id/actionPharmacist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d56"
+                app:actionCardButtonLeft="@drawable/ic_phone_call"
+                app:actionCardButtonText="Call a pharmacist"
+                app:actionCardDescription="Call to add your requested medicine and we will find it."
+                app:actionCardImage=""
+                app:actionCardTitle="Get in touch with our pharmacist instead?"
+                app:actionCardType="Pharmacist"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clSearchNoResultInner"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+            <!--android:onClick="@{ () -> viewModel.onCallPharmacistClick()}"-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.intellihealth.salt.views.StickyNonStickyNotification
+            android:id="@+id/promoCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d8"
+            app:notificationType="applyCoupon"
+            android:tag="binding_4"                                                                                 
+            app:notificationPosition="bottom"
+            app:notificationButtonVisibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/searchBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <!--app:couponModel="@{applyCouponData}"
+            app:lifeCycleOwner="@{lifeCycle}"
+            app:setStickyData="@{couponViewModel}"-->
+        <!--android:visibility="@{ viewmodel.showSearching || viewmodel.searchResultList.size() == 0 || viewmodel.notificationDetailData == null ? View.GONE : View.VISIBLE }"-->
+
+        <!--            app:setStickyNonStickyNotificationData="@{viewmodel.notificationDetailData}"-->
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvResultMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d8"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:tag="binding_5"                                                                   
+            android:layout_marginHorizontal="@dimen/d16"
+            app:bodyTextStyle="BodySmallRegular"
+                                                                                                                                   
+                                            
+            android:textColor="@color/tm_semantic_color_content_main_secondary"
+            app:layout_constraintTop_toBottomOf="@+id/promoCard"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <!--
+        val resultMessage = "Showing $count result${if(count>1) "s" else ""} for $searchText"
+        android:text="@{`Showing ` + viewmodel.searchResultList.isEmpty() ? 0 : viewmodel.searchResultList.size() + ` result` + (viewmodel.searchResultList.isEmpty() &amp;&amp; viewmodel.searchResultList.size()>1) ? `s` : `` + ` for ` + searchText }"
+        -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSearchResult"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/search_result_item"
+            android:orientation="vertical"
+            tools:visibility="gone"
+            android:tag="binding_6"                                                                                             
+            android:layout_marginHorizontal="@dimen/d8"
+                                                                  
+                                          
+                                                      
+            android:layout_marginTop="@dimen/d8"
+            app:layout_constraintTop_toBottomOf="@+id/tvResultMessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/pbLoadMore"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <!--            app:setSearchSuggestionList="@{viewModel.searchSuggestionList}"
+                    app:viewmodel="@{ viewModel }"
+        -->
+
+        <ProgressBar
+            android:id="@+id/pbLoadMore"
+            tools:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="binding_7"                                                       
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/cartView"/>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:visibility="gone"
+            android:tag="binding_8"                                                     
+                                                               
+            app:layout_constraintTop_toBottomOf="@+id/searchBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <!--android:visibility="@{ viewmodel.showSearching ? View.VISIBLE : View.GONE }"-->
+            <include layout="@layout/shimmer_search_result_page_with_item_in_card" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <com.intellihealth.salt.views.Carts
+            android:id="@+id/cartView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cartType="viewCart"
+            android:tag="binding_9"                                                         
+                                                      
+            android:paddingVertical="@dimen/d12"
+            android:paddingHorizontal="@dimen/d16"
+            android:background="@color/tm_semantic_color_primary_white"
+            android:elevation="@dimen/d12"
+            android:translationZ="@dimen/d12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

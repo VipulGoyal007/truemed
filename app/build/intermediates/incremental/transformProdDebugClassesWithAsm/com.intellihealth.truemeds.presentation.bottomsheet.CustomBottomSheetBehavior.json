@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.presentation.bottomsheet.CustomBottomSheetBehavior","classAnnotations":[],"interfaces":["com.google.android.material.motion.MaterialBackHandler"],"superClasses":["com.google.android.material.bottomsheet.BottomSheetBehavior","androidx.coordinatorlayout.widget.CoordinatorLayout$Behavior","java.lang.Object"]}

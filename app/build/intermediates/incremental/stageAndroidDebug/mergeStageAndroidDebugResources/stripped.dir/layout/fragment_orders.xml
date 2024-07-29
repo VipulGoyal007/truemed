@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+
+                 
+                            
+                                                                                          
+           
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/userWithoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:tag="layout/fragment_orders_0"                                 
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".presentation.fragment.AccountFragment"  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.intellihealth.salt.views.MobileSectionHeaders
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:translationZ="@dimen/d6"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mobileSectionHeadersViewType="OnlyText" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clTopList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d12"
+            android:layout_marginEnd="@dimen/d12"
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/d12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header">
+
+            <com.intellihealth.salt.views.dropdown.DropDownHeader
+                android:id="@+id/tmDropDownOrders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:tag="binding_1"                                
+                app:layout_constraintEnd_toStartOf="@+id/tmDropDownPatient"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@+id/tmDropDownPatient"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.intellihealth.salt.views.dropdown.DropDownHeader
+                android:id="@+id/tmDropDownPatient"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-4dp"
+                android:tag="binding_2"                                  
+                                                                                                
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tmDropDownOrders"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_to_refresh"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clTopList">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clTopList">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvOrderList"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginHorizontal="@dimen/d12"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/d12"
+                    android:tag="binding_3"                                                          
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                                                                     
+                                                  
+                    tools:itemCount="5"
+                    tools:listitem="@layout/my_orders_item"
+                    tools:visibility="gone" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:tag="binding_4"                                                 
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clTopList"
+            tools:visibility="gone">
+
+            <include layout="@layout/shimmer_my_order" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rlNoPatientView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:tag="binding_5"                                                      
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivNoPatientYet"
+                android:layout_width="@dimen/d226"
+                android:layout_height="@dimen/d157"
+                android:src="@drawable/ic_no_order_yet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.intellihealth.salt.views.buttons.Button
+                android:id="@+id/btnAddNewPatients"
+                android:layout_width="@dimen/d227"
+                android:layout_height="@dimen/d48"
+                android:layout_marginTop="@dimen/d32"
+                android:drawableStart="@color/button_selector_text_primary"
+                android:tag="binding_6"                                               
+                app:buttonSizeType="Medium"
+                app:buttonTextStyle="ButtonMd"
+                app:buttonType="PrimaryButton"
+                app:drawableTint="@color/button_selector_text_primary"
+                app:iconLeft="@drawable/ic_search_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivNoPatientYet"
+                app:title="@string/search_for_medicines" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

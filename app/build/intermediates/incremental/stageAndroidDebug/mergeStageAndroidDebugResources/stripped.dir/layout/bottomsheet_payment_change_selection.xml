@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                            
+                                                                                               
+           
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" android:tag="layout/bottomsheet_payment_change_selection_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSuccessDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:background="@drawable/bg_bottomsheet_header"
+            android:paddingBottom="16dp">
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/helpTopHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/d16"
+                android:background="@drawable/bg_bottomsheet_header"
+                android:elevation="@dimen/constraint_shadow_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.intellihealth.salt.views.TextView
+                    tools:text="UPI5 offer will be removed !"
+                    android:id="@+id/tvCouponCodeRemovedMsg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d16"
+                    android:layout_marginEnd="@dimen/d16"
+                    app:bodyTextStyle="BodyLargeSemiBold"
+                    android:singleLine="true"
+                    app:layout_constraintEnd_toStartOf="@+id/imgClose"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgClose"
+                    android:layout_width="@dimen/d32"
+                    android:layout_height="@dimen/d32"
+                    android:layout_marginEnd="@dimen/d16"
+                    app:srcCompat="@drawable/ic_close_black_with_white_bg"
+                    app:layout_constraintTop_toTopOf="@+id/tvCouponCodeRemovedMsg"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvCouponCodeRemovedMsg"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvCouponCodeRemovedAdditionalMsg"
+                android:layout_width="0dp"
+                android:paddingHorizontal="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d20"
+                app:bodyTextStyle="BodyMediumRegular"
+                android:text="@string/coupon_removed_msg"
+                android:textColor="@color/filter_dark"
+                app:layout_constraintTop_toBottomOf="@+id/helpTopHeader"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:tag="binding_1"                                                   
+                android:id="@+id/btnChangeMode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d16"
+                android:layout_marginHorizontal="16dp"
+                android:stateListAnimator="@null"
+                app:buttonSizeType="Large"
+                android:gravity="center"
+                android:text="@string/change_mode"
+                android:textColor="@color/tm_semantic_color_button_critical_default"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="DestructiveButton"
+                app:title="@string/change_mode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvCouponCodeRemovedAdditionalMsg" />
+
+
+            <com.intellihealth.salt.views.buttons.Button
+                android:tag="binding_2"                                                        
+                android:id="@+id/btnDontRemove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d10"
+                android:layout_marginHorizontal="16dp"
+                app:title="@string/dont_remove"
+                android:stateListAnimator="@null"
+                android:textColor="@color/white"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="PrimaryButton"
+                app:buttonSizeType="Large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvCouponCodeRemovedAdditionalMsg"
+                app:layout_constraintTop_toBottomOf="@id/btnChangeMode" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+         

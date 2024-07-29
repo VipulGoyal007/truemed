@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <exclude
+        domain="database"
+        path="MOEInteractions" />
+    <exclude
+        domain="database"
+        path="tm_database" />
+
+    <exclude
+        domain="sharedpref"
+        path="pref_moe.xml" />
+
+    <exclude
+        domain="sharedpref"
+        path="." />
+    <exclude
+        domain="sharedpref"
+        path="appsflyer-data" />
+
+    <exclude
+        domain="sharedpref"
+        path="com.intellihealth.truemeds" />
+</full-backup-content>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.WalletViewModel" />
+
+        <variable
+            name="isRewardTransaction"
+            type="Boolean" />
+
+        <variable
+            name="callback"
+            type="com.intellihealth.truemeds.data.callback.TimeIntervalCallback" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.activity.WalletTransactionsActivity">
+
+        <com.intellihealth.salt.views.MobileSectionHeaders
+            android:id="@+id/mobileSectionHeaderWalletTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:translationZ="@dimen/d8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mobileSectionHeadersViewType="DefaultWithoutFill" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="@{viewModel.loaderValue == true ? View.VISIBLE: View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobileSectionHeaderWalletTransactions">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/contentScroll"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:fillViewport="true"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobileSectionHeaderWalletTransactions">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent">
+
+
+                <com.intellihealth.salt.views.cards.WalletCard
+                    android:id="@+id/walletTransactionCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/d20"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:setWalletBalanceData="@{ isRewardTransaction ? viewModel.walletCardRewardData : viewModel.walletCardCreditData}" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/textEarnRewardHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d24"
+                    android:text="Transaction Log"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    app:headerTextStyle="HeadingH2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/walletTransactionCard" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/textSelectedCustomDates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d4"
+                    android:layout_marginBottom="@dimen/d24"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    android:visibility="gone"
+                    app:bodyTextStyle="BodySmallRegular"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textEarnRewardHeader" />
+
+                <com.intellihealth.salt.views.buttons.ButtonLite
+                    android:id="@+id/textViewRewardTransactions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/d20"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Recent"
+                    app:iconRight="@drawable/ic_chevron_blue"
+                    android:textColor="@color/tm_semantic_color_content_ghost_default"
+                    app:buttonSizeType="Small"
+                    app:buttonTextStyle="ButtonSm"
+                    app:buttonType="GhostButton"
+                    android:gravity="end"
+                    app:layout_constraintTop_toBottomOf="@+id/walletTransactionCard"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textEarnRewardHeader"
+                    app:layout_constraintBottom_toBottomOf="@+id/textEarnRewardHeader"
+                    app:removePadding="true" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_transaction_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textSelectedCustomDates">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvWalletTransaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d8"
+                        android:visibility="visible"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ic_no_records"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d24"
+                        android:src="@drawable/ic_no_rocords_found"
+                        android:visibility="gone"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rvWalletTransaction">
+
+                    </androidx.appcompat.widget.AppCompatImageView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/textFAQHeaderTransactions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d24"
+                    android:layout_marginBottom="@dimen/d16"
+                    android:text="Frequently asked questions"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    app:headerTextStyle="HeadingH2"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_transaction_data" />
+
+                <com.intellihealth.salt.views.cards.Faq
+                    android:id="@+id/faqListWalletTransactions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textFAQHeaderTransactions" />
+
+                <com.intellihealth.salt.views.buttons.ButtonLite
+                    android:id="@+id/textViewTermsAndConditionsTransactions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d16"
+                    android:layout_marginTop="@dimen/d32"
+                    android:layout_marginBottom="@dimen/d37"
+                    android:text="Terms &amp; Conditions"
+                    android:textColor="@color/tm_semantic_color_content_main_tertiary"
+                    app:buttonSizeType="ExtraSmall"
+                    app:buttonTextStyle="ButtonXs"
+                    app:buttonType="LinkButton"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/faqListWalletTransactions"
+                    app:removePadding="true"
+                    app:title="Terms &amp; Conditions" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

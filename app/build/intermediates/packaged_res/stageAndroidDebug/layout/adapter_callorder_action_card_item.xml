@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+ <androidx.constraintlayout.widget.ConstraintLayout
+     android:id="@+id/clCallOrder"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" android:tag="layout/adapter_callorder_action_card_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+     <com.intellihealth.salt.views.cards.ActionCard
+         android:id="@+id/tmActionCardCall"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:actionCardType="CallAndOrder"
+         app:actionCardTitle="Need help with buying?"
+         app:actionCardDescription="@string/call_us_between_text"
+         app:actionCardButtonText="Call us and order"
+         app:actionCardDescriptionToFormat="9 AM and 9 PM"
+         app:actionCardButtonLeft="@drawable/ic_phone_call"
+         android:layout_marginHorizontal="@dimen/d8"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:layout_marginTop="@dimen/d12"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintStart_toStartOf="parent"/>
+
+ </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="sellingPrice"
+            type="Double" />
+
+        <variable
+            name="callback"
+            type="com.intellihealth.truemeds.presentation.callbacks.PaymentPendingCallback" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_bottomsheet_payment_pending_header"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d16">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHeader"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_bottomsheet_payment_pending_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content">
+
+
+            <View
+                android:id="@+id/viewDragHandle"
+                android:layout_width="@dimen/d50"
+                android:layout_height="@dimen/d4"
+                android:layout_marginVertical="@dimen/d12"
+                android:background="@color/tm_core_color_gray_300"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLeft"
+                android:layout_width="@dimen/d40"
+                android:layout_height="@dimen/d40"
+                android:layout_marginStart="@dimen/d16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvHeader"
+                android:src="@drawable/ic_pay" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d8"
+                android:layout_marginEnd="@dimen/d16"
+                android:ellipsize="end"
+                android:layout_marginTop="@dimen/d16"
+                android:text="Make payment now!"
+                android:maxLines="2"
+                android:gravity="top"
+                android:textColor="@color/tm_core_color_gray_800"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintEnd_toStartOf="@+id/imageClose"
+                app:layout_constraintStart_toEndOf="@+id/imgLeft"
+                app:layout_constraintTop_toBottomOf="@+id/viewDragHandle"
+                app:layout_constraintBottom_toTopOf="@+id/tvSubHeader"
+                tools:visibility="visible" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvSubHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d8"
+                android:layout_marginTop="@dimen/d2"
+                android:layout_marginEnd="@dimen/d16"
+                android:layout_marginBottom="@dimen/d16"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Pay now and avoid delays in delivery"
+                android:textColor="@color/tm_semantic_color_content_main_secondary"
+                app:bodyTextStyle="BodySmallRegular"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageClose"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imgLeft"
+                app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+                tools:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageClose"
+                android:layout_width="@dimen/d32"
+                android:layout_height="@dimen/d32"
+                android:layout_marginEnd="@dimen/d16"
+                android:clipToOutline="true"
+                android:layout_marginTop="@dimen/d2"
+                android:src="@drawable/ic_close_black_with_white_bg"
+                android:layout_marginBottom="@dimen/d16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvHeader" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clHeader">
+
+            <com.intellihealth.salt.views.RoundedImageView
+                android:id="@+id/iv_upi_logo"
+                android:layout_width="@dimen/d34"
+                android:layout_height="@dimen/d34"
+                android:layout_marginVertical="@dimen/d16"
+                android:layout_marginLeft="@dimen/d16"
+                android:src="@drawable/ic_upi_logo"
+                app:cornerRadius="@dimen/d2"
+                app:layout_constraintBottom_toTopOf="@+id/tmDivider"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvPayUsingPayment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d8"
+                android:layout_marginTop="@dimen/d16"
+                android:layout_marginEnd="@dimen/d16"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Pay using"
+                android:textColor="@color/tm_core_color_gray_800"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintStart_toEndOf="@+id/iv_upi_logo"
+                app:layout_constraintEnd_toStartOf="@+id/tvChange"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvUPIPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d8"
+                android:layout_marginEnd="@dimen/d16"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:textColor="@color/tm_core_color_gray_800"
+                app:bodyTextStyle="BodySmallRegular"
+                app:layout_constraintBottom_toTopOf="@+id/tmDivider"
+                app:layout_constraintStart_toEndOf="@+id/iv_upi_logo"
+                app:layout_constraintTop_toBottomOf="@+id/tvPayUsingPayment"
+                tools:text="UPI"
+                tools:visibility="visible" />
+
+            <com.intellihealth.salt.views.buttons.Button
+                android:id="@+id/tvChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/d16"
+                android:drawableStart="@color/white"
+                app:title="Change"
+                app:buttonSizeType="Medium"
+                app:buttonTextStyle="ButtonMd"
+                app:buttonType="GhostButton"
+                app:layout_constraintTop_toTopOf="@+id/tvPayUsingPayment"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPayUsingPayment"
+                app:layout_constraintRight_toRightOf="parent"
+                app:removePadding="true"
+                tools:text="Change" />
+
+            <com.intellihealth.salt.views.cards.Divider
+                android:id="@+id/tmDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d16"
+                android:layout_marginVertical="@dimen/d16"
+                app:dividerColor="@color/tm_core_color_gray_100"
+                app:dividerThickness="@dimen/d1"
+                app:layout_constraintTop_toBottomOf="@+id/tvUPIPayment"
+                app:layout_constraintBottom_toTopOf="@+id/tvPay" />
+
+            <com.intellihealth.salt.views.buttons.Button
+                android:id="@+id/tvPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginVertical="@dimen/d16"
+                android:drawableStart="@color/white"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="PrimaryButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:title="Pay ₹1232.45"
+                app:title="@{`Pay ₹` + String.valueOf(sellingPrice)}"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

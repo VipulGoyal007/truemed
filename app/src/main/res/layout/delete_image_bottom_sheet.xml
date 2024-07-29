@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/d10"
+        android:background="@drawable/bg_bottomsheet_header"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        tools:context=".presentation.bottomsheet.cart.RemoveProductBottomSheet">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingHorizontal="@dimen/d16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/d16"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivClose"
+                android:text="@string/remove_prescription"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                android:gravity="start"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle"
+                app:layout_constraintStart_toEndOf="@+id/tvTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+                android:src="@drawable/ic_close_reminder_sheet"
+                />
+
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/btnDeletePrescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                android:text="@string/remove_product"
+                android:layout_marginTop="@dimen/d22"
+                app:buttonType="SecondaryButton"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                android:text="@string/cancel"
+                android:layout_marginTop="@dimen/d16"
+                app:buttonType="DestructiveButton"
+                app:layout_constraintTop_toBottomOf="@+id/btnDeletePrescription"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+

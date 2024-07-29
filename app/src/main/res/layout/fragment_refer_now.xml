@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="model"
+            type="com.intellihealth.salt.models.InstructionAccordionModel" />
+
+        <variable
+            name="walletInfoResponse"
+            type="com.intellihealth.truemeds.data.model.walletandreferral.WalletInfoResponse" />
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.ReferNEarnViewModel" />
+
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMyReferNow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.fragment.ReferNowFragment"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/im_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/refer_earn_bottom_round"
+                        android:scaleType="fitXY"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/d16"
+                            android:paddingTop="@dimen/d24"
+                            android:paddingBottom="@dimen/d60"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.intellihealth.salt.views.TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/d32"
+                                android:layout_marginEnd="@dimen/d42"
+                                android:text="@{walletInfoResponse.responseData.referNowHeaderMessage}"
+                                android:textColor="@color/tm_semantic_color_content_main_primary"
+                                app:headerTextStyle="HeadingH1"
+                                app:layout_constraintEnd_toStartOf="@+id/ivRefer"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivRefer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/refer_code_image"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/d0"
+                        android:layout_marginTop="@dimen/d76"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/im_background" />
+
+
+                    <com.intellihealth.salt.views.cards.ActionCard
+                        android:id="@+id/referFriendActionCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/d16"
+                        android:visibility="@{walletInfoResponse.responseData.referralLink.equals(``) ? View.GONE:View.VISIBLE}"
+                        app:actionCardButtonText="@string/refer_a_friend"
+                        app:actionCardTitle="@string/your_referral_code"
+                        app:actionCardType="ReferralCode"
+                        app:layout_constraintBottom_toTopOf="@+id/view"
+                        app:layout_constraintEnd_toStartOf="@+id/im_background"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:setDescription="@{viewModel.referralCode}" />
+
+
+                    <com.intellihealth.salt.views.cards.Divider
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d2"
+                        app:dividerColor="@color/tm_semantic_color_border_main_tertiary"
+                        app:dividerThickness="@dimen/d2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/instructionAccordion" />
+
+
+                    <com.intellihealth.salt.views.cards.InstructionAccordionCard
+                        android:id="@+id/instructionAccordion"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d0"
+                        android:layout_marginTop="@dimen/d32"
+                        android:nestedScrollingEnabled="false"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/referFriendActionCard"
+                        app:setInstructionAccordionCardData="@{model}" />
+
+
+                    <com.intellihealth.salt.views.cards.ActionCard
+                        android:id="@+id/tmActionCartPrescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/d16"
+                        android:layout_marginTop="@dimen/d32"
+                        android:visibility="@{viewModel.yetToPlaceOrderMessage == null || viewModel.yetToPlaceOrderMessage.trim().equals(``) ? View.GONE : View.VISIBLE}"
+                        app:actionCardButtonRight="@drawable/bell_ringing"
+                        app:actionCardButtonText="@string/remind_them"
+                        app:actionCardDescription="@string/encourage_your_friend_to_place_an_order"
+                        app:actionCardType="CartPrescription"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/instructionAccordion"
+                        app:title="@{viewModel.yetToPlaceOrderMessage}" />
+
+
+                    <com.intellihealth.salt.views.cards.WalletCard
+                        android:id="@+id/walletCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/d16"
+                        android:layout_marginTop="@dimen/d32"
+                        android:visibility="@{viewModel.totalRewardsEarning>0?View.VISIBLE:View.GONE}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tmActionCartPrescription"
+                        app:setWalletBalanceUIData="@{viewModel.walletCardData}" />
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvClaimRewardHeader"
+                        android:layout_width="@dimen/d0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/d16"
+                        android:layout_marginTop="@dimen/d32"
+                        android:text="@string/have_a_referral_code"
+                        android:visibility="@{viewModel.alreadyRedeemedLiveData ? View.GONE : View.VISIBLE}"
+                        app:headerTextStyle="HeadingH2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/walletCard" />
+
+                    <com.intellihealth.salt.views.edittext.InputFieldLayout
+                        android:id="@+id/etClaimReward"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/d16"
+                        android:layout_marginTop="@dimen/d16"
+                        android:visibility="@{viewModel.alreadyRedeemedLiveData ? View.GONE : View.VISIBLE}"
+                        app:buttonText="@string/claim_reward"
+                        app:hintText="@string/enter_referral_code"
+                        app:inputTypeLayout="text"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvClaimRewardHeader"
+                        app:maxLength="12"
+                        app:showButton="Yes"
+                        app:showIcon="No" />
+
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/d16"
+                        android:layout_marginTop="@dimen/d32"
+                        android:text="@string/frequently_asked_questions_refer_n_earn"
+                        android:textColor="@color/tm_semantic_color_content_main_primary"
+                        app:headerTextStyle="HeadingH2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/etClaimReward" />
+
+                    <com.intellihealth.salt.views.cards.Faq
+                        android:id="@+id/faq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+
+                    <com.intellihealth.salt.views.buttons.ButtonLite
+                        android:id="@+id/btnViewMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d16"
+                        android:layout_marginTop="@dimen/d12"
+                        android:text="@string/view_more"
+                        app:buttonSizeType="Small"
+                        app:buttonTextStyle="ButtonSm"
+                        app:buttonType="GhostButton"
+                        app:iconRight="@drawable/refer_earn_view_all"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/faq"
+                        app:removePadding="true" />
+
+                    <com.intellihealth.salt.views.buttons.ButtonLite
+                        android:id="@+id/btTnc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d16"
+                        android:layout_marginTop="@dimen/d16"
+                        android:layout_marginBottom="@dimen/d16"
+                        android:text="@string/terms_amp_conditions"
+                        app:buttonSizeType="Small"
+                        app:buttonTextStyle="ButtonSm"
+                        app:buttonType="LinkButton"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnViewMore"
+                        app:removePadding="true" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="@{ viewModel.showView ? View.VISIBLE : View.GONE }"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/white"
+            />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="@{ viewModel.showLoader ? View.VISIBLE : View.GONE }"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

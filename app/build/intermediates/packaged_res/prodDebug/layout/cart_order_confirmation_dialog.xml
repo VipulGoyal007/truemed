@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_corners_background"
+    android:padding="@dimen/d24">
+
+    <com.intellihealth.salt.views.TextView
+        android:id="@+id/tvCartConfirmationMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bodyTextStyle="BodyMediumSemiBold"
+        android:text="@string/msg_remove_from_your_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.intellihealth.salt.views.TextView
+        android:id="@+id/tvNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d24"
+        app:bodyTextStyle="BodyMediumSemiBold"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="8dp"
+        android:text="@string/txt_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCartConfirmationMsg" />
+
+    <com.intellihealth.salt.views.TextView
+        android:id="@+id/tvYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/d36"
+        app:bodyTextStyle="BodyMediumSemiBold"
+        android:padding="8dp"
+        android:text="@string/txt_yes"
+        app:layout_constraintEnd_toStartOf="@+id/tvNo"
+        app:layout_constraintTop_toBottomOf="@+id/tvCartConfirmationMsg"
+        app:layout_constraintTop_toTopOf="@+id/tvNo"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

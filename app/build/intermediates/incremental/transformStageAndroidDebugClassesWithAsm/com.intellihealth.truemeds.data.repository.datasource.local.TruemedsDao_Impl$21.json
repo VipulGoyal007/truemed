@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.data.repository.datasource.local.TruemedsDao_Impl$21","classAnnotations":[],"interfaces":[],"superClasses":["androidx.room.EntityInsertionAdapter","androidx.room.SharedSQLiteStatement","java.lang.Object"]}

@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.data.repository.datasource.local.LocalDbRepositoryImpl","classAnnotations":[],"interfaces":["com.intellihealth.truemeds.domain.repository.LocalDbRepository"],"superClasses":["java.lang.Object"]}

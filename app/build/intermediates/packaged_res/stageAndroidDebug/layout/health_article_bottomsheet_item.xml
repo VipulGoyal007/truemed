@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                                
+                                                                                  
+
+                 
+                                          
+                                                                                               
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainCardCtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="layout/health_article_bottomsheet_item_0"                                           
+        android:paddingHorizontal="@dimen/d16"  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.intellihealth.salt.views.TextView
+            android:paddingVertical="@dimen/d18"
+            android:id="@+id/categoryItemTV"
+            android:layout_width="@dimen/d0"
+            app:bodyTextStyle="BodyMediumRegular"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            tools:text="fdkhbjm "
+            android:layout_marginEnd="@dimen/d24"
+            android:tag="binding_1"                 
+            app:layout_constraintEnd_toStartOf="@+id/forwardArrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/forwardArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/forward_arrow"
+            android:tint="@color/tm_semantic_color_content_ghost_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/categoryItemTV" />
+
+        <com.intellihealth.salt.views.cards.Divider
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:background="@color/tm_core_color_gray_100"
+            app:dividerThickness="1dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

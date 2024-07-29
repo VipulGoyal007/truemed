@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="view"
+            type="android.view.View" />
+
+        <variable
+            name="discountPercentage"
+            type="Double" />
+
+        <variable
+            name="sellingPrice"
+            type="Double" />
+
+        <variable
+            name="callback"
+            type="com.intellihealth.truemeds.presentation.callbacks.DoctorFraudCallback" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottomsheet_header"
+        android:padding="@dimen/d16">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/d32"
+            android:layout_height="@dimen/d32"
+            android:clipToOutline="true"
+            android:src="@drawable/ic_close_black_with_white_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivTopImage"
+            android:layout_width="110dp"
+            android:layout_height="@dimen/d94"
+            android:layout_marginTop="@dimen/d16"
+            android:clipToOutline="true"
+            android:src="@drawable/ic_choosing_substitutes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvThankYou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d24"
+            android:text="Thank you for"
+            android:textColor="@color/tm_semantic_color_content_main_secondary"
+            app:bodyTextStyle="BodySmallRegular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivTopImage"
+            tools:text="Thank you for" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d2"
+            android:text="Choosing substitutes on call"
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:bodyTextStyle="BodyLargeSemiBold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvThankYou"
+            tools:text="Choosing substitutes on call" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvNewBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d24"
+            android:text="New bill amount is"
+            android:textColor="@color/tm_semantic_color_content_main_tertiary"
+            app:bodyTextStyle="BodyMediumRegular"
+            app:layout_constraintEnd_toStartOf="@+id/tvDiscount"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d2"
+            android:layout_marginTop="@dimen/d24"
+            android:text="@{`(-` + String.valueOf(discountPercentage) + `)`}"
+            android:textColor="@color/tm_semantic_color_main_success"
+            app:bodyTextStyle="BodyMediumSemiBold"
+            app:layout_constraintEnd_toStartOf="@+id/tvSellingPrice"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvNewBill"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvSellingPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d2"
+            android:layout_marginTop="@dimen/d24"
+            android:text="@{`₹` + String.valueOf(sellingPrice)}"
+            android:textColor="@color/tm_semantic_color_content_main_secondary"
+            app:bodyTextStyle="BodyMediumSemiBold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tvDiscount"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+        <com.intellihealth.salt.views.buttons.Button
+            android:id="@+id/btnThankYou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d32"
+            app:buttonSizeType="Large"
+            app:buttonTextStyle="ButtonLg"
+            app:buttonType="PrimaryButton"
+            app:layout_constraintTop_toBottomOf="@+id/tvDiscount"
+            app:title="Ok, Thank you" />
+
+        <com.intellihealth.salt.views.buttons.Button
+            android:id="@+id/btnDontOpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d12"
+            app:buttonSizeType="Large"
+            app:buttonTextStyle="ButtonLg"
+            app:buttonType="DestructiveButton"
+            app:layout_constraintTop_toBottomOf="@+id/btnThankYou"
+            app:title="I didn’t opt for substitutes" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

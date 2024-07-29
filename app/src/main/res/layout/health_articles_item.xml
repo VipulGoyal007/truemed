@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="blogCardModel"
+            type="com.intellihealth.truemeds.presentation.model.BlogCardModel" />
+    </data>
+
+    <com.intellihealth.salt.views.cards.BlogCard
+        android:id="@+id/heathArticleCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:blogCardType="mobileInternal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/d8"/>
+
+</layout>

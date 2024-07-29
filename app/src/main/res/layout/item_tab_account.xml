@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+        <import type="android.text.TextUtils"/>
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.AccountTabViewModel" />
+        <variable
+            name="model"
+            type="com.intellihealth.truemeds.data.model.bottomnav.AccountTabModel" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAccountTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_archive" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d8"
+                android:text="My Orders"
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                app:bodyTextStyle="BodyMediumSemiBold"
+                app:layout_constraintBottom_toBottomOf="@+id/icon"
+                app:layout_constraintStart_toEndOf="@+id/icon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/forwordBtn"
+                android:layout_width="@dimen/d20"
+                android:layout_height="@dimen/d20"
+                android:src="@drawable/ic_forword_blue"
+                app:layout_constraintBottom_toBottomOf="@+id/icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvWalletAmt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/d8"
+                android:textColor="@color/tm_semantic_color_content_success_default"
+                app:bodyTextStyle="BodyMediumSemiBold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/forwordBtn"
+                app:layout_constraintEnd_toStartOf="@+id/forwordBtn"
+                app:layout_constraintTop_toTopOf="@+id/forwordBtn"
+                android:text="" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.intellihealth.salt.views.cards.Divider
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:background="@color/tm_core_color_gray_200"
+            app:dividerThickness="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

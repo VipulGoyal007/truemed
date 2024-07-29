@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewmodel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.HomeViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clSaveCall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawable_bottomsheet_top_rounded_corner_canceloder">
+
+        <com.intellihealth.salt.views.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Know when Truemeds calls"
+            android:layout_marginStart="16dp"
+            android:textColor="#40444C"
+            app:bodyTextStyle="BodyLargeSemiBold"
+            app:layout_constraintEnd_toStartOf="@id/imgClose"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imgClose"
+            app:layout_constraintBottom_toBottomOf="@id/imgClose" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="6dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgClose">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="@{ viewmodel.showLoadingOnSaveContact ? View.VISIBLE : View.GONE }"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/dr_calling"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/textBestExperience"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:bodyTextStyle="BodyMediumSemiBold"
+                android:text="@string/for_best_experience_need_permission_to_save_contact"
+                android:gravity="center"
+                android:textColor="#40444C"
+                android:layout_marginTop="26dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgCall" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/textClickSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:bodyTextStyle="BodyMediumRegular"
+                android:text="@string/clicking_save_contact_will_ask_you_permission"
+                android:textColor="#5B616E"
+                android:gravity="center"
+                android:layout_marginTop="13dp"
+                android:layout_marginStart="44dp"
+                android:layout_marginEnd="44dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textBestExperience" />
+
+
+            <com.intellihealth.salt.views.buttons.Button
+                android:id="@+id/btnSaveContact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonMd"
+                android:stateListAnimator="@null"
+                app:title="@string/save_tm_contact"
+                app:buttonType="PrimaryButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textClickSave" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

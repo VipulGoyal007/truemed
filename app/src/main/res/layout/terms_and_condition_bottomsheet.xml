@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.PrescriptionViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_bottomsheet_top_left_right_rounded"
+        android:backgroundTint="@color/tm_core_color_white">
+
+        <View
+            android:id="@+id/viewDragHandle"
+            android:layout_width="@dimen/d50"
+            android:layout_height="@dimen/d4"
+            android:layout_marginTop="@dimen/d12"
+            android:background="@color/tm_core_color_gray_300"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d16"
+            android:layout_marginEnd="@dimen/d16"
+            android:layout_marginTop="@dimen/d12"
+            android:text="@string/terms_amp_condition"
+            android:textColor="@color/upload_prescription_text_color"
+            app:bodyTextStyle="BodyLargeSemiBold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewDragHandle"
+            app:title="@string/terms_amp_condition"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageClose"
+            android:layout_width="@dimen/d32"
+            android:layout_height="@dimen/d32"
+            android:layout_marginTop="@dimen/d12"
+            android:layout_marginEnd="@dimen/d16"
+            android:visibility="gone"
+            android:src="@drawable/ic_close_black_with_white_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvHeader"
+            app:layout_constraintTop_toBottomOf="@+id/viewDragHandle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivShadow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d20"
+            android:layout_marginTop="@dimen/d16"
+            android:background="@drawable/bg_gradient_top"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvPrivacyPolicyHeader"
+            android:layout_marginTop="@dimen/d16"
+            android:paddingHorizontal="@dimen/d16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivShadow"
+            app:bodyTextStyle="BodyMediumSemiBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Application Form"
+            android:textColor="@color/upload_prescription_text_color" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvDescription"
+            android:paddingHorizontal="@dimen/d16"
+            android:layout_marginTop="@dimen/d16"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacyPolicyHeader"
+            app:bodyTextStyle="BodyMediumRegular"
+            android:layout_height="wrap_content"
+            android:text="vsxtsftfstg gsvctgsv"
+            android:textColor="@color/upload_prescription_text_color" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/bottomLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d10"
+            android:background="@drawable/bg_gradient_bottom"
+            android:layout_marginBottom="@dimen/d16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/uploadBtn" />
+
+        <com.intellihealth.salt.views.buttons.ButtonLite
+            android:id="@+id/uploadBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d16"
+            android:text="@string/accept"
+            app:buttonSizeType="Large"
+            app:buttonTextStyle="ButtonLg"
+            app:buttonType="PrimaryButton"
+            android:gravity="bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

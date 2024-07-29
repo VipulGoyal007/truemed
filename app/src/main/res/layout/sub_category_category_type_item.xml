@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.MyOrderViewModel" />
+
+        <variable
+            name="itemPosition"
+            type="Integer" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraitMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/d8"
+        >
+
+        <com.intellihealth.salt.views.TextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tvCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d16"
+            android:text="@string/categories"
+            android:background="@color/tm_core_color_light_blue_200"
+            android:textColor="@color/tm_core_color_gray_800"
+            app:bodyTextStyle="BodyMediumSemiBold"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

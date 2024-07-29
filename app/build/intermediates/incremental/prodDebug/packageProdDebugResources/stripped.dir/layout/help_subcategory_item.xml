@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                            
+                                                                                     
+
+                 
+                               
+                             
+
+
+           
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraitMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/help_subcategory_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/helpCategoryCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="binding_1"                                                          
+            android:paddingHorizontal="@dimen/d16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvSubCategoryTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/d18"
+                android:text=""
+                android:textColor="@color/tm_core_color_gray_800"
+                app:bodyTextStyle="BodyMediumSemiBold"
+                app:layout_constraintEnd_toStartOf="@+id/ivNextArrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivNextArrow"
+                android:layout_width="@dimen/d24"
+                android:layout_height="@dimen/d24"
+                android:layout_marginVertical="@dimen/d16"
+                android:src="@drawable/ic_chevron_right"
+                android:tint="@color/tm_core_color_blue_500"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.intellihealth.salt.views.cards.Divider
+            android:id="@+id/tmDivider1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/language_border_color"
+            app:dividerThickness="@dimen/d1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/helpCategoryCard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+         

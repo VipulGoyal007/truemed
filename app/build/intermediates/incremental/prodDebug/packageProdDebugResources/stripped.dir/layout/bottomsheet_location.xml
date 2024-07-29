@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                                 
+                             
+
+                 
+                                   
+                                                                                     
+
+                 
+                            
+                                                                                     
+           
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottomsheet_header"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior" android:tag="layout/bottomsheet_location_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottomsheet_header"
+            android:paddingBottom="@dimen/d16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <View
+                android:id="@+id/viewDragHandle"
+                android:layout_width="@dimen/d50"
+                android:layout_height="@dimen/d4"
+                android:layout_marginVertical="@dimen/d12"
+                android:background="@color/tm_core_color_gray_300"
+                android:tag="binding_1"                                           
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginTop="@dimen/d16"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:maxLines="2"
+                android:text="@string/choose_your_location"
+                android:textColor="@color/tm_core_color_gray_800"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewDragHandle"
+                app:layout_goneMarginTop="@dimen/d20" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageClose"
+                android:layout_width="@dimen/d32"
+                android:layout_height="@dimen/d32"
+                android:layout_marginEnd="@dimen/d16"
+                android:clipToOutline="true"
+                android:src="@drawable/ic_close_black_with_white_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/tvHeader"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvHeader" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clHeader">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clScrollable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/d16"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/clHeader">
+
+
+            <com.intellihealth.salt.views.edittext.InputFieldLayout
+                android:id="@+id/etInputFieldPinCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d12"
+                android:visibility="visible"
+                app:buttonText="Check"
+                app:hintText="@string/enter_your_6_digit_pin_code"
+                app:inputTypeLayout="number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:maxLength="6"
+                app:maxLine="1"
+                android:tag="binding_2"                       
+                app:showButton="Yes"
+                app:showIcon="No" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clLocationNudge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d16"
+                android:background="@drawable/bg_location_nudge"
+                android:padding="@dimen/d12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etInputFieldPinCode">
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvCurrentLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/use_your_current_location"
+                    android:textColor="@color/tm_semantic_color_content_secondary"
+                    app:bodyTextStyle="BodyMediumSemiBold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/d24"
+                    android:layout_height="@dimen/d24"
+                    android:src="@drawable/ic_location"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.intellihealth.salt.views.cards.Divider
+                android:id="@+id/divider_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/d16"
+                app:dividerColor="@color/tm_core_color_gray_100"
+                app:dividerThickness="@dimen/d1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clLocationNudge" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clLoggedOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/d16"
+                android:paddingBottom="@dimen/d16"
+                android:tag="binding_3"                                           
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider_location">
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvLoginToView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/d4"
+                    android:text="@string/login_to_view_saved_address"
+                    android:textColor="@color/tm_semantic_color_content_secondary"
+                    app:bodyTextStyle="BodyMediumSemiBold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/d24"
+                    android:layout_height="@dimen/d24"
+                    android:src="@drawable/ic_chevron_right"
+                    android:tint="@color/tm_semantic_color_content_secondary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/tvLoginToView"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/groupLoggedIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="binding_4"                                           
+                app:constraint_referenced_ids="tvSaveAddresses,rvSavedAddresses"
+                tools:visibility="visible" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvSaveAddresses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d16"
+                android:text="@string/saved_addresses"
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                android:tag="binding_5"                                                                
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider_location"
+                tools:visibility="visible" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvNoSaveAddresses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d16"
+                android:text="@string/no_saved_addresses"
+                android:textColor="@color/tm_semantic_color_content_main_tertiary"
+                android:tag="binding_6"                                                                                          
+                app:bodyTextStyle="BodyMediumSemiBold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSaveAddresses" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSavedAddresses"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/d16"
+                android:orientation="vertical"
+                android:tag="binding_7"                                                                
+                                                          
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSaveAddresses"
+                                                                     
+                tools:itemCount="10"
+                tools:listitem="@layout/saved_address_item"
+                tools:visibility="visible" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clFooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d16"
+                android:paddingBottom="@dimen/d16"
+                android:tag="binding_8"                                                                                           
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rvSavedAddresses"
+                app:layout_constraintStart_toStartOf="@id/rvSavedAddresses">
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvManageAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/d4"
+                    android:text="@string/manage_addresses"
+                    android:layout_marginBottom="@dimen/d40"
+                        android:textColor="@color/tm_semantic_color_content_secondary"
+                        app:bodyTextStyle="BodyMediumSemiBold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/d24"
+                    android:layout_height="@dimen/d24"
+                    android:src="@drawable/ic_chevron_right"
+                    android:tint="@color/tm_semantic_color_content_secondary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="@dimen/d40"
+                        app:layout_constraintLeft_toRightOf="@+id/tvManageAddress"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <ProgressBar
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:indeterminate="true"
+            android:tag="binding_9"                                                       
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

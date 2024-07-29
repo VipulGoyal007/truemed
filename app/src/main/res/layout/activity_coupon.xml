@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="currentCartValue"
+            type="Double" />
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.CouponViewModel" />
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="@{ viewModel.loaderValue ? View.GONE : View.VISIBLE }"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.intellihealth.salt.views.MobileSectionHeaders
+                android:id="@+id/header"
+                android:layout_width="0dp"
+                android:background="@color/white"
+                android:translationZ="@dimen/d8"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.intellihealth.salt.views.edittext.InputFieldLayout
+                android:id="@+id/edtApplyCoupon"
+                android:layout_marginTop="@dimen/d16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/d16"
+                app:buttonText="Apply"
+                app:hintText="Enter coupon code"
+                app:inputTypeLayout="text"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header"
+                android:maxLines="1"
+                app:ShowTextIme="actionDone"
+                android:singleLine="true"
+                app:setErrorMessage="@{viewModel.errorMsgHelper}"
+                app:showButton="Yes"
+                app:showIcon="No" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clCoupon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d0"
+                android:layout_marginTop="@dimen/d16"
+                android:background="@color/tm_semantic_color_bg_primary"
+                android:visibility="@{viewModel.couponList.size() == 0 ? View.GONE : View.VISIBLE}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtApplyCoupon">
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/textAvailableOffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d16"
+                    android:layout_marginTop="@dimen/d16"
+                    android:text="@string/available_offers"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    app:bodyTextStyle="BodyLargeSemiBold"
+                    app:layout_constraintEnd_toStartOf="@+id/recyclerViewCouponListing"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewCouponListing"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d0"
+                    android:layout_marginTop="@dimen/d16"
+                    android:paddingHorizontal="@dimen/d16"
+                    app:currentCartValue="@{currentCartValue}"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textAvailableOffer"
+                    app:setCouponListData="@{viewModel.couponList}"
+                    app:viewModel="@{viewModel}"
+                    tools:listitem="@layout/adapter_coupon_item" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clNoCoupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="122dp"
+                android:visibility="@{viewModel.couponList.size() > 0 ? View.GONE : View.VISIBLE}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtApplyCoupon">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgNoCouponAvailable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_no_coupon_available"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/no_coupon_available"
+                    android:textColor="@color/tm_semantic_color_content_main_tertiary"
+                    app:bodyTextStyle="BodyMediumSemiBold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgNoCouponAvailable" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="@{ viewModel.loaderValue ? View.VISIBLE : View.GONE }"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</layout>

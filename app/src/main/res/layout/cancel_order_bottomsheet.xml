@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/d10"
+        android:background="@drawable/bg_bottomsheet_header"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:paddingHorizontal="@dimen/d16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/d16"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/d43"
+                android:layout_marginTop="@dimen/d6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ivClose"
+                android:text="@string/are_you_sure_you_want_cancel_this_order"
+                app:bodyTextStyle="BodyLargeSemiBold"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/tvTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+                android:src="@drawable/ic_close_reminder_sheet" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvSubTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                android:text="@string/by_cancelling_this_order_you_will_miss_saving"
+                android:textColor="@color/sub_header_color"
+                app:bodyTextStyle="BodySmallSemiBold"/>
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/goBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonSizeType="Large"
+                android:textColor="#9C27B0"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="SecondaryButton"
+                android:text="@string/no_save"
+                android:layout_marginTop="@dimen/d16"
+                app:layout_constraintTop_toBottomOf="@+id/tvSubTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/deleteBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="DestructiveButton"
+                android:text="@string/cancel_order"
+                android:layout_marginTop="@dimen/d12"
+                android:layout_marginBottom="@dimen/d24"
+                app:layout_constraintTop_toBottomOf="@+id/goBack"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <com.intellihealth.salt.views.section.ProductCardSection
+        android:id="@+id/productCardStackedSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:productCardSectionType="Stacked"  android:tag="layout/adapter_product_card_stacked_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+         

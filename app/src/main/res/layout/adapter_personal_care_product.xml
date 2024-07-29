@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="productCardCallback"
+            type="com.intellihealth.salt.callbacks.ProductCardCallback" />
+
+        <variable
+            name="data"
+            type="com.intellihealth.salt.models.ProductInfoModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.intellihealth.salt.views.cards.ProductCard
+            android:id="@+id/productCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:outlineProvider="none"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:setCrossSellingCallback="@{productCardCallback}"
+            app:setCrossSellingData="@{ data }" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

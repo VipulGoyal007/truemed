@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.DeliveryDetailsViewModel" />
+
+        <variable
+            name="patientCallback"
+            type="com.intellihealth.truemeds.data.callback.PatientClickCallback" />
+
+        <variable
+            name="addressCallback"
+            type="com.intellihealth.truemeds.data.callback.AddressClickCallback" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.activity.DeliveryDetailsActivity">
+
+        <com.intellihealth.salt.views.MobileSectionHeaders
+            android:id="@+id/txtDeliveryDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:headerText="Delivery Details"
+            android:background="@color/white"
+            android:translationZ="@dimen/d6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:setUpMobileSectionHeadersData="@{viewModel.headerType}" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toTopOf="@+id/clFooter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDeliveryDetails">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clPatient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clAddPAtient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d16"
+                        android:layout_marginTop="@dimen/d14"
+                        android:visibility="@{viewModel.showShimmerPatient ? View.GONE : View.VISIBLE}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/txtSelectPatient"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@{ viewModel.patientsList.size > 0 ? @string/select_patient : @string/add_personal_details}"
+                            app:bodyTextStyle="BodyMediumSemiBold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/btnAddPatient"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.intellihealth.salt.views.buttons.Button
+                            android:id="@+id/btnAddPatient"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="@{ () -> viewModel.addNewPatientsButtonClick() }"
+                            android:visibility="@{viewModel.showPatientListView ? View.VISIBLE : View.GONE}"
+                            app:buttonSizeType="Small"
+                            app:buttonTextStyle="ButtonSm"
+                            app:buttonType="GhostButton"
+                            app:iconLeft="@drawable/plus"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:title="@string/add_patient" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmer_view_container_patient"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="@{viewModel.showShimmerPatient ? View.VISIBLE : View.GONE}"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/clAddPAtient"
+                        tools:visibility="gone">
+
+                        <include layout="@layout/shimmer_manage_patient" />
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/patientListRecyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="@{viewModel.showPatientListView ? View.VISIBLE : View.GONE}"
+                        app:callback="@{ patientCallback }"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/clAddPAtient"
+                        app:setDeliveryDetailsPatientsList="@{ viewModel.patientsList }"
+                        app:viewmodel="@{ viewModel }"
+                        tools:itemCount="1"
+                        tools:listitem="@layout/delivery_details_patient_item" />
+
+                    <!-- tools:listitem="@layout/res_patient_item"-->
+
+                    <com.intellihealth.salt.views.buttons.Button
+                        android:layout_marginTop="@dimen/d10"
+                        android:id="@+id/btnViewMore1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:buttonSizeType="Small"
+                        app:buttonTextStyle="ButtonSm"
+                        app:buttonType="GhostButton"
+                        android:onClick="@{ () -> viewModel.changeListStatus() }"
+                        android:visibility="@{viewModel.showViewMoreViewLessPatientList? View.VISIBLE : View.GONE}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/patientListRecyclerview"
+                        app:title="@{viewModel.isExpanded ? `View less` : `View More`}" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivViewMore"
+                        android:layout_width="@dimen/d16"
+                        android:layout_height="@dimen/d16"
+                        android:visibility="@{viewModel.showViewMoreViewLessPatientList? View.VISIBLE : View.GONE}"
+                        android:rotation="@{viewModel.isExpanded ? 180 : 0}"
+                        android:src="@drawable/ic_chevron_down"
+                        android:onClick="@{ () -> viewModel.changeListStatus() }"
+                        android:tint="@color/tm_core_color_blue_500"
+                        app:layout_constraintBottom_toBottomOf="@+id/btnViewMore1"
+                        app:layout_constraintStart_toEndOf="@+id/btnViewMore1"
+                        app:layout_constraintTop_toTopOf="@+id/btnViewMore1" />
+
+
+                   <!-- below view is kept hidden for now - it is not working as expected-->
+                    <com.intellihealth.salt.views.buttons.Button
+                        android:id="@+id/btnViewMore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d20"
+                        android:layout_marginTop="@dimen/d10"
+                        android:layout_marginEnd="@dimen/d20"
+                        android:onClick="@{ () -> viewModel.changeListStatus() }"
+                        android:visibility="gone"
+                        app:buttonSizeType="Small"
+                        app:buttonTextStyle="ButtonSm"
+                        app:buttonType="GhostButton"
+                        app:iconRight="@drawable/down_arrow"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnViewMore1"
+                        app:setListStatus="@{ viewModel.isExpanded }" />
+                  <!--  android:visibility="@{viewModel.patientsList.size() > 3 ? View.VISIBLE : View.GONE}"
+-->
+
+                    <com.intellihealth.salt.views.buttons.Button
+                        android:id="@+id/btnAddNewPatient"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d48"
+                        android:layout_marginHorizontal="@dimen/d16"
+                        android:layout_marginTop="@dimen/d16"
+                        android:drawableStart="@color/white"
+                        android:onClick="@{ () -> viewModel.addNewPatientsButtonClick() }"
+                        android:visibility="@{viewModel.showAddPatientView? View.VISIBLE : View.GONE}"
+                        app:buttonSizeType="Medium"
+                        app:buttonTextStyle="ButtonMd"
+                        app:buttonType="SecondaryButton"
+                        app:iconLeft="@drawable/plus_icon_blue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnViewMore"
+                        app:title="@string/addpersonaldetails" />
+
+                    <com.intellihealth.salt.views.DividerView
+                        android:id="@+id/viewMoreDivider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d1"
+                        android:layout_marginHorizontal="@dimen/d16"
+                        android:layout_marginTop="@dimen/d16"
+                        android:background="#EDEEF1"
+                        android:visibility="@{viewModel.showShimmerPatient ? View.GONE : View.VISIBLE}"
+                        app:dividerThickness="1dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnAddNewPatient" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clPatient">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clAddAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/d16"
+                        android:layout_marginTop="@dimen/d10"
+                        android:visibility="@{viewModel.showShimmerAddress ? View.GONE : View.VISIBLE}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/txtSelectAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@{ viewModel.addressList.size > 0 ? @string/select_address : @string/add_address_details }"
+                            app:bodyTextStyle="BodyMediumSemiBold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/btnAddress"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.intellihealth.salt.views.buttons.Button
+                            android:id="@+id/btnAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="@{ () -> viewModel.addNewAddressButtonClick() }"
+                            android:visibility="@{viewModel.showAddressListView ? View.VISIBLE : View.GONE}"
+                            app:buttonSizeType="Small"
+                            app:buttonTextStyle="ButtonSm"
+                            app:buttonType="GhostButton"
+                            app:iconLeft="@drawable/plus"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:title="@string/add_address" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <com.facebook.shimmer.ShimmerFrameLayout
+                        android:id="@+id/shimmer_view_container_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="@{viewModel.showShimmerAddress ? View.VISIBLE : View.GONE}"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/clAddAddress"
+                        tools:visibility="gone">
+
+                        <include layout="@layout/shimmer_manage_patient" />
+                    </com.facebook.shimmer.ShimmerFrameLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/addressListRecyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginHorizontal="@dimen/d10"
+                        android:visibility="@{viewModel.showAddressListView ? View.VISIBLE : View.GONE}"
+                        app:callback="@{ addressCallback }"
+                        android:layout_marginTop="@dimen/d4"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintTop_toBottomOf="@+id/clAddAddress"
+                        app:setDeliveryDetailsAddressList="@{ viewModel.addressList }"
+                        app:viewmodel="@{ viewModel }"
+                        tools:itemCount="1"
+                        tools:listitem="@layout/manage_address_card_item" />
+
+                    <com.intellihealth.salt.views.buttons.Button
+                        android:id="@+id/btnAddNewAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d48"
+                        android:layout_marginHorizontal="@dimen/d16"
+                        android:layout_marginTop="@dimen/d16"
+                        android:drawableStart="@color/white"
+                        android:onClick="@{ () -> viewModel.addNewAddressButtonClick() }"
+                        android:visibility="@{viewModel.showAddAddressView ? View.VISIBLE : View.GONE}"
+                        app:buttonSizeType="Medium"
+                        app:buttonTextStyle="ButtonMd"
+                        app:buttonType="SecondaryButton"
+                        app:iconLeft="@drawable/plus_icon_blue"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/addressListRecyclerview"
+                        app:title="@string/add_address" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <!--<View
+            android:id="@+id/ivBottomLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d10"
+            android:background="@drawable/bg_gradient_bottom"
+            app:layout_constraintBottom_toTopOf="@+id/clCheckout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nestedScrollView" />-->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/clFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/d15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clCheckout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="@dimen/d16"
+                android:translationZ="@dimen/d16"
+                android:outlineProvider="paddedBounds"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.intellihealth.salt.views.buttons.Button
+                    android:id="@+id/btnCheckout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d16"
+                    android:onClick="@{ () -> viewModel.proceedToCheckoutClick() }"
+                    app:buttonSizeType="Large"
+                    app:buttonTextStyle="ButtonLg"
+                    app:buttonType="PrimaryButton"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1"
+                    app:title="@string/checkout" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            tools:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="@{viewModel.isLoadingView() ? View.VISIBLE : View.GONE }"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ProgressBar
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

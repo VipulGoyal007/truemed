@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.LoginViewModel" />
+    </data>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/d16"
+            android:paddingVertical="@dimen/d24">
+
+            <com.intellihealth.salt.views.edittext.InputFieldLayout
+                android:id="@+id/tvLoginMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ShowTextIme="actionDone"
+                app:buttonText="Get OTP"
+                app:hintText="Enter your 10-digit number"
+                app:inputTypeLayout="number"
+                app:label="Enter your mobile number to get started"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:maxLength="10"
+                app:showButton="No"
+                app:showIcon="No"
+                app:showKeyboard="true" />
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/flexboxLoginTermsConditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:alignContent="flex_start"
+                app:flexWrap="wrap"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLoginMobileNumber">
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvSigning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingVertical="@dimen/d12"
+                    android:text="By signing up, I agree to the"
+                    android:textColor="@color/tm_semantic_color_content_main_tertiary"
+                    app:bodyTextStyle="BodySmallRegular" />
+
+                <com.intellihealth.salt.views.buttons.ButtonLite
+                    android:id="@+id/tvTermsConditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d40"
+                    android:text="Terms and Conditions"
+                    app:buttonSizeType="WrapHeight"
+                    app:buttonTextStyle="ButtonXs"
+                    app:buttonType="GhostButton"
+                    app:iconPaddingBottom="7"
+                    app:iconPaddingEnd="16"
+                    app:iconPaddingStart="2"
+                    app:iconPaddingTop="7"
+                    app:removePadding="false" />
+            </com.google.android.flexbox.FlexboxLayout>
+
+            <com.intellihealth.salt.views.buttons.Button
+                android:id="@+id/btnGetOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d24"
+                android:drawableStart="@color/white"
+                app:buttonSizeType="Medium"
+                app:buttonTextStyle="ButtonMd"
+                app:buttonType="PrimaryButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/flexboxLoginTermsConditions"
+                app:layout_constraintVertical_bias="1"
+                app:title="Get OTP" />
+
+            <LinearLayout
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d8"
+                android:layout_marginBottom="@dimen/d8"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/d8"
+                android:paddingBottom="@dimen/d8"
+                android:visibility="@{viewModel.checkTrueCallerAvailability()?View.VISIBLE:View.GONE}"
+                android:weightSum="3"
+                app:layout_constraintTop_toBottomOf="@+id/btnGetOtp">
+
+                <View
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="@dimen/d1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.3"
+                    android:background="@color/tm_semantic_color_button_disabled" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:text="@string/or"
+                    android:textAlignment="center"
+                    android:textColor="@color/tm_semantic_color_content_main_tertiary"
+                    android:textSize="@dimen/d14"
+                    app:bodyTextStyle="BodyMediumRegular" />
+
+                <View
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="@dimen/d1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.3"
+                    android:background="@color/tm_semantic_color_button_disabled" />
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_true_caller_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="@{viewModel.checkTrueCallerAvailability()?View.VISIBLE:View.GONE}"
+                app:cardBackgroundColor="@color/truecaller_color"
+                app:cardCornerRadius="@dimen/d12"
+                app:layout_constraintTop_toBottomOf="@+id/divider">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d19"
+                    android:layout_marginTop="@dimen/d15"
+                    android:layout_marginBottom="@dimen/d15"
+                    android:src="@drawable/ic_truecaller" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!-- android:visibility="@{ viewModel.isLoadingViewForLoginBottomSheet() ? View.VISIBLE : View.GONE }"
+     -->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

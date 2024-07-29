@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="item"
+            type="com.intellihealth.truemeds.data.model.home.ChildCategoryModel" />
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.HomeViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/abc"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="@dimen/d8"
+        android:layout_marginHorizontal="@dimen/d4"
+        android:background="@drawable/white_bg_corner_8"
+        android:padding="@dimen/d8"
+        >
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@{item.name}"
+            android:textColor="@color/tm_semantic_color_content_main_secondary"
+            app:bodyTextStyle="BodyMediumSemiBold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Baby &amp; Mom Care" />
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{item.subsTitle}"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/tm_core_color_green_500"
+            app:bodyTextStyle="BodySmallSemiBold"
+            app:layout_constraintStart_toStartOf="@+id/tvCategory"
+            app:layout_constraintTop_toBottomOf="@+id/tvCategory"
+            tools:text="Upto 10% off" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView11"
+            android:layout_width="80dp"
+            android:layout_height="72dp"
+            android:layout_margin="@dimen/d8"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDiscount"
+            app:layout_constraintVertical_bias="1.0"
+            app:placeHolder="@{@drawable/otc_placeholder}"
+            app:setUrl="@{item.image}"
+            tools:src="@drawable/med" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

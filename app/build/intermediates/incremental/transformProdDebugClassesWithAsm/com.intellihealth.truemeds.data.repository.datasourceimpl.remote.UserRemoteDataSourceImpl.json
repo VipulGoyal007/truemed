@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.data.repository.datasourceimpl.remote.UserRemoteDataSourceImpl","classAnnotations":[],"interfaces":["com.intellihealth.truemeds.data.repository.datasource.remote.UserRemoteDataSource"],"superClasses":["java.lang.Object"]}

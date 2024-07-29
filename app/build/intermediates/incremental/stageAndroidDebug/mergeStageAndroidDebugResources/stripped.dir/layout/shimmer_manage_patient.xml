@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+
+           
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/d16"
+        android:background="@color/white" android:tag="layout/shimmer_manage_patient_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d32"
+           >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivGreyBox"
+                android:layout_width="@dimen/d28"
+                android:layout_height="@dimen/d28"
+                android:background="@drawable/shimmer_grey_box"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTube1"
+                android:layout_width="@dimen/d188"
+                android:layout_height="@dimen/d10"
+                android:layout_marginStart="@dimen/d10"
+                android:background="@drawable/shimmer_grey_tube"
+                app:layout_constraintStart_toEndOf="@+id/ivGreyBox"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTube2"
+                android:layout_width="@dimen/d165"
+                android:layout_height="@dimen/d10"
+                android:layout_marginTop="@dimen/d8"
+                android:background="@drawable/shimmer_grey_tube"
+                app:layout_constraintStart_toStartOf="@+id/ivTube1"
+                app:layout_constraintTop_toBottomOf="@+id/ivTube1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d32"
+           >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivGreyBox2"
+                android:layout_width="@dimen/d28"
+                android:layout_height="@dimen/d28"
+                android:background="@drawable/shimmer_grey_box"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTube3"
+                android:layout_width="@dimen/d188"
+                android:layout_height="@dimen/d10"
+                android:layout_marginStart="@dimen/d10"
+                android:background="@drawable/shimmer_grey_tube"
+                app:layout_constraintStart_toEndOf="@+id/ivGreyBox2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTube4"
+                android:layout_width="@dimen/d165"
+                android:layout_height="@dimen/d10"
+                android:layout_marginTop="@dimen/d8"
+                android:background="@drawable/shimmer_grey_tube"
+                app:layout_constraintStart_toStartOf="@+id/ivTube3"
+                app:layout_constraintTop_toBottomOf="@+id/ivTube3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d32"
+          >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivGreyBox3"
+                android:layout_width="@dimen/d28"
+                android:layout_height="@dimen/d28"
+                android:background="@drawable/shimmer_grey_box"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTube5"
+                android:layout_width="@dimen/d188"
+                android:layout_height="@dimen/d10"
+                android:layout_marginStart="@dimen/d10"
+                android:background="@drawable/shimmer_grey_tube"
+                app:layout_constraintStart_toEndOf="@+id/ivGreyBox3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTube6"
+                android:layout_width="@dimen/d165"
+                android:layout_height="@dimen/d10"
+                android:layout_marginTop="@dimen/d8"
+                android:background="@drawable/shimmer_grey_tube"
+                app:layout_constraintStart_toStartOf="@+id/ivTube5"
+                app:layout_constraintTop_toBottomOf="@+id/ivTube5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d32"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivGreyBox4"
+                android:layout_width="@dimen/d28"
+                android:layout_height="@dimen/d28"
+                android:background="@drawable/shimmer_grey_box"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTube7"
+                android:layout_width="@dimen/d188"
+                android:layout_height="@dimen/d10"
+                android:layout_marginStart="@dimen/d10"
+                android:background="@drawable/shimmer_grey_tube"
+                app:layout_constraintStart_toEndOf="@+id/ivGreyBox4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTube8"
+                android:layout_width="@dimen/d165"
+                android:layout_height="@dimen/d10"
+                android:layout_marginTop="@dimen/d8"
+                android:background="@drawable/shimmer_grey_tube"
+                app:layout_constraintStart_toStartOf="@+id/ivTube7"
+                app:layout_constraintTop_toBottomOf="@+id/ivTube7" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+         

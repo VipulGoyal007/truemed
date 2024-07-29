@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="com.intellihealth.truemeds.data.model.orderstatus.ModificationItem" />
+
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.intellihealth.salt.views.cards.FullWidthProductCard
+        android:id="@+id/fullWidthProductCard2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:productCardType="modification"
+        app:setCrossSellingData="@{  model.productDetailModel }" />
+
+    <com.intellihealth.salt.views.tooltip.TooltipProductCard
+        android:id="@+id/tooltipProductCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullWidthProductCard2"
+        app:setProductCardData="@{ model.tooltipProductCardModel }" />
+
+    <com.intellihealth.salt.views.DividerView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/d1"
+        android:layout_marginTop="@dimen/d24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tooltipProductCard" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

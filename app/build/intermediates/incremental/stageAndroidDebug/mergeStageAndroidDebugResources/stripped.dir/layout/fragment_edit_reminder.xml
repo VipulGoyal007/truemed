@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                                    
+                                                                                         
+
+                 
+                           
+                                                                                                        
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_reminder_header_main"
+        tools:context=".presentation.bottomsheet.ReminderEditFragment" android:tag="layout/fragment_edit_reminder_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_reminder_header"
+            android:padding="@dimen/d16"
+            app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivHeader"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_calendar_bottom_sheet"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d8"
+                android:text="@string/set_a_reminder_call_for_your_next_order"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintEnd_toStartOf="@+id/ivClose"
+                app:layout_constraintStart_toEndOf="@+id/ivHeader"
+                app:layout_constraintTop_toTopOf="@+id/ivHeader" />
+
+            <com.intellihealth.salt.views.TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d8"
+                android:layout_marginTop="@dimen/d4"
+                android:tag="binding_1"                                                    
+                app:bodyTextStyle="BodySmallRegular"
+                app:layout_constraintEnd_toStartOf="@+id/ivClose"
+                app:layout_constraintStart_toEndOf="@+id/ivHeader"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close_reminder_sheet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ivHeader" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        <androidx.core.widget.NestedScrollView-->
+<!--            android:layout_width="@dimen/d0"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/headerLayout">-->
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/d16"
+                app:layout_constraintTop_toBottomOf="@+id/headerLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvLabel"
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d16"
+                    android:layout_marginTop="@dimen/d24"
+                    android:text="@string/reminder_date"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    app:bodyTextStyle="BodyMediumSemiBold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <!--<com.intellihealth.salt.views.edittext.InputFieldLayout
+                    android:id="@+id/inputLabel"
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d8"
+                    android:layout_marginHorizontal="@dimen/d16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabel"
+                    />-->
+                <EditText
+                    android:id="@+id/inputLabel"
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/d16"
+                    android:layout_marginTop="@dimen/d8"
+                    android:background="@drawable/blue_border_box"
+                    android:clickable="false"
+                    android:drawableEnd="@drawable/edit_icon"
+                    android:focusable="false"
+                    android:padding="@dimen/d10"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvLabel" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvReminderHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d16"
+                    android:layout_marginTop="@dimen/d24"
+                    android:text="@string/remind_me_in_intervals"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputLabel" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/rvChips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/d16"
+                    android:paddingVertical="@dimen/d4"
+                    android:nestedScrollingEnabled="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvReminderHeader">
+
+                    <LinearLayout
+                        android:id="@+id/left"
+                        android:layout_width="@dimen/d0"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/right"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.intellihealth.salt.views.chip.Chip
+                            android:id="@+id/chip1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/d4"
+                            android:layout_marginVertical="@dimen/d8"
+                            android:layout_weight="1"
+                            app:chipSize="Large"
+                            app:chipType="UnSelected"
+                            app:layout_constraintEnd_toStartOf="@+id/chip2"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:matchWidth="true" />
+
+
+                        <com.intellihealth.salt.views.chip.Chip
+                            android:id="@+id/chip3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/d4"
+                            android:layout_marginVertical="@dimen/d8"
+                            android:layout_weight="1"
+                            app:chipSize="Large"
+                            app:chipType="UnSelected"
+                            app:layout_constraintEnd_toStartOf="@+id/chip4"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/chip1"
+                            app:matchWidth="true" />
+
+
+                        <com.intellihealth.salt.views.chip.Chip
+                            android:id="@+id/chip5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/d4"
+                            android:layout_marginVertical="@dimen/d8"
+                            android:layout_weight="1"
+                            app:chipSize="Large"
+                            app:chipType="UnSelected"
+                            app:layout_constraintEnd_toStartOf="@+id/chip6"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/chip3"
+                            app:matchWidth="true" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/right"
+                        android:layout_width="@dimen/d0"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/left"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <com.intellihealth.salt.views.chip.Chip
+                            android:id="@+id/chip2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/d4"
+                            android:layout_marginVertical="@dimen/d8"
+                            android:layout_weight="1"
+                            app:chipSize="Large"
+                            app:chipType="UnSelected"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/chip1"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:matchWidth="true" />
+
+
+                        <com.intellihealth.salt.views.chip.Chip
+                            android:id="@+id/chip4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/d4"
+                            android:layout_marginVertical="@dimen/d8"
+                            android:layout_weight="1"
+                            app:chipSize="Large"
+                            app:chipType="UnSelected"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/chip3"
+                            app:layout_constraintTop_toBottomOf="@+id/chip2"
+                            app:matchWidth="true" />
+
+
+                        <com.intellihealth.salt.views.chip.Chip
+                            android:id="@+id/chip6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/d4"
+                            android:layout_marginVertical="@dimen/d8"
+                            android:layout_weight="1"
+                            app:chipSize="Large"
+                            app:chipType="UnSelected"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toEndOf="@+id/chip5"
+                            app:layout_constraintTop_toBottomOf="@+id/chip4"
+                            app:matchWidth="true" />
+
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <com.intellihealth.salt.views.buttons.ButtonLite
+                    android:id="@+id/deleteReminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/d16"
+                    android:layout_marginTop="@dimen/d16"
+                    android:text="@string/delete_reminder"
+                    app:buttonSizeType="Large"
+                    app:buttonTextStyle="ButtonLg"
+                    app:buttonType="DestructiveButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rvChips" />
+
+                <com.intellihealth.salt.views.buttons.ButtonLite
+                    android:id="@+id/goBack"
+                    android:layout_width="@dimen/d0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/d16"
+                    android:layout_marginTop="@dimen/d16"
+                    android:layout_marginBottom="@dimen/d16"
+                    android:text="@string/set_reminder"
+                    app:buttonSizeType="Large"
+                    app:buttonTextStyle="ButtonLg"
+                    app:buttonType="PrimaryButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/deleteReminder" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+<!--        </androidx.core.widget.NestedScrollView>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

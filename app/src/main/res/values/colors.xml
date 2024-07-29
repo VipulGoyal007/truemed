@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#22B573</color>
+    <color name="colorPrimaryDark">#0071BC</color>
+    <color name="colorAccent">#22B573</color>
+
+    <color name="notification_text_color_dark">#333333</color>
+    <color name="notification_text_color_normal">#40464D</color>
+
+    <color name="colorGray6">#d9d9d9</color>
+    <color name="tc_btn_color">#0071BD</color>
+    <color name="color_button_blue">#2671E3</color><!--#0071BD-->
+    <color name="adress_text_color">#8897A2</color>
+    <color name="filter_dark">#4F585E</color>
+    <color name="transparent">#00000000</color>
+    <color name="shimmerGray">#EDEEF1</color>
+    <color name="color_help_bottom_sheet_working_hours_text">#4F585E</color>
+    <color name="tm_core_color_light_blue_200">#EFF8FF</color>
+    <color name="white">#ffffff</color>
+
+
+
+    <color name="video_seekbar_color">#0071BD</color>
+    <color name="video_seekbar_buffer_color">#bababa</color>
+    <color name="video_buffer_color">#cfcfcf</color>
+
+    <color name="color_video_unselected">#fff</color>
+    <color name="color_video_selected">#EFEFEF</color>
+
+    <color name="text_color_en_selected">#ADB3B7</color>
+
+
+    <color name="btn_prescription_border_color">#D8DBDF</color>
+    <color name="btn_prescription_header_color">#0D000000</color>
+    <color name="btn_prescription_upload_selection_color">#1B69DE</color>
+    <color name="upload_prescription_img_stoke_color">#E1E8EB</color>
+    <color name="upload_prescription_text_color">#40444C</color>
+    <color name="tm_semantic_color_border_selection_yes">#1B69DE</color>
+    <color name="tm_semantic_color_border_main_tertiary_dark">#D8DBDF</color>
+    <color name="tm_semantic_color_border_main_tertiary_dark2">#6b7280</color>
+    <color name="color_blue">#2E77E5</color>
+    <color name="color_green">#9CBC9E</color>
+    <color name="sub_header_color">#8897A2</color>
+    <color name="error_msg_color">#EB1414</color>
+    <color name="light_grey">#8E95A2</color>
+    <color name="light_grey_color">#5B616E</color>
+    <color name="ecf2ff">#ECF2FF</color>
+    <color name="color_40464d">#40464D</color>
+
+    <color name="login_banner1">#277854</color>
+    <color name="login_banner2">#9DD0F6</color>
+    <color name="login_banner3">#F9F9F9</color>
+
+    <color name="undo_replace_all_bg" >#178755</color>
+    <color name="tm_custom">#a2b0c5</color>
+
+    <color name="truecaller_color">#0087FF</color>
+
+</resources>

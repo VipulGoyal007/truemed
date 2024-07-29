@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                             
+                                                                   
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemAuthorCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/author_card_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.intellihealth.salt.views.cards.AuthorCard
+            android:id="@+id/authorItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="binding_1"                
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

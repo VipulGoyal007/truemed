@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="expires"
+            type="Integer" />
+
+        <variable
+            name="lifeCycle"
+            type="androidx.lifecycle.LifecycleOwner" />
+
+        <variable
+            name="discount"
+            type="String" />
+
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.CouponViewModel" />
+
+
+        <import type="android.view.View" />
+
+        <variable
+            name="applyCouponData"
+            type="com.intellihealth.truemeds.data.model.coupon.CouponCodeResponse.Coupon" />
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_bottomsheet_header"
+            app:behavior_hideable="false">
+
+
+            <!--   <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/clHeader"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/bg_bottomsheet_header"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent">-->
+
+            <com.intellihealth.salt.views.cards.Divider
+                android:id="@+id/viewDragHandle"
+                android:layout_width="@dimen/d50"
+                android:layout_height="@dimen/d4"
+                android:layout_marginTop="@dimen/d12"
+                android:background="@color/tm_core_color_gray_300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginTop="@dimen/d12"
+                app:layout_constraintEnd_toStartOf="@+id/imageClose"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewDragHandle">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgLeft"
+                    android:layout_width="@dimen/d24"
+                    android:layout_height="@dimen/d24"
+                    android:src="@drawable/ic_percentage_purple"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:setUrl="@{applyCouponData.image}" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvHeader"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/d4"
+                    android:layout_marginStart="@dimen/d8"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:maxLines="1"
+                    android:text="@{applyCouponData.promoCode}"
+                    android:visibility="@{applyCouponData.couponCodeRequired == true ? View.VISIBLE : View.GONE}"
+                    android:textColor="@color/tm_core_color_purple_500"
+                    app:bodyTextStyle="BodyLargeSemiBold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgLeft"
+                    app:layout_constraintTop_toTopOf="@+id/imgLeft"
+                    tools:visibility="visible" />
+
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvCouponHeader"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d8"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="@{applyCouponData.title}"
+                    app:bodyTextStyle="BodyLargeSemiBold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgLeft" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d5"
+                    android:maxLines="2"
+                    android:text="@{applyCouponData.description}"
+                    android:textColor="@color/tm_core_color_gray_400"
+                    app:bodyTextStyle="BodySmallRegular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCouponHeader" />
+                <!--todo-->
+<!--android:text="@{applyCouponData.subHeader}"-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_coupon_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginTop="@dimen/d16"
+                android:background="@drawable/bg_faint_blue_radius_8"
+                android:padding="@dimen/d12"
+                android:visibility="@{applyCouponData.infoPanel == null ? View.GONE : View.VISIBLE}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageInfoCircle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:srcCompat="@drawable/ic_info_circle" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvCouponInfoDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d6"
+                    android:text="@{applyCouponData.infoPanel}"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    app:bodyTextStyle="BodySmallRegular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="@dimen/d4"
+                    tools:text="Offer will be applicable automatically if you paying using UPI wallet during payment fjfja dsfdsfjds dsfdsfdsf fjsdkfjsdf dsfjsdjkfsd"
+                    app:layout_constraintStart_toEndOf="@+id/imageInfoCircle"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageInfoCircle"
+                    app:layout_constraintTop_toTopOf="@+id/imageInfoCircle" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_coupon_offer_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginTop="@dimen/d16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_coupon_info">
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvMinOrderValue"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:text="@string/min_order_value"
+                    android:textColor="@color/tm_semantic_color_content_main_secondary"
+                    app:bodyTextStyle="BodyMediumRegular"
+                    app:layout_constraintEnd_toStartOf="@+id/tvMinCartValue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvMinCartValue"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:gravity="end"
+                    android:text="@{`₹`+ applyCouponData.minCartValue.intValue()}"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    app:bodyTextStyle="BodyMediumSemiBold"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvMinOrderValue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <!--todo '₹'+-->
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvDiscountCashback"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="@dimen/d8"
+                    android:text="@string/discount_cashback"
+                    android:textColor="@color/tm_semantic_color_content_main_secondary"
+                    app:bodyTextStyle="BodyMediumRegular"
+                    app:layout_constraintEnd_toStartOf="@+id/tvMinCartValue"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMinOrderValue" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvDiscountCashbackValue"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:gravity="end"
+                    android:text="@{applyCouponData.offerTypeMsg}"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    app:bodyTextStyle="BodyMediumSemiBold"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvDiscountCashback"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvCouponExpiry"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="@dimen/d8"
+                    android:text="@string/expires"
+                    android:visibility="gone"
+                    android:textColor="@color/tm_semantic_color_content_main_secondary"
+                    app:bodyTextStyle="BodyMediumRegular"
+                    app:layout_constraintEnd_toStartOf="@+id/tvMinCartValue"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDiscountCashback" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvExpiryDays"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:gravity="end"
+                    android:text="@{applyCouponData.expiryDays}"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    app:bodyTextStyle="BodyMediumSemiBold"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvCouponExpiry"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMinOrderValue"
+                    app:layout_constraintVertical_bias="1.0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginTop="@dimen/d16"
+                android:background="#D8DBDF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_coupon_offer_content" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvTermsAndConditionsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginTop="@dimen/d16"
+                android:text="@string/terms_and_conditions"
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                app:bodyTextStyle="BodyMediumSemiBold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedScrollview"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginTop="@dimen/d12"
+                android:layout_marginEnd="@dimen/d16"
+                android:paddingBottom="@dimen/d22"
+                android:fillViewport="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTermsAndConditionsLabel">
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/textTermsAndConditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginBottom="@dimen/d16"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    android:textSize="13sp"
+                    app:setTermsAndCondition="@{applyCouponData.termsAndConditions}"
+                    app:bodyTextStyle="BodySmallRegular"
+                    tools:text="" />
+
+
+            </androidx.core.widget.NestedScrollView>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageClose"
+                android:layout_width="@dimen/d32"
+                android:layout_height="@dimen/d32"
+                android:layout_marginEnd="@dimen/d16"
+                android:src="@drawable/ic_close_black_with_white_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+
+            <!--   </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="@color/white"
+                android:id="@+id/cl_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:visibility="@{applyCouponData.couponCodeRequired == true ? View.VISIBLE:View.GONE}"
+                tools:layout_marginTop="500dp"
+
+                android:elevation="@dimen/d16"
+                android:translationZ="@dimen/d8"
+                android:outlineProvider="paddedBounds"
+                >
+
+
+                <com.intellihealth.salt.views.StickyNonStickyNotification
+                    android:id="@+id/viewStickyNonStickyNotification"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d15"
+                    android:visibility="@{applyCouponData.isCouponApplied == true ? View.VISIBLE : View.GONE}"
+                    app:couponModel="@{applyCouponData}"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    app:layout_constraintBottom_toTopOf="@+id/btnApplyCoupon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lifeCycleOwner="@{lifeCycle}"
+                    app:notificationButtonVisibility="gone"
+                    app:notificationPosition="bottom"
+                    app:notificationType="couponApplied"
+                    app:setStickyData="@{viewModel}" />
+
+
+                <com.intellihealth.salt.views.buttons.ButtonLite
+                    android:id="@+id/btnApplyCoupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d15"
+                    android:drawableStart="@color/white"
+                    android:text="@string/apply_coupon"
+                    android:visibility="@{applyCouponData.isCouponApplied == true ? View.GONE : View.VISIBLE}"
+                    app:buttonSizeType="Large"
+                    app:buttonTextStyle="ButtonLg"
+                    android:layout_marginHorizontal="@dimen/d15"
+                    tools:visibility="visible"
+                    app:buttonType="PrimaryButton"
+                    android:layout_marginBottom="@dimen/d16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:Text="Apply Coupon" />
+
+                <com.intellihealth.salt.views.buttons.ButtonLite
+                    android:id="@+id/btnRemoveCoupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@color/white"
+                    android:layout_marginHorizontal="@dimen/d16"
+                    android:layout_marginBottom="@dimen/d15"
+                    android:layout_marginTop="@dimen/d15"
+                    android:paddingTop="@dimen/d15"
+                    android:text="@string/remove_coupon"
+                    android:visibility="@{applyCouponData.isCouponApplied == true  ? View.VISIBLE : View.GONE}"
+                    app:buttonSizeType="Large"
+                    app:buttonTextStyle="ButtonLg"
+                    app:buttonType="DestructiveButton"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viewStickyNonStickyNotification"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:visibility="gone"
+                    tools:Text="Remove Coupon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</layout>

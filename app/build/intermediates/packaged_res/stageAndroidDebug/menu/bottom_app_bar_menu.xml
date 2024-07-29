@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/bottom_nav_home" />
+    <item
+        android:id="@+id/referEarnFragment"
+        android:title="Refer &amp; Earn"
+        android:icon="@drawable/bottom_nav_refer" />
+    <item
+        android:id="@+id/ordersFragment"
+        android:title="My Orders"
+        android:icon="@drawable/bottom_nav_orders" />
+    <item
+        android:id="@+id/accountFragment"
+        android:title="Account"
+        android:icon="@drawable/bottom_nav_account" />
+
+</menu>

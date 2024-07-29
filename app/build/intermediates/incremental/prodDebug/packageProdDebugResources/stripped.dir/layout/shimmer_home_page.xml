@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d177"
+        android:layout_marginStart="@dimen/d14"
+        android:layout_marginTop="@dimen/d22"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/d304"
+            android:layout_height="match_parent"
+            android:background="@drawable/shimmer_grey_box_16_curve" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/d12"
+            android:layout_weight="1"
+            android:background="@drawable/shimmer_grey_box_16_curve_end_straight" />
+    </LinearLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d174"
+        android:layout_marginHorizontal="@dimen/d16"
+        android:layout_marginTop="@dimen/d24"
+        android:background="@color/white"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:cardCornerRadius="@dimen/d16"
+        app:cardElevation="@dimen/d1"
+        app:cardPreventCornerOverlap="true"
+        app:strokeColor="@color/shimmerGray"
+        app:strokeWidth="@dimen/d1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d16"
+            android:layout_marginTop="@dimen/d32"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/d188"
+                android:layout_height="@dimen/d10"
+                android:background="@drawable/shimmer_grey_tube" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/d165"
+                android:layout_height="@dimen/d10"
+                android:layout_marginTop="@dimen/d8"
+                android:background="@drawable/shimmer_grey_tube" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/d109"
+                android:layout_height="@dimen/d10"
+                android:layout_marginTop="@dimen/d8"
+                android:background="@drawable/shimmer_grey_tube" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/d118"
+                android:layout_height="@dimen/d40"
+                android:layout_marginTop="@dimen/d28"
+
+                android:background="@drawable/shimmer_grey_box_12_curve" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/d188"
+        android:layout_height="@dimen/d10"
+        android:layout_marginHorizontal="@dimen/d16"
+        android:layout_marginTop="@dimen/d24"
+        android:background="@drawable/shimmer_grey_tube" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d229"
+        android:layout_marginHorizontal="@dimen/d16"
+        android:layout_marginTop="@dimen/d24"
+        android:background="@drawable/shimmer_grey_box_12_curve" />
+
+
+</LinearLayout>

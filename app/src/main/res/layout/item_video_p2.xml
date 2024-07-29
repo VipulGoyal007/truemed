@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="android.graphics.Color" />
+
+        <variable
+            name="item"
+            type="com.intellihealth.truemeds.data.model.home.VideoFaqAllResponse.Video.VideoUrl" />
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.VideoViewModel" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="selected"
+            type="boolean" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/d12"
+        android:paddingHorizontal="@dimen/d16"
+        android:background="@{ selected ? @color/tm_semantic_color_bg_primary : @color/tm_core_color_white}"
+        android:onClick="@{ () -> viewModel.onPlayListSelected(item,position,true,false) }"
+        android:orientation="horizontal"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView26"
+            android:layout_width="100dp"
+            android:layout_height="54dp"
+            android:background="#D3F1FF"
+            app:thumbnailUrl="@{item.thumbnailUrl }"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+<!---->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/bg_gray_timestamp"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center"
+            android:paddingHorizontal="@dimen/d2"
+            android:text="@{ item.duration }"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView26"
+            app:layout_constraintEnd_toEndOf="@+id/appCompatImageView26"
+            tools:text="0.30" />
+        <!--android:text="@{ viewModel.dtoVideos[position].duration }"-->
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:id="@+id/tvTitle"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d8"
+            android:fontFamily="@font/inter_semibold"
+            android:text="@{ item.title }"
+            android:textColor="#4F585E"
+            android:textSize="13sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@+id/ivPlay"
+            app:layout_constraintStart_toEndOf="@+id/appCompatImageView26"
+            app:layout_constraintTop_toTopOf="@+id/appCompatImageView26"
+            tools:text="Save your money with substitutesa hn vxhka xhka sah cxah hx asx ah sxah sxs xk xkx askx axks" />
+
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvIsVideoPlaying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d4"
+            android:text="@string/playing_now"
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:bodyTextStyle="BodySmallRegular"
+            app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView26"
+            app:layout_constraintStart_toStartOf="@+id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPlay"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:gravity="end"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+<!--android:src="@{ selected ? @drawable/ic_pause : @drawable/ic_play}"-->
+
+
+
+        <!--app:isSelected="@{selected ? 1:0}"
+            app:viewModel="@{viewModel}"
+            android:src="@{ selected ? viewModel.isSecondaryPlayFlag ? @drawable/ic_pause
+            : @drawable/ic_play : @drawable/ic_play }"-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

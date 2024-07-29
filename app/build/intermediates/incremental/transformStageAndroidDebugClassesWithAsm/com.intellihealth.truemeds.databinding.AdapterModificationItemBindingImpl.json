@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.databinding.AdapterModificationItemBindingImpl","classAnnotations":[],"interfaces":["androidx.databinding.Observable","androidx.viewbinding.ViewBinding"],"superClasses":["com.intellihealth.truemeds.databinding.AdapterModificationItemBinding","androidx.databinding.ViewDataBinding","androidx.databinding.BaseObservable","java.lang.Object"]}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+                                           
+
+                                        
+                 
+                       
+                                                                                 
+                 
+                                          
+                                                                                               
+           
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginRight="@dimen/d8"
+        android:background="@drawable/health_article_chip_border" android:tag="layout/health_article_chip_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/chipTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/color_green"
+            android:text="News"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

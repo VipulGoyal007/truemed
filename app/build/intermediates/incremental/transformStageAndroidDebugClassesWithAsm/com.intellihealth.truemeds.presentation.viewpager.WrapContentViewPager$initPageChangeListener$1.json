@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.presentation.viewpager.WrapContentViewPager$initPageChangeListener$1","classAnnotations":[],"interfaces":["androidx.viewpager.widget.ViewPager$OnPageChangeListener"],"superClasses":["androidx.viewpager.widget.ViewPager$SimpleOnPageChangeListener","java.lang.Object"]}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+    </data>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/d16">
+
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/d32"
+            android:layout_height="@dimen/d32"
+            android:clipToOutline="true"
+            android:visibility="visible"
+            android:src="@drawable/ic_close_black_with_white_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPopupThumbup"
+            android:layout_width="@dimen/d98"
+            android:layout_height="@dimen/d106"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivClose"
+            android:src="@drawable/rating_submitted_thumb_up" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginTop="@dimen/d16"
+            android:id="@+id/ivPopupStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPopupThumbup"
+            android:src="@drawable/rating_submitted_star_group" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d16"
+            android:text="@string/thanks_for_your_feedback"
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:bodyTextStyle="BodyXLargeSemiBold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivPopupStar"
+            />
+
+        <com.intellihealth.salt.views.buttons.Button
+            android:id="@+id/btnOk"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="4dp"
+            app:buttonSizeType="Large"
+            app:buttonType="PrimaryButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeader"
+            app:title="@string/ok_thanks" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+</layout>

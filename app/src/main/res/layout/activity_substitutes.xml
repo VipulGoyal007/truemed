@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.activity.SubstitutesActivity">
+
+
+        <com.intellihealth.salt.views.MobileSectionHeaders
+            android:id="@+id/msHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:translationZ="@dimen/d8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mobileSectionHeadersViewType="TextWithIcons" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="@dimen/d0"
+            android:layout_height="@dimen/d0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/ivBottomLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/msHeader">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d0"
+                android:clipToPadding="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!--<androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clCardLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d212"
+                    android:background="@drawable/bg_substitute"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="@dimen/d0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/d36"
+                        android:layout_marginTop="@dimen/d24"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imIcon"
+                        android:layout_width="@dimen/d110"
+                        android:layout_height="@dimen/d94"
+                        android:layout_marginTop="@dimen/d25"
+                        android:src="@drawable/ic_substitute"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivHeaderImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="212dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/subs_activity_header" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/d16"
+                    android:layout_marginTop="@dimen/d40"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ivHeaderImage">
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvSubstituteSafe"
+                        android:layout_width="@dimen/d0"
+                        android:layout_height="wrap_content"
+                        android:text="@string/substitutes_are_safe"
+                        android:textColor="@color/tm_core_color_gray_800"
+                        app:headerTextStyle="HeadingH2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="@dimen/d0"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d4"
+                        android:text="@string/they_have_the_same_attributes_as_your_prescribed_medicine"
+                        android:textColor="@color/tm_core_color_gray_600"
+                        app:bodyTextStyle="BodyMediumSemiBold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSubstituteSafe" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvSubsList"
+                        android:layout_width="@dimen/d0"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/d24"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+                        tools:itemCount="2"
+                        tools:listitem="@layout/subs_item" />
+
+
+                    <com.intellihealth.salt.views.cards.Divider
+                        android:id="@+id/divider"
+                        android:layout_width="@dimen/d0"
+                        android:layout_height="@dimen/d1"
+                        android:layout_marginTop="@dimen/d8"
+                        app:dividerColor="@color/tm_core_color_gray_100"
+                        app:dividerThickness="@dimen/d1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rvSubsList" />
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvMedTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d24"
+                        app:headerTextStyle="HeadingH2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvMedList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/d24"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvMedTitle"
+                        tools:itemCount="2"
+                        tools:listitem="@layout/subs_med_item" />
+
+                    <com.intellihealth.salt.views.cards.Divider
+                        android:id="@+id/medDivider"
+                        android:layout_width="@dimen/d0"
+                        android:layout_height="@dimen/d1"
+                        android:layout_marginTop="@dimen/d8"
+                        app:dividerColor="@color/tm_core_color_gray_100"
+                        app:dividerThickness="@dimen/d1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rvMedList" />
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvSaveMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d24"
+                        android:text="@string/you_save_more_on_medicines"
+                        app:headerTextStyle="HeadingH2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/medDivider" />
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvPlaceorder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d20"
+                        android:textColor="#5B616E"
+                        android:text="@string/place_your_order_by_opting_for_substitutes_and_have_it_delivered_at_your_door_step"
+                        app:bodyTextStyle="BodyMediumRegular"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSaveMore" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clMoneyLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d20"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvPlaceorder">
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/tvPlace"
+                            android:layout_width="@dimen/d0"
+                            android:layout_height="wrap_content"
+                            android:text="@string/place_your_order_by_opting_for_substitutes_and_have_it_delivered_at_your_door_step"
+                            app:bodyTextStyle="BodyMediumRegular"
+                            android:textColor="#5B616E"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/appCompatImageView2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/appCompatImageView2"
+                            android:layout_width="@dimen/d64"
+                            android:layout_height="@dimen/d64"
+                            android:src="@drawable/ic_money"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBottomLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d10"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_gradient_bottom"
+            app:layout_constraintBottom_toTopOf="@+id/startOrderingNow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.intellihealth.salt.views.buttons.ButtonLite
+            android:id="@+id/startOrderingNow"
+            android:layout_width="@dimen/d0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="@dimen/d12"
+            android:text="@string/start_ordering_now"
+            app:buttonSizeType="Large"
+            app:buttonTextStyle="ButtonLg"
+            app:buttonType="PrimaryButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

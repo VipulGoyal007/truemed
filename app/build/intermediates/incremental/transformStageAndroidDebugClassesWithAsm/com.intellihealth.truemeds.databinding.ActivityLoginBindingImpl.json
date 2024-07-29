@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.databinding.ActivityLoginBindingImpl","classAnnotations":[],"interfaces":["androidx.databinding.Observable","androidx.viewbinding.ViewBinding"],"superClasses":["com.intellihealth.truemeds.databinding.ActivityLoginBinding","androidx.databinding.ViewDataBinding","androidx.databinding.BaseObservable","java.lang.Object"]}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/d16"
+        android:layout_marginTop="@dimen/d24"
+        app:cardCornerRadius="@dimen/d20"
+        app:cardElevation="0dp" android:tag="layout/adapter_homepage_alert_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivAlert"
+            android:minWidth="@dimen/d96"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d96" />
+    </androidx.cardview.widget.CardView>
+         

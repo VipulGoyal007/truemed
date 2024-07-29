@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="reorderData"
+            type="com.intellihealth.truemeds.data.model.home.HomeReorderBottomSheetModel" />
+
+        <variable
+            name="isLoading"
+            type="Boolean" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_bottomsheet_header"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        android:paddingBottom="@dimen/d16"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHeader"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_bottomsheet_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/baseShadowThemeGrey"
+            android:elevation="@dimen/d4"
+            android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/viewDragHandle"
+                    android:layout_width="@dimen/d50"
+                    android:layout_height="@dimen/d4"
+                    android:layout_marginVertical="@dimen/d12"
+                    android:background="@color/tm_core_color_gray_300"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgLeft"
+                    android:layout_width="@dimen/d40"
+                    android:layout_height="@dimen/d40"
+                    android:layout_marginStart="@dimen/d16"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvHeader"
+                    android:src="@drawable/ic_default_profile" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvHeader"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d8"
+                    android:layout_marginEnd="@dimen/d16"
+                    android:ellipsize="end"
+                    android:layout_marginTop="@dimen/d16"
+                    android:text="@{reorderData.header}"
+                    android:maxLines="2"
+                    android:gravity="top"
+                    android:textColor="@color/tm_core_color_gray_800"
+                    app:bodyTextStyle="BodyLargeSemiBold"
+                    app:layout_constraintEnd_toStartOf="@+id/imageClose"
+                    app:layout_constraintStart_toEndOf="@+id/imgLeft"
+                    app:layout_constraintTop_toBottomOf="@+id/viewDragHandle"
+                    app:layout_constraintBottom_toTopOf="@+id/tvSubHeader"
+                    tools:text="Vijay Chopra"
+                    tools:visibility="visible" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvSubHeader"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d8"
+                    android:layout_marginEnd="@dimen/d16"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@{reorderData.subHeader}"
+                    android:textColor="@color/tm_semantic_color_content_main_secondary"
+                    app:bodyTextStyle="BodySmallRegular"
+                    app:layout_constraintEnd_toStartOf="@+id/imageClose"
+                    app:layout_constraintStart_toEndOf="@+id/imgLeft"
+                    app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginTop="@dimen/d2"
+                    android:layout_marginBottom="@dimen/d16"
+                    tools:text="Placed on 21 Jan 2023 "
+                    tools:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageClose"
+                    android:layout_width="@dimen/d32"
+                    android:layout_height="@dimen/d32"
+                    android:layout_marginEnd="@dimen/d16"
+                    android:clipToOutline="true"
+                    android:layout_marginTop="@dimen/d2"
+                    android:src="@drawable/ic_close_black_with_white_bg"
+                    android:layout_marginBottom="@dimen/d16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvHeader" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clData"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clHeader">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvReorderMedicineList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginTop="@dimen/d16"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:itemCount="5"
+                tools:listitem="@layout/bottomsheet_reorder_item" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.intellihealth.salt.views.buttons.Button
+            android:id="@+id/tvReorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d16"
+            android:layout_marginTop="@dimen/d24"
+            android:layout_marginBottom="@dimen/d16"
+            android:drawableStart="@color/white"
+            app:title="Reorder"
+            app:buttonSizeType="Large"
+            app:buttonTextStyle="ButtonLg"
+            app:buttonType="PrimaryButton"
+            app:layout_constraintTop_toBottomOf="@id/clData"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clProgressBar"
+            android:layout_width="0dp"
+            android:elevation="@dimen/d4"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@color/transparent"
+            android:visibility="@{ isLoading ? View.VISIBLE : View.INVISIBLE }"
+            app:layout_constraintBottom_toBottomOf="@id/tvReorder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.databinding.AdapterBlogSectionItemBindingImpl","classAnnotations":[],"interfaces":["androidx.databinding.Observable","androidx.viewbinding.ViewBinding"],"superClasses":["com.intellihealth.truemeds.databinding.AdapterBlogSectionItemBinding","androidx.databinding.ViewDataBinding","androidx.databinding.BaseObservable","java.lang.Object"]}

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.ReminderViewModel" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.bottomsheet.AddReminderBottomSheet">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_reminder_header_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_reminder_header"
+                android:padding="@dimen/d16"
+                app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivHeader"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/ic_calendar_bottom_sheet"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/d14"
+                    android:text="@{viewModel.addReminderTitle.toString()}"
+                    app:bodyTextStyle="BodyLargeSemiBold"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivHeader"
+                    app:layout_constraintEnd_toStartOf="@+id/imClose"
+                    app:layout_constraintStart_toEndOf="@+id/ivHeader"
+                    app:layout_constraintTop_toTopOf="@+id/ivHeader" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d4"
+                    android:text="@{`For Patient: ` + viewModel.alertReminderNameValue}"
+                    android:visibility="@{viewModel.addReminderFromOrderStatusActivity ? View.VISIBLE : View.GONE}"
+                    app:bodyTextStyle="BodySmallRegular"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close_reminder_sheet"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/ivHeader" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="@dimen/d0"
+                android:layout_height="@dimen/d0"
+                android:layout_marginBottom="@dimen/d88"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/headerLayout"
+                app:layout_constraintVertical_bias="1">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/d16"
+                        android:layout_marginTop="@dimen/d16"
+                        android:text="@string/patient_s_name"
+                        android:visibility="@{viewModel.addReminderFromOrderStatusActivity ? View.GONE : View.VISIBLE}"
+                        android:textColor="@color/tm_semantic_color_content_main_primary"
+                        app:bodyTextStyle="BodyMediumSemiBold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <com.intellihealth.salt.views.dropdown.DropDownHeader
+                        android:id="@+id/dropDownHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/d16"
+                        android:layout_marginTop="@dimen/d8"
+                        android:visibility="@{viewModel.addReminderFromOrderStatusActivity ? View.GONE : View.VISIBLE}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/recyclerviewHeader"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/d16"
+                        android:layout_marginStart="@dimen/d16"
+                        android:layout_marginTop="@dimen/d16"
+                        android:text="@string/how_often_do_you_want_to_be_reminded"
+                        android:textColor="@color/tm_core_color_gray_800"
+                        android:visibility="visible"
+                        app:bodyTextStyle="BodyMediumSemiBold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/dropDownHeader" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvReminderTimer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/recyclerviewHeader"
+                        app:reminderFrequency="@{viewModel.reminderFrequencyListData}"
+                        app:viewModel="@{viewModel}" />
+
+
+                    <com.intellihealth.salt.views.dropdown.DropDownDefault
+                        android:id="@+id/tmDropDownPatientList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/dropDownHeader"
+                        tools:visibility="visible" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/setReminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginTop="@dimen/d16"
+                android:layout_marginBottom="@dimen/d16"
+                android:text="@string/set_reminder"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="PrimaryButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

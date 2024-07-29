@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.intellihealth.truemeds.data.model.home.DeliveryDelayModel" />
+        <variable
+            name="view"
+            type="android.view.View" />
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.HomeViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/d16"
+        android:background="@drawable/bg_bottomsheet_header">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHeader"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:background="@drawable/bg_doctor_call_missed_2"
+            android:padding="@dimen/d16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/d32"
+                android:layout_height="@dimen/d32"
+                android:clipToOutline="true"
+                android:src="@drawable/ic_close_black_with_white_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvOrderID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{`Order ID :` + viewModel.bottomSheetDoctorCallOrderId}"
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                app:bodyTextStyle="BodySmallRegular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Order ID :12345653" />
+           <!-- android:text="@{`Order ID :` + viewModel.orderID}"-->
+
+
+            <com.intellihealth.salt.views.TextView
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d2"
+                android:text="@{model.title}"
+                android:textColor="@color/tm_semantic_color_button_critical_default"
+                app:bodyTextStyle="BodyXLargeSemiBold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOrderID"
+                tools:text="Call from our doctor\nmissed! " />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d16"
+            android:paddingHorizontal="@dimen/d16"
+            android:text=""
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:bodyTextStyle="BodyMediumRegular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clHeader"
+            tools:text="Speak to the doctor within the time limit to get delivery" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clTimer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_circular_red"
+            android:layout_marginHorizontal="@dimen/d16"
+            android:layout_marginTop="@dimen/d4"
+             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMessage"
+            tools:visibility="visible">
+         <!--   android:visibility="@{viewModel.bottomSheetDoctorCallTimerValue != ``&amp;&amp; viewModel.bottomSheetDoctorCallTimerValue != `0` ? view.VISIBLE : view.GONE}" -->
+            <!--  android:visibility="@{model.time == null ? view.GONE : view.VISIBLE}"-->
+
+
+            <ImageView
+                android:id="@+id/ivClockTimer"
+                android:layout_width="@dimen/d16"
+                android:layout_height="@dimen/d16"
+                android:background="@drawable/clock_icon"
+                android:layout_marginStart="@dimen/d8"
+                android:layout_marginVertical="@dimen/d4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d4"
+                android:layout_marginEnd="@dimen/d12"
+                android:textColor="@color/tm_semantic_color_content_critical_default"
+                app:bodyTextStyle="BodySmallSemiBold"
+                app:layout_constraintBottom_toBottomOf="@+id/ivClockTimer"
+                app:layout_constraintStart_toEndOf="@id/ivClockTimer"
+                app:layout_constraintTop_toTopOf="@+id/ivClockTimer"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text=""
+                />
+          <!--  android:text="@{viewModel.bottomSheetDoctorCallOrderId}"-->
+          <!--  android:text="23h:20m:05s"-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <!-- <com.intellihealth.salt.views.chip.Chip
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d16"
+            android:layout_marginTop="@dimen/d4"
+            android:includeFontPadding="false"
+            app:chipTitle="@{model.time == null ? `` : model.time}"
+            app:chipType="Critical"
+            app:chipSize="Small"
+            app:chipIconLeft="@drawable/ic_recently_search_icon"
+            android:visibility="@{model.time == null ? view.GONE : view.VISIBLE}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMessage"/>-->
+
+        <com.intellihealth.salt.views.cards.Divider
+            android:id="@+id/tmDivider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/d16"
+            app:dividerColor="@color/tm_core_color_gray_100"
+            app:dividerThickness="@dimen/d1"
+            app:layout_constraintTop_toBottomOf="@+id/clTimer"/>
+
+        <com.intellihealth.salt.views.buttons.Button
+            android:id="@+id/btnCallMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d16"
+            app:buttonSizeType="Large"
+            app:buttonTextStyle="ButtonLg"
+            app:buttonType="PrimaryButton"
+            app:layout_constraintTop_toBottomOf="@+id/tmDivider"
+           />
+      <!--  app:title="@{model.buttonText}"-->
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

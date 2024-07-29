@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                       
+                                                                                                       
+
+                 
+                            
+                                                                                       
+
+                 
+                        
+                             
+           
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCrossSellingMedParent"
+        android:layout_width="@dimen/d152"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/d12"
+        app:cardElevation="@dimen/d4"
+        android:shadowColor="@color/tm_custom"
+        app:cardUseCompatPadding="true"
+        android:theme="@style/shadowTheme"
+        app:strokeColor="@color/tm_core_color_gray_100"
+        app:strokeWidth="@dimen/d1" android:tag="layout/search_previous_viewed_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+        <!--android:onClick="@{()->productCardCallback.viewClick(mutableMedData)}"-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d176">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivMedicine"
+                android:layout_width="@dimen/d72"
+                android:layout_height="@dimen/d88"
+                android:contentDescription="@string/medicine_image"
+                android:tag="binding_1"                    
+                                                          
+                                               
+                android:layout_marginBottom="@dimen/d8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tvMedicine"/>
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvMedicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="@dimen/d4"
+                android:layout_marginBottom="@dimen/d12"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:tag="binding_2"            
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                app:bodyTextStyle="BodyMediumRegular"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivMedicine"
+                tools:text="Crocine 650mg 12/5 cal and DOLO 650" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+<!--
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp">
+        &lt;!&ndash;        android:onClick="@{ () -> viewmodel.onRecentItemClicked(item, index,``,``) }"&ndash;&gt;
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clProduct"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:background="@drawable/border_faint_black_radius_6"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivProductImage"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_marginHorizontal="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@color/colorGray6" />
+            &lt;!&ndash;            app:medicineUrl="@{ item.productImage }"&ndash;&gt;
+            &lt;!&ndash;            app:medicineName="@{item.getName}"&ndash;&gt;
+            &lt;!&ndash;            app:drugType="@{item.drugType}"&ndash;&gt;
+            &lt;!&ndash;            app:viewmodel="@{ viewmodel }"&ndash;&gt;
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="start"
+            android:lineSpacingExtra="6dp"
+            android:maxLines="2"
+            android:text="@{item.medicineName}"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clProduct" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+-->
+         

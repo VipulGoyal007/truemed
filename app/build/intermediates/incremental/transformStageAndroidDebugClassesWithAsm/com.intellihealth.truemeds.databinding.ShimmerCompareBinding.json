@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.databinding.ShimmerCompareBinding","classAnnotations":[],"interfaces":["androidx.databinding.Observable","androidx.viewbinding.ViewBinding"],"superClasses":["androidx.databinding.ViewDataBinding","androidx.databinding.BaseObservable","java.lang.Object"]}

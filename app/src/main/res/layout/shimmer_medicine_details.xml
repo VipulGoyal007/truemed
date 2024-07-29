@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/d16"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d229"
+            android:layout_marginTop="@dimen/d24"
+            android:background="@drawable/shimmer_grey_box_12_curve" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/d188"
+            android:layout_height="@dimen/d10"
+            android:layout_marginTop="@dimen/d20"
+            android:background="@drawable/shimmer_grey_tube" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/d165"
+            android:layout_height="@dimen/d10"
+            android:layout_marginTop="@dimen/d8"
+            android:background="@drawable/shimmer_grey_tube" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/d109"
+            android:layout_height="@dimen/d10"
+            android:layout_marginTop="@dimen/d8"
+            android:background="@drawable/shimmer_grey_tube" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/d60"
+            android:layout_height="@dimen/d10"
+            android:layout_marginTop="@dimen/d8"
+            android:background="@drawable/shimmer_grey_tube" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/d118"
+            android:layout_height="@dimen/d40"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/d16"
+            android:background="@drawable/shimmer_grey_box_12_curve" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/d142"
+            android:layout_height="@dimen/d10"
+            android:layout_marginTop="@dimen/d24"
+            android:background="@drawable/shimmer_grey_tube" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d174"
+            android:layout_marginTop="@dimen/d16"
+            android:background="@color/white"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cardCornerRadius="@dimen/d16"
+            app:cardElevation="@dimen/d1"
+            app:cardPreventCornerOverlap="true"
+            app:strokeColor="@color/shimmerGray"
+            app:strokeWidth="@dimen/d1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginTop="@dimen/d22"
+                android:orientation="vertical">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/startBox"
+                        android:layout_width="@dimen/d84"
+                        android:layout_height="@dimen/d84"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:background="@drawable/shimmer_grey_box_12_curve" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivTopTube1"
+                        android:layout_marginStart="@dimen/d12"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/startBox"
+                        android:layout_width="@dimen/d188"
+                        android:layout_height="@dimen/d10"
+                        android:background="@drawable/shimmer_grey_tube" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivTopTube2"
+                        app:layout_constraintTop_toBottomOf="@+id/ivTopTube1"
+                        app:layout_constraintStart_toStartOf="@+id/ivTopTube1"
+                        android:layout_width="@dimen/d165"
+                        android:layout_height="@dimen/d10"
+                        android:layout_marginTop="@dimen/d8"
+                        android:background="@drawable/shimmer_grey_tube" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        app:layout_constraintTop_toBottomOf="@+id/ivTopTube2"
+                        app:layout_constraintStart_toStartOf="@+id/ivTopTube2"
+                        android:layout_width="@dimen/d109"
+                        android:layout_height="@dimen/d10"
+                        android:layout_marginTop="@dimen/d8"
+                        android:background="@drawable/shimmer_grey_tube" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/d118"
+                    android:layout_height="@dimen/d40"
+                    android:layout_gravity="end"
+                    android:background="@drawable/shimmer_grey_box_12_curve" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+</layout>

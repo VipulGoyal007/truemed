@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                                            
+                             
+
+                 
+                            
+                                                                                              
+
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".presentation.activity.AddPatientActivity" android:tag="layout/activity_add_patient_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+
+        <com.intellihealth.salt.views.MobileSectionHeaders
+            android:id="@+id/tmTopHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:translationZ="@dimen/d6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mobileSectionHeadersViewType="DefaultWithoutFill" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/contentScroll"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="@+id/ivBottomLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tmTopHeader">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_myself_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginHorizontal="@dimen/d16"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.intellihealth.salt.views.edittext.InputFieldLayout
+                        android:id="@+id/tvInputFirstNameMySelf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d24"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        app:buttonText="Save"
+                        app:helperText=""
+                        app:inputTypeLayout="capstext"
+                        app:label="@string/firstname"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:maxLength="50"
+                        android:tag="binding_1"                             
+                        app:showButton="No"
+                        app:showIcon="No" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clFirstNameBlocker"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:tag="binding_2"                                                      
+                        app:layout_constraintBottom_toBottomOf="@+id/tvInputFirstNameMySelf"
+                        app:layout_constraintEnd_toEndOf="@+id/tvInputFirstNameMySelf"
+                        app:layout_constraintStart_toStartOf="@+id/tvInputFirstNameMySelf"
+                        app:layout_constraintTop_toTopOf="@+id/tvInputFirstNameMySelf" />
+                    <!--app:setPatientLabel="@{viewModel.patientExperiment}"-->
+
+                    <com.intellihealth.salt.views.edittext.InputFieldLayout
+                        android:id="@+id/tvInputLastNameMySelf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d16"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:tag="binding_3"                                                                    
+                        app:buttonText="Save"
+                        app:helperText=""
+                        app:inputTypeLayout="capstext"
+                        app:label="@string/lastname"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvInputFirstNameMySelf"
+                        app:maxLength="50"
+                                                                           
+                        app:showButton="No"
+                        app:showIcon="No" />
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clLastNameBlocker"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:tag="binding_4"                                                     
+                        app:layout_constraintBottom_toBottomOf="@+id/tvInputLastNameMySelf"
+                        app:layout_constraintEnd_toEndOf="@+id/tvInputLastNameMySelf"
+                        app:layout_constraintStart_toStartOf="@+id/tvInputLastNameMySelf"
+                        app:layout_constraintTop_toTopOf="@+id/tvInputLastNameMySelf" />
+
+                    <com.intellihealth.salt.views.edittext.InputFieldLayout
+                        android:id="@+id/tvInputAgeMySelf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d16"
+                        android:digits="0123456789"
+                        app:buttonText="Save"
+                        app:helperText=""
+                        app:inputTypeLayout="number"
+                        app:label="@string/age"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvInputLastNameMySelf"
+                        app:maxLength="3"
+                        app:maxLine="1"
+                        android:tag="binding_5"                       
+                        app:showButton="No"
+                        app:showIcon="No" />
+
+                    <com.intellihealth.salt.views.edittext.InputFieldLayout
+                        android:id="@+id/tvInputEmailIdMySelf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d16"
+                        android:digits="0123456789"
+                        app:buttonText="Save"
+                        app:helperText=""
+                        app:hintText="@string/enter_your_email_id"
+                        app:inputTypeLayout="email"
+                        app:label="@string/email_label"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvInputAgeMySelf"
+                        app:maxLine="1"
+                        android:tag="binding_6"                         
+                        app:showButton="No"
+                        app:showIcon="No"
+                                                                                                                          
+                        />
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvSelectGenderMySelf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d16"
+                        android:text="@string/gender"
+                        android:textColor="@color/tm_core_color_gray_800"
+                        app:bodyTextStyle="BodyMediumSemiBold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvInputEmailIdMySelf" />
+
+                    <RadioGroup
+                        android:id="@+id/llRadioGenderMySelf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d16"
+                        android:orientation="horizontal"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSelectGenderMySelf">
+
+                        <com.intellihealth.salt.views.radiofield.RadioFieldLayout
+                            android:id="@+id/customRadioMaleMySelf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="binding_7"                                
+                                                                                       
+                            app:radioLabel="@string/male"
+                            app:radioPosition="right"
+                            app:selected="false" />
+
+                        <com.intellihealth.salt.views.radiofield.RadioFieldLayout
+                            android:id="@+id/customRadioFemaleMySelf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="binding_8"                                  
+                                                                                         
+                            app:radioLabel="@string/female"
+                            app:radioPosition="right"
+                            app:selected="false" />
+
+                        <com.intellihealth.salt.views.radiofield.RadioFieldLayout
+                            android:id="@+id/customRadioOtherMySelf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="binding_9"                                 
+                                                                                        
+                            app:radioLabel="@string/other"
+                            app:radioPosition="right"
+                            app:selected="false" />
+
+                    </RadioGroup>
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/selfGenderValidation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d12"
+                        android:fontFamily="@font/inter_semibold"
+                        android:tag="binding_10"                       
+                        android:textColor="@color/tm_semantic_color_content_critical_default"
+                                                                                                        
+                        app:bodyTextStyle="BodySmallSemiBold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llRadioGenderMySelf" />
+                    <!--android:text="@string/gender_validation"-->
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clAddPatientView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d16"
+                    android:tag="binding_11"                                                         
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_myself_section">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/chipLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/d16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/txtOrdering"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Who are you ordering for ?"
+                            app:bodyTextStyle="BodyMediumSemiBold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.intellihealth.salt.views.chip.Chip
+                            android:id="@+id/chipMyself"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d12"
+                            android:layout_marginBottom="@dimen/d10"
+                            app:chipSize="Large"
+                            app:chipTitle="Myself"
+                            app:chipType="Selected"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtOrdering" />
+
+                        <com.intellihealth.salt.views.chip.Chip
+                            android:id="@+id/chipSomeoneElse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/d8"
+                            android:layout_marginTop="@dimen/d12"
+                            android:layout_marginBottom="@dimen/d18"
+                            app:chipSize="Large"
+                            app:chipTitle="Someone else"
+                            app:chipType="UnSelected"
+                            app:layout_constraintStart_toEndOf="@+id/chipMyself"
+                            app:layout_constraintTop_toBottomOf="@+id/txtOrdering" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivAlmostDone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d12"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_almost_done"
+                        android:tag="binding_12"                                                          
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/chipLayout" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/someonelseLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/d16"
+                    android:layout_marginTop="@dimen/d24"
+                    android:tag="binding_13"                                                          
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clAddPatientView">
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/headerPatientDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="@string/patient_details"
+                        android:textColor="#40444C"
+                        android:textSize="@dimen/d16"
+                        app:bodyTextStyle="BodyLargeSemiBold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.intellihealth.salt.views.edittext.InputFieldLayout
+                        android:id="@+id/tvInputFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d16"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        app:buttonText="Save"
+                        app:helperText=""
+                        app:hintText="@string/patient_firstname"
+                        app:inputTypeLayout="capstext"
+                        app:label="@string/firstname"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/headerPatientDetails"
+                        app:maxLength="50"
+                        android:tag="binding_14"                        
+                        app:showButton="No"
+                        app:showIcon="No"
+                        app:text="@string/checkout" />
+
+                    <com.intellihealth.salt.views.edittext.InputFieldLayout
+                        android:id="@+id/tvInputLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d16"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:tag="binding_15"                                                                   
+                        app:buttonText="Save"
+                        app:helperText=""
+                        app:hintText="@string/patient_lastname"
+                        app:inputTypeLayout="capstext"
+                        app:label="@string/lastname"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvInputFirstName"
+                        app:maxLength="50"
+                        app:showButton="No"
+                        app:showIcon="No" />
+
+                    <com.intellihealth.salt.views.edittext.InputFieldLayout
+                        android:id="@+id/tvInputAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d16"
+                        android:digits="0123456789"
+                        app:buttonText="Save"
+                        app:helperText=""
+                        app:hintText="@string/patient_age"
+                        app:inputTypeLayout="number"
+                        app:label="@string/age"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvInputLastName"
+                        app:maxLine="1"
+                        app:maxLength="3"
+                        android:tag="binding_16"                         
+                        app:showButton="No"
+                        app:showIcon="No" />
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvSelectGender"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d16"
+                        android:text="@string/gender"
+                        android:textColor="@color/tm_core_color_gray_800"
+                        app:bodyTextStyle="BodyMediumSemiBold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvInputAge" />
+
+                    <RadioGroup
+                        android:id="@+id/llRadioGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d16"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSelectGender">
+
+                        <com.intellihealth.salt.views.radiofield.RadioFieldLayout
+                            android:id="@+id/customRadioMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="binding_17"                                          
+                                                                                                  
+                            app:radioLabel="@string/male"
+                            app:radioPosition="right"
+                            app:selected="false" />
+
+                        <com.intellihealth.salt.views.radiofield.RadioFieldLayout
+                            android:id="@+id/customRadioFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="binding_18"                                            
+                                                                                                    
+                            app:radioLabel="@string/female"
+                            app:radioPosition="right"
+                            app:selected="false" />
+
+                        <com.intellihealth.salt.views.radiofield.RadioFieldLayout
+                            android:id="@+id/customRadioOther"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="binding_19"                                           
+                                                                                                   
+                            app:radioLabel="@string/other"
+                            app:radioPosition="right"
+                            app:selected="false" />
+
+                    </RadioGroup>
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/patientGenderValidation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d12"
+                        android:fontFamily="@font/inter_semibold"
+                        android:text="@string/gender_validation"
+                        android:textColor="@color/tm_semantic_color_content_critical_default"
+                        android:tag="binding_20"                                                    
+                        app:bodyTextStyle="BodySmallSemiBold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llRadioGender" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_patient_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/d16"
+                    android:layout_marginTop="@dimen/d16"
+                    android:background="@drawable/myself_prescription_bg"
+                    android:padding="@dimen/d12"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/someonelseLayout">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/info_circle"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/txtPrescription"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/d6"
+                        android:text="@string/prescription"
+                        android:textColor="@color/color_40464d"
+                        app:bodyTextStyle="BodySmallRegular"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgInfo"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBottomLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d10"
+            android:layout_marginTop="@dimen/d16"
+            android:background="@drawable/bg_gradient_bottom"
+            app:layout_constraintBottom_toTopOf="@+id/btnSave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contentScroll" />
+
+        <com.intellihealth.salt.views.buttons.Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/d16"
+            android:layout_marginVertical="@dimen/d16"
+            android:drawableStart="@color/white"
+            app:buttonSizeType="Large"
+            app:buttonTextStyle="ButtonMd"
+            app:buttonType="PrimaryButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivBottomLine"
+            android:tag="binding_21"                                                        />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:tag="binding_22"                                                  
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tmTopHeader">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

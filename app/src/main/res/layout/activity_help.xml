@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.HelpViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".presentation.activity.HelpActivity">
+
+        <com.intellihealth.salt.views.MobileSectionHeaders
+            android:id="@+id/tmTopHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:translationZ="@dimen/d8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mobileSectionHeadersViewType="DefaultWithoutFill" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="@{viewModel.showShimmer ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tmTopHeader"
+            tools:visibility="gone">
+
+            <include layout="@layout/shimmer_manage_patient" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <com.intellihealth.salt.views.SearchBar
+            android:id="@+id/searchBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d4"
+            android:layout_marginTop="4dp"
+            android:visibility="@{viewModel.showHelpListView ? View.VISIBLE : View.GONE}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tmTopHeader"
+            app:searchHint="@string/search_for_topic_or_question" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNeedHelpList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/d22"
+            android:orientation="vertical"
+            android:visibility="@{viewModel.showHelpListView ? View.VISIBLE : View.GONE}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/llBottom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchBar"
+            app:layout_constraintVertical_bias="0.0"
+            app:setHelpList="@{ viewModel.helpList }"
+            app:viewmodel="@{ viewModel }"
+            tools:itemCount="5"
+            tools:listitem="@layout/help_categories"
+            tools:visibility="visible" />
+
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/llBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d18"
+            android:gravity="center"
+            app:alignContent="center"
+            app:alignItems="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvStillHaveQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/still_have_questions"
+                app:bodyTextStyle="BodySmallSemiBold" />
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/btnLinkSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d2"
+                android:drawableStart="@color/white"
+                android:onClick="@{ () -> viewModel.contactCustomerSupportClick() }"
+                android:text="@string/contact_customer_support"
+                app:buttonSizeType="ExtraSmall"
+                app:buttonTextStyle="ButtonXs"
+                app:buttonType="GhostButton"
+                app:drawableTint="@color/button_selector_text_link"
+                app:iconRight="@drawable/ic_chevron_right"
+                app:removePadding="true" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

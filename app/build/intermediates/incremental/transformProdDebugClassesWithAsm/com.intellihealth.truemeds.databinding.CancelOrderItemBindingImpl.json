@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.databinding.CancelOrderItemBindingImpl","classAnnotations":[],"interfaces":["androidx.databinding.Observable","androidx.viewbinding.ViewBinding"],"superClasses":["com.intellihealth.truemeds.databinding.CancelOrderItemBinding","androidx.databinding.ViewDataBinding","androidx.databinding.BaseObservable","java.lang.Object"]}

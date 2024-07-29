@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="android.graphics.Color" />
+
+        <variable
+            name="item"
+            type="com.intellihealth.truemeds.data.model.home.VideoFaqAllResponse.Video.VideoUrl" />
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.VideoViewModel" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="selected"
+            type="boolean" />
+
+        <variable
+            name="selectedNext"
+            type="boolean" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="4dp"
+        android:id="@+id/clBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@{ () -> viewModel.onPlayListSelected(item,position,true,true) }"
+        android:orientation="horizontal"
+        >
+
+        <!--            android:background="@{ selectedNext ? @drawable/background_vertical_video : @drawable/background_vertical_video_borderless }"
+
+
+-->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView26"
+            android:layout_width="127dp"
+            android:layout_height="184dp"
+            android:layout_margin="2dp"
+
+            android:background="@drawable/white_bg_corner_8"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginBottom="14dp"
+            app:thumbnailUrl="@{item.thumbnailUrl_portrait }"
+            tools:background="@drawable/background_vertical_video" />
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+</layout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.CancelOrderViewModel" />
+
+        <variable
+            name="model"
+            type="com.intellihealth.salt.models.RadioListModel" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.intellihealth.salt.views.MobileSectionHeaders
+            android:id="@+id/mobileSectionHeadersDefaultWithoutFill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/cancel_order"
+            app:setUpMobileSectionHeadersData="@{viewModel.headerType}"
+            app:mobileSectionHeadersViewType="DefaultWithoutFill" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d10"
+            android:background="@drawable/bg_gradient_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="@dimen/d5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mobileSectionHeadersDefaultWithoutFill" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="@{viewModel.showShimmerForSubReason ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:visibility="gone">
+            <include layout="@layout/shimmer_manage_patient" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottomLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d16"
+                    android:layout_marginTop="@dimen/d24"
+                    android:text="@string/tell_us_more_about_it"
+                    android:textColor="@color/upload_prescription_text_color"
+                    android:visibility="@{viewModel.showCancelOrderSubReasonListView ? View.VISIBLE : View.GONE}"
+                    app:bodyTextStyle="BodyMediumSemiBold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.intellihealth.salt.views.radiofield.RadioList
+                    android:id="@+id/rvListVertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:radioLabelPosition="right"
+                    app:radioDivider="true"
+                    android:layout_marginVertical="@dimen/d16"
+                    app:radioOrientation="vertical"
+                    android:visibility="@{viewModel.showCancelOrderSubReasonListView ? View.VISIBLE : View.GONE}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+                    app:radioPaddingHorizontal="16"
+                    app:radioPaddingVertical="16"/>
+                <EditText
+                    android:id="@+id/edtOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d125"
+                    android:ellipsize="end"
+                    android:layout_margin="@dimen/d16"
+                    android:textColorHint="@color/light_grey"
+                    android:textColor="@color/tm_semantic_color_content_main_primary"
+                    android:background="@drawable/other_box_bg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:visibility="gone"
+                    android:gravity="top|left"
+                    android:inputType="text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:padding="@dimen/d12"
+                    android:hint="@string/tell_us_about_it"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    app:layout_constraintTop_toBottomOf="@+id/rvListVertical" />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvOtherErrorMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/error_msg_color"
+                    android:text="@string/minimum_10_characters_required"
+                    app:bodyTextStyle="BodySmallSemiBold"
+                    android:layout_marginTop="@dimen/d12"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@+id/edtOther"
+                    app:layout_constraintStart_toStartOf="@+id/edtOther" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/bottomLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d10"
+            android:layout_marginTop="@dimen/d16"
+            android:layout_marginBottom="@dimen/d16"
+            android:background="@drawable/bg_gradient_bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="@dimen/d5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/cancelOrderBtn" />
+
+        <com.intellihealth.salt.views.buttons.ButtonLite
+            android:id="@+id/cancelOrderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/d16"
+            android:text="@string/cancel_order"
+            app:buttonSizeType="Large"
+            app:buttonTextStyle="ButtonLg"
+            app:buttonType="DestructiveButton"
+            android:gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/clProgress"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:clickable="true"-->
+<!--            android:focusable="true"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/mobileSectionHeadersDefaultWithoutFill"-->
+<!--            tools:visibility="visible">-->
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="@{viewModel.isLoading() ? View.VISIBLE : View.GONE }"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

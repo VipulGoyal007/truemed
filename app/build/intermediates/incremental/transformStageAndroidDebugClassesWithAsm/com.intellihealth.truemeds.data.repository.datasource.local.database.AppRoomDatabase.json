@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.data.repository.datasource.local.database.AppRoomDatabase","classAnnotations":["androidx.room.Database"],"interfaces":[],"superClasses":["androidx.room.RoomDatabase","java.lang.Object"]}

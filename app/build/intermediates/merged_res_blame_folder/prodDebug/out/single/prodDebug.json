@@ -1,0 +1,2498 @@
+[
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_switch_horizontal.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_switch_horizontal.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_help_category_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/help_category_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_account_tab_rupee_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/account_tab_rupee_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_doctor_call_pending.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_doctor_call_pending.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_doctor_call.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_doctor_call.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_reorder_header.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_reorder_header.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_location_nudge.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_location_nudge.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_wallet_tranasctions.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_wallet_tranasctions.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_myself_prescription_bg.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/myself_prescription_bg.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_activity_slide_from_left.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/activity_slide_from_left.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_category_type_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/category_type_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_bell.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_bell.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_coupon_applied.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_coupon_applied.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_wallet_icon_chc.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/wallet_icon_chc.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_doctor_call_pending.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_doctor_call_pending.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/font_opensans_regular.ttf.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/font/opensans_regular.ttf"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_payment_ruppes.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_payment_ruppes.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_no_order_yet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_no_order_yet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_search_trending_updated_ui_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/search_trending_updated_ui_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_payment_pending_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/payment_pending_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_login_banner_third.webp.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_login_banner_third.webp"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_excretion.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_excretion.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_enter.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/enter.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_slide_in_left_anim.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/slide_in_left_anim.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_refer_and_earn.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_refer_and_earn.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_health_articles.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_health_articles.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_see_results_button_shadow.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/see_results_button_shadow.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ripple.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ripple.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bottomsheet_all_radius.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bottomsheet_all_radius.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_manage_address_card_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/manage_address_card_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_login.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_home_page.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_home_page.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_cancel_order_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/cancel_order_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_down_arrow.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/down_arrow.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_activity_fade_in.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/activity_fade_in.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_custom_notification_view_expanded.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/custom_notification_view_expanded.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_other_box_error_bg.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/other_box_error_bg.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_shimmer_search.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_search.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_reward.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_reward.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_shimmer_health_articles.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_health_articles.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_custom_toast.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/custom_toast.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_shimmer_home_page.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_home_page.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_payment_options_list_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/payment_options_list_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_faint_white_radius_60.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_faint_white_radius_60.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_compare_and_understand.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_compare_and_understand.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_policies_page.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_policies_page.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_dialog_rx_coupon_suceess.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_rx_coupon_suceess.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_loader_grey_gif.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/loader_grey_gif.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/xml_remote_config_defaults.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/xml/remote_config_defaults.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/font_plus_jakarta_sans_bold.ttf.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/font/plus_jakarta_sans_bold.ttf"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_payment_pending.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_payment_pending.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_dialog_background.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/dialog_background.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_tooltip_down_social.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/tooltip_down_social.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_gray_timestamp.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_gray_timestamp.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_drawable_bottomsheet_top_rounded_corner_canceloder.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/drawable_bottomsheet_top_rounded_corner_canceloder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_placeholder_capsule_bottle.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_placeholder_capsule_bottle.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_out_for_delivery.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_out_for_delivery.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_health_article_bottomsheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/health_article_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_circle_reorder_otc.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_circle_reorder_otc.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_saved_addresses_disable.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_saved_addresses_disable.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_doctor_prescription_order_summary.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_doctor_prescription_order_summary.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_reminder_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/reminder_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_popup_zoom_in.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/popup_zoom_in.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_shimmer_compare.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_compare.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_plus.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/plus.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/font_plus_jakarta_sans_regular.ttf.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/font/plus_jakarta_sans_regular.ttf"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_manage_patient.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_manage_patient.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_dialog_coupon_suceess.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_coupon_suceess.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_reorder.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_reorder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_bottom_nav_shadow.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_bottom_nav_shadow.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/font_inter_medium.ttf.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/font/inter_medium.ttf"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_product_list_view_all_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/product_list_view_all_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_doctor_prescription.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_doctor_prescription.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_otc_category.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_otc_category.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_res_patient_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/res_patient_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_trending_up.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_trending_up.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_prescription.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_prescription.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_reorder_footer.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_reorder_footer.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_back_video.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_back_video.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_payment_success.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_payment_success.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_rx_prescription.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_rx_prescription.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/menu_bottom_app_bar_menu.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/menu/bottom_app_bar_menu.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_login_corner.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_login_corner.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_box_seam.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_box_seam.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_instruction_accordion_step_two.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/instruction_accordion_step_two.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_filter.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_filter.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_blue_border_corner_8.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_blue_border_corner_8.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_white_square.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/white_square.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_cart_order_confirmation_dialog.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/cart_order_confirmation_dialog.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_choosing_substitutes.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_choosing_substitutes.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_banner_third.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_banner_third.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_help_subcategory_detail.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_help_subcategory_detail.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_item_video_p2.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/item_video_p2.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_non_active_order_status.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_non_active_order_status.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_coupon_fail.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_coupon_fail.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_product_detail.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_product_detail.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_sub_category_type_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/sub_category_type_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_shimmer_order_summary.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_order_summary.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_packing.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_packing.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_shimmer.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_shimmer.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_choose_custom_dates.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_choose_custom_dates.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_purple_success_tick.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_purple_success_tick.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_currentlocation.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/currentlocation.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_home_adapter_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/home_adapter_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/font_inter_extrabold.ttf.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/font/inter_extrabold.ttf"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_substitutes.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_substitutes.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_back_arrow.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_back_arrow.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_opt_for_subs_bottom_sheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/opt_for_subs_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_unselected_category.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_unselected_category.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_plus.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_plus.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_doctor_call_missed.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_doctor_call_missed.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_replace_bottom_sheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_replace_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_payment_option.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_payment_option.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_search_result_updated_ui_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/search_result_updated_ui_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_rating_submitted_star_group.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/rating_submitted_star_group.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_product_details_slider_image_bs.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/product_details_slider_image_bs.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_forword_blue.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_forword_blue.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_product_card_banner_cheaper.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_product_card_banner_cheaper.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_cart_van.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_cart_van.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_slide_out_up.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/slide_out_up.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_reminder_bottom_sheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_reminder_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_update_app.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_update_app.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_dialog_replace_savings.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_replace_savings.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_modification_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_modification_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_remove_unavailable_product.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_remove_unavailable_product.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_recently_search_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_recently_search_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_call.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_call.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_choose_time_interval.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_choose_time_interval.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_shimmer_grey_box_12_curve.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/shimmer_grey_box_12_curve.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_cancel_order_bottomsheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/cancel_order_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_close.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_close.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_view_prescription.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_view_prescription.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_payment.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_payment.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_gradient_search.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_gradient_search.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_reorder_savings_btn_add_bg.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/reorder_savings_btn_add_bg.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_edit_profile.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_edit_profile.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_search_result_rv_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/search_result_rv_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_progress_bar_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/progress_bar_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bell_ringing.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bell_ringing.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_rv_otc_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/rv_otc_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_truecaller.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_truecaller.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_view_bill_details.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_view_bill_details.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_save_number.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_save_number.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_logout_bottom_sheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_logout_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_bottomsheet_payment_pending_header.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_bottomsheet_payment_pending_header.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_past_prescription_bottomsheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/past_prescription_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_helpline.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_helpline.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_payment_unsuccessful.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_payment_unsuccessful.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_img.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/img.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_mec.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_mec.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_call_to_add_medicine_bg.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/call_to_add_medicine_bg.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bottom_nav_color_tint.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bottom_nav_color_tint.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_order_delivered.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_order_delivered.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_banner_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_banner_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_saved_address_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/saved_address_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_popup_zoom_out.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/popup_zoom_out.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_gradient_bottom.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_gradient_bottom.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_metabolism.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_metabolism.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_back_arrow_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/back_arrow_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_product_detail.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_product_detail.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_icon_tooltip_trustedby.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/icon_tooltip_trustedby.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_substitute.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_substitute.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_blue_border_box.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/blue_border_box.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_video_progress_blue.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/video_progress_blue.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_activity_slide_to_right.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/activity_slide_to_right.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_detailed_status.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_detailed_status.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/font_inter_bold.ttf.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/font/inter_bold.ttf"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_exit.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/exit.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_reminder.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_reminder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_footer_image.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_footer_image.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_white_bg_corner_8.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/white_bg_corner_8.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_skip_forward.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_skip_forward.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_reminder_time_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_reminder_time_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_move_top_to_bottom.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/move_top_to_bottom.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_expiring_soon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_expiring_soon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_shimmer_manage_patient.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_manage_patient.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_search_product_border.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/search_product_border.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_no_address_added_yet_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/no_address_added_yet_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_video_backward.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_video_backward.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_faint_blue_radius_8.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_faint_blue_radius_8.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_shimmer_medicine_details.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_medicine_details.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_brand_icons.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/brand_icons.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_bottom_sheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_close_reminder_sheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_close_reminder_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_doc_subs.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_doc_subs.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_error.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_error.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_forward_arrow.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/forward_arrow.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_reminder_header_main.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_reminder_header_main.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_icon_tooltip_composition.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/icon_tooltip_composition.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_placegholder_syrup.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_placegholder_syrup.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_calendar_layout.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/calendar_layout.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_payment_pending.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_payment_pending.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_orders.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_orders.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/font_opensans_bold.ttf.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/font/opensans_bold.ttf"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bottom_nav_account.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bottom_nav_account.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_product_list_view_all.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_product_list_view_all.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_doctor_call_missed.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/doctor_call_missed.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_doctor_group.jpg.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/doctor_group.jpg"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_custom_exo_controller_view.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/custom_exo_controller_view.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_article.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_article.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_referral_img.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/referral_img.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_pharmacist_call_pending.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_pharmacist_call_pending.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_filter.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_filter.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_white_dp75.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_white_dp75.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_polygon_upside.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/polygon_upside.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_button_blue_fill.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/button_blue_fill.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_chevron_right.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_chevron_right.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_order_dispatch.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_order_dispatch.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_plus_icon_blue.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/plus_icon_blue.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_truck_delivery.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_truck_delivery.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_video_pause.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_video_pause.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_time_interval_item_default.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_time_interval_item_default.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/font_inter_regular.ttf.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/font/inter_regular.ttf"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_no_internet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_no_internet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_percentage.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/percentage.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_login_otp.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_login_otp.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_past_prescription_details.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/past_prescription_details.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_transaction_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_transaction_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_terms_and_condition_bottomsheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/terms_and_condition_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_img_2.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/img_2.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_small_doctor_group.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/small_doctor_group.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_my_orders.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_my_orders.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_plus_blue_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_plus_blue_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_super_category.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_super_category.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_do_not_have_bottomsheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/do_not_have_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_slide_to_left.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/slide_to_left.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_shimmer_horizontal_products.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_horizontal_products.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_help.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_help.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_background_rounded_blue_corner_12.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/background_rounded_blue_corner_12.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_bill_details_order_summary.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_bill_details_order_summary.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_no_search_result_found.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_no_search_result_found.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_shimmer_grey_box_16_curve_end_straight.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/shimmer_grey_box_16_curve_end_straight.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_collapse_up_grey.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_collapse_up_grey.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_shimmer.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/shimmer.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_placeholder_devices.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_placeholder_devices.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/font_opensans_extrabold.ttf.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/font/opensans_extrabold.ttf"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_patient_reminder.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_patient_reminder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_slide_in_right.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_archive.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_archive.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_med_molecules.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_med_molecules.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_right_arrow.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/right_arrow.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_account.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_account.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_doctor_call.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_doctor_call.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_subs_activity_header.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/subs_activity_header.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_search_previous_viewed_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/search_previous_viewed_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_dialog_bg_corner_6.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/dialog_bg_corner_6.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_referal_fail.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_referal_fail.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_assigned_to_warehouse_green.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_assigned_to_warehouse_green.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_terms_condition.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_terms_condition.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_cart_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_cart_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_res_address.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/res_address.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_slide_in_up.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/slide_in_up.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_default_profile.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_default_profile.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_items_no_longer_available.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_items_no_longer_available.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_return_refund_web.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_return_refund_web.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_org_sub_compare.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_org_sub_compare.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_activity_fade_out.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/activity_fade_out.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_placed.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_placed.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_cancelled_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_cancelled_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_msc.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_msc.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_delivery_attempted.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_delivery_attempted.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_privacy_policy_bottomsheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/privacy_policy_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_intersect.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_intersect.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_circle_check.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_circle_check.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_info_circle.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_info_circle.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_absorption.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_absorption.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_pharmacist_img.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_pharmacist_img.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_order_picked_up.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_order_picked_up.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_pharmist_call_bg.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/pharmist_call_bg.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_curve_shape_green.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_curve_shape_green.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_border_faint_black_radius_6.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/border_faint_black_radius_6.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_circle_done.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_circle_done.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_saved_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/saved_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_location.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_location.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_shimmer_wallet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_wallet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_prescription_dr_img.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/prescription_dr_img.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/font_inter_semibold.ttf.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/font/inter_semibold.ttf"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_splash_top.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/splash_top.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_phone_call_yellow.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/phone_call_yellow.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_payment_completed.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_payment_completed.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/font_opensans_semibold.ttf.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/font/opensans_semibold.ttf"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_cart_badge.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/cart_badge.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_gold_rupee_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_gold_rupee_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_searching_product.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/searching_product.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_mail_blue.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_mail_blue.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_item_no_longer_available.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_item_no_longer_available.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_pay.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_pay.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_blue_button_corner_3.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_blue_button_corner_3.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_blurred_toast_message.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_blurred_toast_message.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_thank_you.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_thank_you.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_video_progress.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/video_progress.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_upi_logo.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_upi_logo.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_img_3.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/img_3.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_help.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_help.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_plus_reminder.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_plus_reminder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_edit_reminder.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_edit_reminder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_help_subcategory_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/help_subcategory_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_total_replace_savings.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_total_replace_savings.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_tab_chip.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_tab_chip.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_capsule.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_capsule.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_dialog_progressbar.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_progressbar.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_gradient_top.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_gradient_top.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_red_delete_img.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/red_delete_img.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_big_right_arrow.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/big_right_arrow.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_product_detail.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_product_detail.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_subs_header.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_subs_header.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_info.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_info.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_pdp_shake_up_down.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/pdp_shake_up_down.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_video_faq.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_video_faq.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_home_wallet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_home_wallet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_bottomsheet_top_left_right_rounded.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_bottomsheet_top_left_right_rounded.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_tooltip_social_proof.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_tooltip_social_proof.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_order_cancelled.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_order_cancelled.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_brand_type_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/brand_type_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_btn_blue_border_change_mode.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/btn_blue_border_change_mode.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_order_process.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_order_process.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_med_subs.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_med_subs.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_doctor_call_done.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_doctor_call_done.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_expand_down_black.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_expand_down_black.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_refer_earn_bottom_round.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/refer_earn_bottom_round.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_camera_img.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/camera_img.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_order_summary.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_order_summary.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_banner_first.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_banner_first.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_splash_bottom.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/splash_bottom.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_help.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_help.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bottom_nav_orders.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bottom_nav_orders.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_search_blue.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_search_blue.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_grey_icon_delete.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/grey_icon_delete.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_replace_all_company_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_replace_all_company_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_ratings.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_ratings.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_prescription_bg.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/prescription_bg.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_patient_type_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/patient_type_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_manage_patient_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/manage_patient_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_reminder.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_reminder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_instruction_accordion_step_three.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/instruction_accordion_step_three.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_remove_product_bottom_sheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_remove_product_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_banner_second.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_banner_second.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_replacing.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_replacing.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_patient_medicines_chips_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_patient_medicines_chips_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_semantic_color_bg_main.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_semantic_color_bg_main.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_currency_rupee.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_currency_rupee.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_update_patient_info_delivery_details.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/update_patient_info_delivery_details.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_refer_now.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_refer_now.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_policy_detail.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_policy_detail.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_being_placed_final.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_being_placed_final.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_coupon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_coupon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_reminder_header.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_reminder_header.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_green_oval.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_green_oval.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_blue_corner_8.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_blue_corner_8.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_money.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_money.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_health_articles_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/health_articles_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_wallet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_wallet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_button_gray_border1.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/button_gray_border1.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_shimmer_grey_box_12_curve_end_straight.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/shimmer_grey_box_12_curve_end_straight.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_background_vertical_video.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/background_vertical_video.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_delivery_details.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_delivery_details.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_add_address.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_add_address.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_refresh_white.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_refresh_white.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_placeholder_injection.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_placeholder_injection.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_call_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/call_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_hold_on_gif.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/hold_on_gif.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_past_prescription_all_patient_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/past_prescription_all_patient_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_order_deliver.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_order_deliver.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_switch_back_og.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_switch_back_og.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_personal_care_category.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_personal_care_category.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_shimmer_grey_box_16_curve.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/shimmer_grey_box_16_curve.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_fade_in.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/fade_in.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_trending_search_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/trending_search_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_sub_category_category_type_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/sub_category_category_type_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_order_packed.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_order_packed.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_pharmacist_doctor_call.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/pharmacist_doctor_call.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_cart_replace_undo.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_cart_replace_undo.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_maximize.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_maximize.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ref_earn_img.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ref_earn_img.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_substitute.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_substitute.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bottom_nav_refer.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bottom_nav_refer.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_reorder.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_reorder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_filter.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_filter.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_play.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_play.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_color_cursor.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/color_cursor.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_unsuccessful.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_unsuccessful.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_login_banner_second.webp.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_login_banner_second.webp"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_fade_out.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/fade_out.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_banner_viewpager_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/banner_viewpager_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_upload_prescription_item_lay.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/upload_prescription_item_lay.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_home.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_recommended_badge_yellow_border.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_recommended_badge_yellow_border.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_upload_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/upload_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_activity_slide_to_left.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/activity_slide_to_left.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_img_1.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/img_1.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_cart_empty.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_cart_empty.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_chevron_down.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_chevron_down.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_wallet_view_transactions.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_wallet_view_transactions.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_placeholder_personal_care.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_placeholder_personal_care.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_product_card_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_product_card_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_curve_shape.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_curve_shape.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_refer_code_image.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/refer_code_image.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_author_card_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/author_card_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_order_summary_cart_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_order_summary_cart_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_recently_searched_result.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_recently_searched_result.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_dialog_coupon_error.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_coupon_error.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_fade_out_cart.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/fade_out_cart.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_info_circle.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/info_circle.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_instruction_accordion_step_one.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/instruction_accordion_step_one.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_health_article_chip_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/health_article_chip_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_delete_image_bottom_sheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/delete_image_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_order_dispatched.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_order_dispatched.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_help_subcategory.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_help_subcategory.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_cart.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_cart.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_coin_rupee.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_coin_rupee.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_slide_down.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/slide_down.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_faq_group.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/faq_group.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_alert_circle_filled.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_alert_circle_filled.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_splash_screen.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_search_white.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_search_white.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_subs_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/subs_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_order_type_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/order_type_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_bottomsheet_header.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_bottomsheet_header.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_search_result.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_search_result.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_custom_notification_view_collapsed.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/custom_notification_view_collapsed.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_call_pending_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/call_pending_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_product_card_stacked_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_product_card_stacked_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_user.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_user.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_selected_category.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_selected_category.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_subsitute_upper_round.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/subsitute_upper_round.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_payment_carousel.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_payment_carousel.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_background_top_rounded_blue.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/background_top_rounded_blue.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_footer_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_footer_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_prescription_card_img.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/prescription_card_img.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_up_arrow.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/up_arrow.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_dialog_rating_submitted.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_rating_submitted.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bottom_nav_home.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bottom_nav_home.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_dialog_rounded_corner.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_rounded_corner.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_search_result_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/search_result_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_bubble.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_bubble.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_video_play.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_video_play.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_health_article_chip_border.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/health_article_chip_border.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_search_suggestion_recent_rv_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/search_suggestion_recent_rv_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_bill_details_order_status.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_bill_details_order_status.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_homepage_alert_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_homepage_alert_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_dialog_with_single_button.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_with_single_button.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_subs_med_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/subs_med_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_payment_status.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_payment_status.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/xml_backup_descriptor.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/xml/backup_descriptor.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_tab_account.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_tab_account.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_delivery_details_patient_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/delivery_details_patient_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_prescription_call_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/prescription_call_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/font_plus_jakarta_sans_semi_bold.ttf.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/font/plus_jakarta_sans_semi_bold.ttf"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_faint_green_radius_12.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_faint_green_radius_12.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_chips_reminder_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_chips_reminder_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_dialog_corners_background.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/dialog_corners_background.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_almost_done.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_almost_done.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_manage_address.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_manage_address.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_cancel_order.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_cancel_order.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_health_article_detail.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_health_article_detail.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_search_no_result.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_search_no_result.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_callorder_action_card_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_callorder_action_card_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_shimmer_grey_box.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/shimmer_grey_box.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_video_language_selected.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_video_language_selected.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_payment_change_selection.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_payment_change_selection.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_delivery_reattempt.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/delivery_reattempt.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_timer.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_timer.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_login_user_avtar.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/login_user_avtar.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_reminder_delete.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_reminder_delete.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_order_summary_search.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_order_summary_search.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_login.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_login.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_filter_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/filter_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_super_category_shop_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/super_category_shop_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_item_video_vertical_p2.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/item_video_vertical_p2.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_item_animation_fall_down.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/item_animation_fall_down.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_privacy_policy.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_privacy_policy.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_doctor_call_missed_2.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_doctor_call_missed_2.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_splash_screen_with_51_discount.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_splash_screen_with_51_discount.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_reminder_alert.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_reminder_alert.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_my_orders_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/my_orders_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_upload.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_upload.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_dialog_coupon_saving.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_coupon_saving.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bottom_nav_tab_item_bg.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bottom_nav_tab_item_bg.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_activity_slide_from_right.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/activity_slide_from_right.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_edit.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_edit.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_faq_group_child.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/faq_group_child.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_refer_earn.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_refer_earn.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_otc_placeholder.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/otc_placeholder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_slide_out.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/slide_out.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_alternate_number.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_alternate_number.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_doctor_call_pending.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/doctor_call_pending.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_apply_coupon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_apply_coupon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/font_opensans_semibolditalic.ttf.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/font/opensans_semibolditalic.ttf"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_faint_blue_radius_60.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_faint_blue_radius_60.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_notification_icon.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/notification_icon.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_refer_earn_view_all.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/refer_earn_view_all.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_all_corner_rounded.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_all_corner_rounded.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_substitute_info_card_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_substitute_info_card_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_search_screen.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_search_screen.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_order_placed.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_order_placed.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_splash_screen_christmas.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_splash_screen_christmas.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_item_tab_account.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/item_tab_account.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_view_prescription.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_view_prescription.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_my_referrals.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_my_referrals.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_login_mobile_number.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_login_mobile_number.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_doctor_fraud.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_doctor_fraud.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_addmore_prescription_order_summary.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_addmore_prescription_order_summary.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_prescription_details.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/prescription_details.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_wallet_filter_round_corner.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/wallet_filter_round_corner.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_reorder_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_reorder_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_video_forward.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_video_forward.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_trending_search_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/trending_search_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_circle_exclamation.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_circle_exclamation.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_pharmacist_call.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_pharmacist_call.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_testimonial_section_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_testimonial_section_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_coupon_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_coupon_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_otc_selected_item_bg.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/otc_selected_item_bg.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_info_circle_grey.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_info_circle_grey.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_past_prescription_oval_bg.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/past_prescription_oval_bg.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_view_bill.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_view_bill.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_no_rocords_found.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_no_rocords_found.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_health_article_bottomsheet_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/health_article_bottomsheet_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_map_pin.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_map_pin.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_home_shopping_cart.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_home_shopping_cart.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_order_status.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_order_status.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_composition.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_composition.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_plus_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_plus_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_location.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_location.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_round_green_right_borders.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_round_green_right_borders.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_shimmer_account_screen.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_account_screen.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_share.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_share.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_doctor_img.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_doctor_img.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_switch_medicine.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/switch_medicine.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_pharmacist_call_done.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_pharmacist_call_done.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_placeholder_tablet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_placeholder_tablet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/navigation_nav_graph.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_doctor_call_missed.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_doctor_call_missed.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_chevron.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_chevron.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_dr_calling.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/dr_calling.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_saved_addresses.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_saved_addresses.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_north_west_direction_arrow.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_north_west_direction_arrow.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_other_box_bg.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/other_box_bg.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_distribution.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_distribution.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_composition_bottomsheet_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/composition_bottomsheet_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_clear_search_product_text.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_clear_search_product_text.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_web_browser.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_web_browser.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_pause.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_pause.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_category_shop_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/category_shop_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_modification_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_modification_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_payment_pending.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_payment_pending.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_composition_2.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_composition_2.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_coupon_offer.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_coupon_offer.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_activity_card_white_bg_with_curve_no_border.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_activity_card_white_bg_with_curve_no_border.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_no_coupon_available.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_no_coupon_available.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_wallet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_wallet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_select_org_sub_shadow.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_select_org_sub_shadow.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_percentage_purple.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_percentage_purple.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_edit_delete_bottomsheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/edit_delete_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_no_patient_yet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/no_patient_yet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_search_medicine.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_search_medicine.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_personal_care_product.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_personal_care_product.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_edit_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/edit_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_login_banner_first.webp.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_login_banner_first.webp"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_prescription_action_card_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_prescription_action_card_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_default_recommend_subs_icon.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_default_recommend_subs_icon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_calendar_bottom_sheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_calendar_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_collapse_up_black.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_collapse_up_black.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_faq_view_all.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_faq_view_all.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_assigned_to_warehouse.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_assigned_to_warehouse.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_gallary_img.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/gallary_img.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_slide_up.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/slide_up.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_doctor_call_bg.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/doctor_call_bg.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_rating_submitted_thumb_up.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/rating_submitted_thumb_up.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_delivery.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_delivery.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_pharmacist_call_pending.gif.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/pharmacist_call_pending.gif"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_subs_bottom_sheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_subs_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_shimmer_grey_box_8_curve.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/shimmer_grey_box_8_curve.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_see_results_background.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/see_results_background.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_logout_sheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_logout_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_replace_all_recocommended.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_replace_all_recocommended.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_upload_prescription_bottomsheet.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/upload_prescription_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_building_warehouse.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_building_warehouse.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_shimmer_my_order.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_my_order.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_icon_tooltip_social.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/icon_tooltip_social.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_shimmer_grey_tube.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/shimmer_grey_tube.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_order_received_tick.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_order_received_tick.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_fragment_refer_and_earn.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_refer_and_earn.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_replace_all_recocommended_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_replace_all_recocommended_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_shimmer_search_result_page_with_item_in_card.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_search_result_page_with_item_in_card.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_composition_details.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_composition_details.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_past_prescription.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/past_prescription.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_cancel_sub_order.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_cancel_sub_order.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_order_status_order_cancel.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/order_status_order_cancel.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_expand_down_grey.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_expand_down_grey.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_shopping_cart_updated.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_shopping_cart_updated.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_doctor_call_missed.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_doctor_call_missed.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_doctor_img.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/doctor_img.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_reminder_placeholder.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_reminder_placeholder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_chevron_blue.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_chevron_blue.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/xml_fragment_home_scene2.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/xml/fragment_home_scene2.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/anim_slide_in.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/anim/slide_in.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_add_patient.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_add_patient.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_reminder_rounded.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_reminder_rounded.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_bg_selected_addresses.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/bg_selected_addresses.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_purple_tick.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_purple_tick.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_exo_play.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_exo_play.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_activity_search_suggestion.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_search_suggestion.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_adapter_blog_section_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_blog_section_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/drawable_ic_prescription_placeholder.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/drawable/ic_prescription_placeholder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_bottomsheet_myorder.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_myorder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_shimmer_order_status.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_order_status.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-merged_res-97:/layout_login_banner_item.xml.flat",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/login_banner_item.xml"
+    }
+]

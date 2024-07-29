@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.intellihealth.truemeds.data.model.home.CompositionBSDataModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemComposition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/d16">
+
+      <com.intellihealth.salt.views.TextView
+          android:id="@+id/componentName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@{data.componentName}"
+          app:bodyTextStyle="BodyMediumRegular"
+          android:layout_marginTop="@dimen/d16"
+          android:gravity="start"
+          android:ellipsize="end"
+          android:textColor="@color/tm_semantic_color_content_main_primary"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          tools:text="Paracitemol"/>
+
+     <!--   <com.intellihealth.salt.views.TextView
+            android:id="@+id/componentWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.componentWeight}"
+            app:bodyTextStyle="BodyMediumRegular"
+            android:textColor="@color/tm_semantic_color_content_main_secondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/componentName"
+            app:layout_constraintBottom_toBottomOf="@+id/componentName"/>-->
+
+        <com.intellihealth.salt.views.cards.Divider
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/tm_core_color_gray_100"
+            app:dividerThickness="@dimen/d1"
+            android:layout_marginTop="@dimen/d16"
+            app:layout_constraintTop_toBottomOf="@+id/componentName"
+            app:layout_constraintStart_toStartOf="@+id/componentName"
+            app:layout_constraintEnd_toEndOf="@+id/componentName"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+   <!--     <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

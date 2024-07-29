@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                           
+                             
+
+                 
+                            
+                                                                                     
+
+                 
+                                    
+                                                                                                      
+                 
+                                     
+                                                                                                      
+                 
+                                
+                            
+           
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d24"
+        android:paddingHorizontal="@dimen/d16"
+        app:cardBackgroundColor="@color/tm_core_color_white"
+        app:cardCornerRadius="@dimen/d20"
+        android:tag="layout/adapter_super_category_0"                                            
+        app:strokeColor="@color/tm_semantic_color_bg_primary"
+        app:strokeWidth="@dimen/d1"
+
+        app:cardElevation="@dimen/d0"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clCategoryMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_bg_corner_8"
+            android:paddingBottom="@dimen/d24">
+
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvTextShopByCategories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginTop="@dimen/d24"
+                android:text="@string/shop_by_categories"
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                app:headerTextStyle="HeadingH1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bothRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTextShopByCategories">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSuperCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d16"
+                    android:paddingEnd="@dimen/d16"
+                    android:clipToPadding="false"
+                    android:layout_marginTop="@dimen/d20"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:tag="binding_1"                        
+                                                  
+                    tools:listitem="@layout/super_category_shop_item" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/llCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/d16"
+                    android:background="@drawable/background_rounded_blue_corner_12"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rvSuperCategory">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/d12"
+                        android:paddingTop="@dimen/d20"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:tag="binding_2"                    
+                                                                                                                                        
+                                                                                                                     
+                        app:spanCount="3"
+                                                      
+                        tools:itemCount="6"
+                        tools:listitem="@layout/category_shop_item" />
+
+
+                    <com.intellihealth.salt.views.buttons.Button
+                        android:id="@+id/btnViewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="@dimen/d12"
+                        app:buttonSizeType="Small"
+                        app:buttonTextStyle="ButtonSm"
+                        android:layout_marginStart="@dimen/d3"
+                        app:buttonType="GhostButton"
+                        app:iconRight="@drawable/right_arrow"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rvCategory"
+                        app:removePadding="true"
+                        android:tag="binding_3"       
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+         

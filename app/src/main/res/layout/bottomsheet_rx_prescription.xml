@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.intellihealth.truemeds.data.model.orderflow.OrderRxInfo"/>
+
+        <variable
+            name="url"
+            type="String" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="list"
+            type="java.util.List&lt;OrderRxInfo>" />
+
+        <variable
+            name="callback"
+            type="com.intellihealth.truemeds.presentation.callbacks.ViewPrescriptionCallback" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottomsheet_header"
+        android:paddingBottom="@dimen/d16">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/helpTopHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottomsheet_header"
+            android:elevation="@dimen/constraint_shadow_height"
+            android:paddingVertical="@dimen/d16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivClose"
+                android:layout_width="@dimen/d32"
+                android:layout_height="@dimen/d32"
+                android:layout_marginEnd="@dimen/d16"
+                android:clipToOutline="true"
+                android:src="@drawable/ic_close_black_with_white_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/d16"
+                android:paddingVertical="@dimen/d6"
+                android:text="@string/txt_view_prescription"
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/txt_view_prescription" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.intellihealth.truemeds.presentation.viewpager.PdpZoomImageViewPager
+            android:id="@+id/ivPrescription"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingHorizontal="@dimen/d12"
+            app:layout_constraintBottom_toTopOf="@+id/rvPrescription"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/helpTopHeader" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPrescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d16"
+            android:layout_marginTop="@dimen/d12"
+            android:orientation="horizontal"
+            app:index="@{ position }"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/ivPrescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:prescriptionCallback="@{ callback }"
+            app:setRxPrescriptionList="@{ list }"
+            tools:listitem="@layout/adapter_doctor_prescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

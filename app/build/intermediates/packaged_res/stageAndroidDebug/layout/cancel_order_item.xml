@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                        
+                                                                                                   
+           
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/d8" android:tag="layout/cancel_order_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="@dimen/d0"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:tag="binding_1"      
+            android:textColor="@color/light_grey_color"
+            app:bodyTextStyle="BodyMediumRegular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Teleflex medical asia pte 10m .." />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/apply_coupon_forword"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvTitle" />
+
+        <com.intellihealth.salt.views.cards.Divider
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:layout_marginTop="@dimen/d16"
+            app:dividerColor="@color/tm_core_color_gray_100"
+            app:dividerThickness="@dimen/d1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="@dimen/d2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivIcon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+         

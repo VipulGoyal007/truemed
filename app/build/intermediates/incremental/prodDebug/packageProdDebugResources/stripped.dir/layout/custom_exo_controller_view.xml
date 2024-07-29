@@ -1,0 +1,210 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:targetApi="28"
+    android:background="#66000000">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline80"
+        app:layout_constraintStart_toEndOf="@+id/guideline20"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--        <ProgressBar-->
+        <!--            android:id="@+id/progressBar2"-->
+        <!--            android:layout_width="85dp"-->
+        <!--            android:layout_height="85dp"-->
+        <!--            android:indeterminateDrawable="@drawable/video_progress_blue"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="@+id/exo_ffwd"-->
+        <!--            app:layout_constraintStart_toStartOf="@+id/exo_rew"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--<ImageButton
+            android:id="@id/exo_prev"
+            style="@style/ExoMediaButton.Previous"
+            android:tintMode="src_in"
+            app:tint="@color/colorPrimaryDark" />-->
+
+        <ImageButton
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@id/exo_rew"
+            style="@style/ExoMediaButton.Rewind"
+            android:src="@drawable/ic_video_backward"
+            android:tintMode="src_in"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:text="10"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/exo_rew"
+            />
+
+        <!--        <ImageButton-->
+        <!--            android:id="@id/exo_shuffle"-->
+        <!--            style="@style/ExoMediaButton.Shuffle"-->
+        <!--            app:tint="@color/colorPrimaryDark"-->
+        <!--            android:tintMode="src_in" />-->
+
+        <!--<ImageButton
+            android:id="@id/exo_repeat_toggle"
+            style="@style/ExoMediaButton"
+            app:tint="@color/colorPrimaryDark"
+            android:tintMode="src_in" />-->
+
+
+
+        <ImageButton
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@id/exo_play"
+            style="@style/ExoMediaButton.Play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_video_pause"
+            android:tintMode="src_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/exo_rew"
+            app:tint="@color/white"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <ImageButton
+            android:id="@id/exo_pause"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/ExoMediaButton.Pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tintMode="src_in"
+            app:layout_constraintEnd_toEndOf="@+id/exo_ffwd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="@color/white"
+            tools:layout_editor_absoluteY="4dp" />
+
+        <TextView
+            android:textSize="13sp"
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_regular"
+            android:text="10"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/exo_ffwd"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@id/exo_ffwd"
+            style="@style/ExoMediaButton.FastForward"
+            android:src="@drawable/ic_video_forward"
+            android:tintMode="src_in"
+            app:tint="@color/white" />
+
+        <!--<ImageButton
+            android:id="@id/exo_next"
+            style="@style/ExoMediaButton.Next"
+            app:tint="@color/colorPrimaryDark"
+            android:tintMode="src_in" />-->
+
+        <!--<ImageButton
+            android:id="@id/exo_vr"
+            style="@style/ExoMediaButton.VR"
+            app:tint="@color/colorPrimaryDark"
+            android:tintMode="src_in" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+
+
+        <com.google.android.exoplayer2.ui.DefaultTimeBar
+            android:id="@id/exo_progress"
+            android:layout_width="0dp"
+            android:layout_height="26dp"
+            android:layout_weight="1"
+            android:scrollbarSize="8dp"
+            app:ad_marker_color="@color/video_seekbar_color"
+            app:animation_enabled="true"
+            app:bar_height="2dp"
+            app:buffered_color="@color/video_seekbar_buffer_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:played_color="@color/video_seekbar_color"
+            app:scrubber_color="@color/video_seekbar_color"
+            app:unplayed_color="@color/video_seekbar_buffer_color" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <com.google.android.exoplayer2.ui.DefaultTimeBar-->
+    <!--        android:id="@id/exo_progress"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="26dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:scrollbarSize="2dp"-->
+    <!--        app:ad_marker_color="@color/video_seekbar_color"-->
+    <!--        app:animation_enabled="true"-->
+    <!--        app:bar_height="2dp"-->
+    <!--        app:buffered_color="@color/video_seekbar_buffer_color"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:played_color="@color/video_seekbar_color"-->
+    <!--        app:scrubber_color="@color/video_seekbar_color"-->
+    <!--        app:unplayed_color="@color/video_seekbar_buffer_color"-->
+    <!--        app:bar_gravity="bottom"-->
+    <!--        />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPrescriptionCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/adapter_prescription_action_card_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.intellihealth.salt.views.cards.ActionCard
+            android:id="@+id/tmPrescriptionActionCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/d6"
+            android:layout_marginTop="@dimen/d6"
+
+            app:actionCardButtonText="@string/order_now2"
+            app:actionCardDescription="@string/upload_to_place_order_msg"
+            app:actionCardTitle="@string/order_with_prescription"
+            app:actionCardType="Prescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--  app:actionCardButtonLeft="@drawable/icon_upload"-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

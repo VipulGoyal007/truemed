@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+
+           
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" android:tag="layout/shimmer_wallet_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/CustomCardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d169"
+            android:background="@color/white"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cardElevation="@dimen/d1"
+            app:cardPreventCornerOverlap="true"
+            app:strokeColor="@color/shimmerGray"
+            app:strokeWidth="@dimen/d1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginTop="@dimen/d24"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d84"
+                    android:background="@drawable/shimmer_grey_box_12_curve"
+                    />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_marginEnd="@dimen/d46"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d10"
+                    android:layout_marginTop="@dimen/d17"
+                    android:background="@drawable/shimmer_grey_tube" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d10"
+                    android:layout_marginEnd="@dimen/d108"
+                    android:layout_marginTop="@dimen/d8"
+                    android:background="@drawable/shimmer_grey_tube" />
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginHorizontal="@dimen/d16"
+            android:layout_width="@dimen/d142"
+            android:layout_height="@dimen/d10"
+            android:layout_marginTop="@dimen/d24"
+            android:background="@drawable/shimmer_grey_tube" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:theme="@style/Theme.MaterialComponents.Light"
+            android:layout_marginTop="@dimen/d16"
+            android:layout_marginHorizontal="@dimen/d16"
+            app:cardCornerRadius="@dimen/d16"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d154"
+            android:background="@color/white"
+            app:cardElevation="@dimen/d1"
+            app:cardPreventCornerOverlap="true"
+            app:strokeColor="@color/shimmerGray"
+            app:strokeWidth="@dimen/d1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginTop="@dimen/d22"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/d188"
+                    android:layout_height="@dimen/d10"
+                    android:background="@drawable/shimmer_grey_tube" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/d165"
+                    android:layout_height="@dimen/d10"
+                    android:layout_marginTop="@dimen/d8"
+                    android:background="@drawable/shimmer_grey_tube" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/d109"
+                    android:layout_height="@dimen/d10"
+                    android:layout_marginTop="@dimen/d8"
+                    android:background="@drawable/shimmer_grey_tube" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_marginTop="@dimen/d24"
+                    android:layout_width="@dimen/d118"
+                    android:layout_height="@dimen/d40"
+                    android:background="@drawable/shimmer_grey_box_12_curve"
+                     />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/d16"
+            android:layout_marginTop="@dimen/d24"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/d142"
+                android:layout_height="@dimen/d10"
+                android:background="@drawable/shimmer_grey_tube" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginTop="@dimen/d24"
+                android:layout_width="@dimen/d188"
+                android:layout_height="@dimen/d10"
+                android:background="@drawable/shimmer_grey_tube" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginTop="@dimen/d26"
+                android:layout_width="@dimen/d188"
+                android:layout_height="@dimen/d10"
+                android:background="@drawable/shimmer_grey_tube" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginTop="@dimen/d16"
+                android:layout_width="@dimen/d275"
+                android:layout_height="@dimen/d10"
+                android:background="@drawable/shimmer_grey_tube" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginTop="@dimen/d9"
+                android:layout_width="@dimen/d223"
+                android:layout_height="@dimen/d10"
+                android:background="@drawable/shimmer_grey_tube" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginTop="@dimen/d26"
+                android:layout_width="@dimen/d188"
+                android:layout_height="@dimen/d10"
+                android:background="@drawable/shimmer_grey_tube" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginTop="@dimen/d16"
+                android:layout_width="@dimen/d260"
+                android:layout_height="@dimen/d10"
+                android:background="@drawable/shimmer_grey_tube" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginTop="@dimen/d9"
+                android:layout_width="@dimen/d211"
+                android:layout_height="@dimen/d10"
+                android:background="@drawable/shimmer_grey_tube" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+         

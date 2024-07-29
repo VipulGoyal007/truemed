@@ -1,0 +1,138 @@
+package com.intellihealth.truemeds.data.api;
+
+@kotlin.Metadata(mv = {1, 9, 0}, k = 1, xi = 48, d1 = {"\u0000h\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\"\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0002\bf\u0018\u00002\u00020\u0001J8\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u00032\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0001\u0010\u0007\u001a\u0004\u0018\u00010\u00062\n\b\u0001\u0010\b\u001a\u0004\u0018\u00010\u0006H\u00a7@\u00a2\u0006\u0002\u0010\tJB\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u000b0\u00032\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u00062\b\b\u0001\u0010\f\u001a\u00020\r2\n\b\u0001\u0010\u000e\u001a\u0004\u0018\u00010\u00062\n\b\u0001\u0010\u000f\u001a\u0004\u0018\u00010\u0006H\u00a7@\u00a2\u0006\u0002\u0010\u0010J6\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00120\u00032\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0001\u0010\u0007\u001a\u0004\u0018\u00010\u00062\b\b\u0001\u0010\u0013\u001a\u00020\u0006H\u00a7@\u00a2\u0006\u0002\u0010\tJF\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00150\u00032\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0001\u0010\u0007\u001a\u0004\u0018\u00010\u00062\b\b\u0001\u0010\u0016\u001a\u00020\u00062\u000e\b\u0001\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00060\u0018H\u00a7@\u00a2\u0006\u0002\u0010\u0019J,\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u001b0\u00032\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0001\u0010\u0007\u001a\u0004\u0018\u00010\u0006H\u00a7@\u00a2\u0006\u0002\u0010\u001cJJ\u0010\u001d\u001a\b\u0012\u0004\u0012\u00020\u001e0\u00032\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0001\u0010\u0007\u001a\u0004\u0018\u00010\u00062\b\b\u0001\u0010\u001f\u001a\u00020\u00062\b\b\u0001\u0010 \u001a\u00020\u00062\b\b\u0001\u0010!\u001a\u00020\u0006H\u00a7@\u00a2\u0006\u0002\u0010\"J8\u0010#\u001a\b\u0012\u0004\u0012\u00020\u00120\u00032\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0001\u0010\u0007\u001a\u0004\u0018\u00010\u00062\n\b\u0001\u0010$\u001a\u0004\u0018\u00010\u0006H\u00a7@\u00a2\u0006\u0002\u0010\tJD\u0010%\u001a\b\u0012\u0004\u0012\u00020&0\u00032\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0001\u0010\u0007\u001a\u0004\u0018\u00010\u00062\n\b\u0001\u0010\'\u001a\u0004\u0018\u00010(2\n\b\u0001\u0010)\u001a\u0004\u0018\u00010\u0006H\u00a7@\u00a2\u0006\u0002\u0010*J6\u0010+\u001a\b\u0012\u0004\u0012\u00020\u00120\u00032\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0001\u0010\u0007\u001a\u0004\u0018\u00010\u00062\b\b\u0001\u0010\u0013\u001a\u00020\u0006H\u00a7@\u00a2\u0006\u0002\u0010\tJJ\u0010,\u001a\b\u0012\u0004\u0012\u00020\u00120\u00032\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0001\u0010\u0007\u001a\u0004\u0018\u00010\u00062\b\b\u0001\u0010\'\u001a\u00020(2\b\b\u0001\u0010-\u001a\u00020(2\b\b\u0001\u0010.\u001a\u00020\u0006H\u00a7@\u00a2\u0006\u0002\u0010/JL\u00100\u001a\b\u0012\u0004\u0012\u00020\u00120\u00032\n\b\u0001\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\b\u0001\u0010\u0007\u001a\u0004\u0018\u00010\u00062\b\b\u0001\u00101\u001a\u00020\u00062\b\b\u0001\u0010\'\u001a\u00020(2\n\b\u0001\u00102\u001a\u0004\u0018\u000103H\u00a7@\u00a2\u0006\u0002\u00104\u00a8\u00065"}, d2 = {"Lcom/intellihealth/truemeds/data/api/HomePageApi;", "", "checkPincodeServiceability", "Lretrofit2/Response;", "Lcom/intellihealth/truemeds/data/model/home/PinCodeServiceabilityResponse;", "contentType", "", "authorization", "pincode", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "fetchHomePageCategories", "Lcom/intellihealth/truemeds/data/model/home/HomePageOtcResponse;", "isApp", "", "sessionToken", "wareHouseId", "(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "fetchTruemedsContactByName", "Lokhttp3/ResponseBody;", "name", "getBannersForHomePage", "Lcom/intellihealth/truemeds/data/model/home/HomePageBannersResponse;", "type", "subType", "", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "getRatingDetails", "Lcom/intellihealth/truemeds/data/model/home/RatingDetailsResponseModel;", "(Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "getVideoFaq", "Lcom/intellihealth/truemeds/data/model/home/VideoFaqAllResponse;", "page", "limit", "source", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "getWordpressArticle", "urlParam", "increaseDigitizedOrderRank", "Lcom/intellihealth/truemeds/data/model/home/IncreaseDigitizedOrderRankModel;", "orderId", "", "transactionId", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "saveContactMappingInfo", "savePopUpReasons", "optionReasonId", "optionType", "(Ljava/lang/String;Ljava/lang/String;JJLjava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "saveRatingDetails", "customerId", "saveRatingDetailsRequestDataModel", "Lcom/intellihealth/truemeds/data/model/orderflow/SaveRatingDetailsRequestDataModel;", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLcom/intellihealth/truemeds/data/model/orderflow/SaveRatingDetailsRequestDataModel;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "app_prodDebug"})
+public abstract interface HomePageApi {
+    
+    @retrofit2.http.POST(value = "/CustomerService/v1/getBannersForHomePage")
+    @org.jetbrains.annotations.Nullable()
+    public abstract java.lang.Object getBannersForHomePage(@retrofit2.http.Header(value = "Content-Type")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String contentType, @retrofit2.http.Header(value = "Authorization")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String authorization, @retrofit2.http.Query(value = "type")
+    @org.jetbrains.annotations.NotNull()
+    java.lang.String type, @retrofit2.http.Body()
+    @org.jetbrains.annotations.NotNull()
+    java.util.Set<java.lang.String> subType, @org.jetbrains.annotations.NotNull()
+    kotlin.coroutines.Continuation<? super retrofit2.Response<com.intellihealth.truemeds.data.model.home.HomePageBannersResponse>> $completion);
+    
+    @retrofit2.http.GET(value = "https://articleservice.tmmumbai.in/ArticleService/getWordpressArticleNew?")
+    @org.jetbrains.annotations.Nullable()
+    public abstract java.lang.Object getWordpressArticle(@retrofit2.http.Header(value = "Content-Type")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String contentType, @retrofit2.http.Header(value = "Authorization")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String authorization, @retrofit2.http.Query(value = "urlParams")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String urlParam, @org.jetbrains.annotations.NotNull()
+    kotlin.coroutines.Continuation<? super retrofit2.Response<okhttp3.ResponseBody>> $completion);
+    
+    @retrofit2.http.GET(value = "/CustomerService/v1/getRatingDetails")
+    @org.jetbrains.annotations.Nullable()
+    public abstract java.lang.Object getRatingDetails(@retrofit2.http.Header(value = "Content-Type")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String contentType, @retrofit2.http.Header(value = "Authorization")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String authorization, @org.jetbrains.annotations.NotNull()
+    kotlin.coroutines.Continuation<? super retrofit2.Response<com.intellihealth.truemeds.data.model.home.RatingDetailsResponseModel>> $completion);
+    
+    @retrofit2.http.GET(value = "/CustomerService/v1/videoFaq/all")
+    @org.jetbrains.annotations.Nullable()
+    public abstract java.lang.Object getVideoFaq(@retrofit2.http.Header(value = "Content-Type")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String contentType, @retrofit2.http.Header(value = "Authorization")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String authorization, @retrofit2.http.Query(value = "page")
+    @org.jetbrains.annotations.NotNull()
+    java.lang.String page, @retrofit2.http.Query(value = "limit")
+    @org.jetbrains.annotations.NotNull()
+    java.lang.String limit, @retrofit2.http.Query(value = "source")
+    @org.jetbrains.annotations.NotNull()
+    java.lang.String source, @org.jetbrains.annotations.NotNull()
+    kotlin.coroutines.Continuation<? super retrofit2.Response<com.intellihealth.truemeds.data.model.home.VideoFaqAllResponse>> $completion);
+    
+    @retrofit2.http.POST(value = "/CustomerService/v1/saveRatingDetails")
+    @org.jetbrains.annotations.Nullable()
+    public abstract java.lang.Object saveRatingDetails(@retrofit2.http.Header(value = "Content-Type")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String contentType, @retrofit2.http.Header(value = "Authorization")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String authorization, @retrofit2.http.Query(value = "customerId")
+    @org.jetbrains.annotations.NotNull()
+    java.lang.String customerId, @retrofit2.http.Query(value = "orderId")
+    long orderId, @retrofit2.http.Body()
+    @org.jetbrains.annotations.Nullable()
+    com.intellihealth.truemeds.data.model.orderflow.SaveRatingDetailsRequestDataModel saveRatingDetailsRequestDataModel, @org.jetbrains.annotations.NotNull()
+    kotlin.coroutines.Continuation<? super retrofit2.Response<okhttp3.ResponseBody>> $completion);
+    
+    @retrofit2.http.GET(value = "/CustomerService/v1/savePopUpReasons")
+    @org.jetbrains.annotations.Nullable()
+    public abstract java.lang.Object savePopUpReasons(@retrofit2.http.Header(value = "Content-Type")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String contentType, @retrofit2.http.Header(value = "Authorization")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String authorization, @retrofit2.http.Query(value = "orderId")
+    long orderId, @retrofit2.http.Query(value = "optionReasonId")
+    long optionReasonId, @retrofit2.http.Query(value = "optionType")
+    @org.jetbrains.annotations.NotNull()
+    java.lang.String optionType, @org.jetbrains.annotations.NotNull()
+    kotlin.coroutines.Continuation<? super retrofit2.Response<okhttp3.ResponseBody>> $completion);
+    
+    @retrofit2.http.GET(value = "/CustomerService/v1/checkPincodeServiceability")
+    @org.jetbrains.annotations.Nullable()
+    public abstract java.lang.Object checkPincodeServiceability(@retrofit2.http.Header(value = "Content-Type")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String contentType, @retrofit2.http.Header(value = "Authorization")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String authorization, @retrofit2.http.Query(value = "pincode")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String pincode, @org.jetbrains.annotations.NotNull()
+    kotlin.coroutines.Continuation<? super retrofit2.Response<com.intellihealth.truemeds.data.model.home.PinCodeServiceabilityResponse>> $completion);
+    
+    @retrofit2.http.GET(value = "/CustomerService/v1/increaseDigitizedOrderRank")
+    @org.jetbrains.annotations.Nullable()
+    public abstract java.lang.Object increaseDigitizedOrderRank(@retrofit2.http.Header(value = "Content-Type")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String contentType, @retrofit2.http.Header(value = "Authorization")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String authorization, @retrofit2.http.Query(value = "orderId")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.Long orderId, @retrofit2.http.Query(value = "transactionId")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String transactionId, @org.jetbrains.annotations.NotNull()
+    kotlin.coroutines.Continuation<? super retrofit2.Response<com.intellihealth.truemeds.data.model.home.IncreaseDigitizedOrderRankModel>> $completion);
+    
+    @retrofit2.http.GET(value = "/CustomerService/fetchHomePageCategories")
+    @org.jetbrains.annotations.Nullable()
+    public abstract java.lang.Object fetchHomePageCategories(@retrofit2.http.Header(value = "Content-Type")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String contentType, @retrofit2.http.Query(value = "isApp")
+    boolean isApp, @retrofit2.http.Query(value = "sessionToken")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String sessionToken, @retrofit2.http.Query(value = "warehouseId")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String wareHouseId, @org.jetbrains.annotations.NotNull()
+    kotlin.coroutines.Continuation<? super retrofit2.Response<com.intellihealth.truemeds.data.model.home.HomePageOtcResponse>> $completion);
+    
+    @retrofit2.http.GET(value = "/CustomerService/fetchTruemedsContactByName")
+    @org.jetbrains.annotations.Nullable()
+    public abstract java.lang.Object fetchTruemedsContactByName(@retrofit2.http.Header(value = "Content-Type")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String contentType, @retrofit2.http.Header(value = "Authorization")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String authorization, @retrofit2.http.Query(value = "name")
+    @org.jetbrains.annotations.NotNull()
+    java.lang.String name, @org.jetbrains.annotations.NotNull()
+    kotlin.coroutines.Continuation<? super retrofit2.Response<okhttp3.ResponseBody>> $completion);
+    
+    @retrofit2.http.POST(value = "/CustomerService/saveCxContactMapping")
+    @org.jetbrains.annotations.Nullable()
+    public abstract java.lang.Object saveContactMappingInfo(@retrofit2.http.Header(value = "Content-Type")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String contentType, @retrofit2.http.Header(value = "Authorization")
+    @org.jetbrains.annotations.Nullable()
+    java.lang.String authorization, @retrofit2.http.Query(value = "version")
+    @org.jetbrains.annotations.NotNull()
+    java.lang.String name, @org.jetbrains.annotations.NotNull()
+    kotlin.coroutines.Continuation<? super retrofit2.Response<okhttp3.ResponseBody>> $completion);
+}

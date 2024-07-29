@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                          
+                            
+
+                 
+                            
+                                                                                     
+
+                 
+                        
+                             
+
+                 
+                                   
+                                                                    
+
+                 
+                                           
+                                                                    
+
+
+           
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/adapter_cart_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clReplacedSubs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:tag="binding_1"                                                       
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <com.intellihealth.salt.views.cards.FullWidthProductCard
+                android:id="@+id/fullWidthProductCardReplaced"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:productCardType="cart"
+                android:tag="binding_2"                     
+                                                                               
+                 />
+<!--app:setCrossSellingData="@{ productInfoModelReplaced }"-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clBlueBG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:minHeight="185dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivBgAnim"
+                android:layout_width="450dp"
+                android:layout_height="0dp"
+                android:src="@drawable/bg_shimmer"
+                android:translationZ="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvBgAmountDiff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                android:fontFamily="@font/inter_semibold"
+                android:textColor="#2FA46F"
+                android:textSize="21sp"
+                android:tag="binding_3"                      
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="\u20b9 222.45 Saved!" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clOriginal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="binding_4"                                                        
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+            <!--    View before replacing medicine item    -->
+
+            <com.intellihealth.salt.views.cards.FullWidthProductCard
+                android:id="@+id/fullWidthProductCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:productCardType="cart"
+                android:tag="binding_5"                         />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+    </FrameLayout>
+         

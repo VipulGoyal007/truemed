@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="productComparisonData"
+            type="com.intellihealth.salt.models.ProductComparisonModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottomsheet_header"
+        android:paddingBottom="@dimen/d24">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHeader"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_bottomsheet_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:elevation="@dimen/constraint_shadow_height"
+            android:layout_height="wrap_content">
+
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginVertical="@dimen/d22"
+                android:ellipsize="end"
+                android:visibility="visible"
+                android:layout_marginTop="@dimen/d16"
+                android:text="@{productComparisonData.title}"
+                tools:text="Compare and understand"
+                android:textColor="@color/tm_core_color_gray_800"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:visibility="visible" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageClose"
+                android:layout_width="@dimen/d32"
+                android:layout_height="@dimen/d32"
+                android:layout_marginEnd="@dimen/d16"
+                android:visibility="visible"
+                android:clipToOutline="true"
+                android:layout_marginVertical="@dimen/d16"
+                android:src="@drawable/ic_close_black_with_white_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clBoby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:visibility="visible"
+                android:paddingHorizontal="@dimen/d16"
+                android:paddingTop="@dimen/d20"
+                android:layout_marginTop="@dimen/d18"
+                android:layout_marginBottom="@dimen/d24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clHeader">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/clOGProductCard"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:cardCornerRadius="@dimen/d12"
+                    android:layout_marginEnd="@dimen/d4"
+                    android:layout_marginStart="@dimen/d1"
+                    android:layout_marginTop="@dimen/d1"
+                    android:layout_marginBottom="@dimen/d1"
+                    app:cardElevation="@dimen/d0"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/clOGProductCard2"
+                    app:layout_constraintBottom_toBottomOf="@+id/clOGProductCard2">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/clOGProduct"
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/d12"
+                        android:layout_height="match_parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="@drawable/bg_semantic_color_bg_main">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivOg"
+                            android:layout_width="@dimen/d68"
+                            android:layout_height="@dimen/d68"
+                            app:imgUrl="@{productComparisonData.product.productImageUrl}"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:src="@drawable/match_icon"
+                            android:layout_marginTop="@dimen/d8"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/tvOgProductName"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:bodyTextStyle="BodyMediumSemiBold"
+                            android:layout_marginTop="@dimen/d12"
+                            android:lines="2"
+                            android:gravity="start|center_vertical"
+                            android:ellipsize="end"
+                            android:textColor="@color/tm_semantic_color_content_main_primary"
+                            android:text="@{productComparisonData.product.skuName}"
+                            tools:text="Telma 40mg lorem ipsum dolor si"
+                            app:layout_constraintTop_toBottomOf="@+id/ivOg"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <View
+                            android:id="@+id/vOgProductName"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/d1"
+                            android:layout_marginTop="@dimen/d12"
+                            android:background="@color/tm_semantic_color_border_main_tertiary"
+                            app:layout_constraintTop_toBottomOf="@+id/tvOgProductName"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/tvOgManufacturer"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:bodyTextStyle="BodySmallRegular"
+                            android:layout_marginTop="@dimen/d12"
+                            android:maxLines="2"
+                            android:lines="2"
+                            android:ellipsize="end"
+                            android:textColor="@color/tm_semantic_color_content_main_secondary"
+                            android:text="@{productComparisonData.product.manufacturerName}"
+                            tools:text="Abbot India Pvt Ltd"
+                            app:layout_constraintTop_toBottomOf="@+id/vOgProductName"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <View
+                            android:id="@+id/vOgManufacture"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/d1"
+                            android:layout_marginTop="@dimen/d12"
+                            android:background="@color/tm_semantic_color_border_main_tertiary"
+                            app:layout_constraintTop_toBottomOf="@+id/tvOgManufacturer"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/tvOgApproval"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:bodyTextStyle="BodySmallRegular"
+                            android:layout_marginTop="@dimen/d12"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:textColor="@color/tm_semantic_color_content_main_secondary"
+                            android:text="FDA Approved"
+                            tools:text="FDA Approved"
+                            app:layout_constraintTop_toBottomOf="@+id/vOgManufacture"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <View
+                            android:id="@+id/vOgApproval"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/d1"
+                            android:layout_marginTop="@dimen/d12"
+                            android:background="@color/tm_semantic_color_border_main_tertiary"
+                            app:layout_constraintTop_toBottomOf="@+id/tvOgApproval"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/tvOgProductContain"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:bodyTextStyle="BodySmallRegular"
+                            android:layout_marginTop="@dimen/d12"
+                            android:maxLines="3"
+                            android:lines="3"
+                            android:ellipsize="end"
+                            android:textColor="@color/tm_semantic_color_content_main_secondary"
+                            android:text="@{productComparisonData.product.composition}"
+                            tools:text="Paracetamol (50mg) + Syllicylifomaldihide ( 100mg )"
+                            app:layout_constraintTop_toBottomOf="@+id/vOgApproval"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <View
+                            android:id="@+id/vOgProductContain"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/d1"
+                            android:layout_marginTop="@dimen/d12"
+                            android:background="@color/tm_semantic_color_border_main_tertiary"
+                            app:layout_constraintTop_toBottomOf="@+id/tvOgProductContain"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/tvOgPricePerUnit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:bodyTextStyle="BodySmallRegular"
+                            android:layout_marginTop="@dimen/d12"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:textStyle="bold"
+                            android:ellipsize="end"
+                            android:textColor="@color/tm_semantic_color_content_main_secondary"
+                            android:text="@{productComparisonData.product.pricePerUnitLabel}"
+                            tools:text="₹7.57 / Tablet"
+                            app:layout_constraintTop_toBottomOf="@+id/vOgProductContain"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <com.intellihealth.salt.views.TextView
+                            android:id="@+id/tvOgPriceMRP"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:bodyTextStyle="BodySmallRegular"
+                            android:layout_marginTop="@dimen/d4"
+                            android:maxLines="1"
+                            android:textStyle="bold"
+                            android:ellipsize="end"
+                            android:textColor="@color/tm_semantic_color_content_main_secondary"
+                            app:setMRPValue="@{productComparisonData}"
+                            tools:text="₹7.57 / Tablet"
+                            app:layout_constraintTop_toBottomOf="@+id/tvOgPricePerUnit"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/clOGProductCard2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/d12"
+                android:layout_marginStart="@dimen/d4"
+                android:layout_marginEnd="@dimen/d1"
+                android:layout_marginTop="@dimen/d1"
+                android:layout_marginBottom="@dimen/d1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/clOGProductCard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:cardElevation="@dimen/d0"
+                app:layout_constraintBottom_toBottomOf="@+id/clOGProductCard">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clSubProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/d12"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@drawable/bg_semantic_color_button_success_subdued">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivSub"
+                        android:layout_width="@dimen/d68"
+                        android:layout_height="@dimen/d68"
+                        app:imgUrl="@{productComparisonData.suggestion.productImageUrl}"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:src="@drawable/match_icon"
+                        android:layout_marginTop="@dimen/d8"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvSubProductName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:bodyTextStyle="BodyMediumSemiBold"
+                        android:layout_marginTop="@dimen/d12"
+                        android:lines="2"
+                        android:gravity="start|center_vertical"
+                        android:ellipsize="end"
+                        android:textColor="@color/tm_semantic_color_content_main_primary"
+                        android:text="@{productComparisonData.suggestion.skuName}"
+                        tools:text="Telma 40mg lorem ipsum dolor si"
+                        app:layout_constraintTop_toBottomOf="@+id/ivSub"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/vSubProductName"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/d1"
+                        android:layout_marginTop="@dimen/d12"
+                        android:background="@color/tm_semantic_color_border_main_substitute_light"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSubProductName"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvSubManufacturer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:bodyTextStyle="BodySmallRegular"
+                        android:layout_marginTop="@dimen/d12"
+                        android:maxLines="2"
+                        android:lines="2"
+                        android:ellipsize="end"
+                        android:textColor="@color/tm_semantic_color_content_main_secondary"
+                        android:text="@{productComparisonData.suggestion.manufacturerName}"
+                        tools:text="Abbot India Pvt Ltd"
+                        app:layout_constraintTop_toBottomOf="@+id/vSubProductName"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/vSubManufacture"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/d1"
+                        android:layout_marginTop="@dimen/d12"
+                        android:background="@color/tm_semantic_color_border_main_substitute_light"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSubManufacturer"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvSubApproval"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:bodyTextStyle="BodySmallRegular"
+                        android:layout_marginTop="@dimen/d12"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/tm_semantic_color_content_main_secondary"
+                        android:text="FDA Approved"
+                        tools:text="FDA Approved"
+                        app:layout_constraintTop_toBottomOf="@+id/vSubManufacture"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/vSubApproval"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/d1"
+                        android:layout_marginTop="@dimen/d12"
+                        android:background="@color/tm_semantic_color_border_main_substitute_light"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSubApproval"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvSubProductContain"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:bodyTextStyle="BodySmallRegular"
+                        android:layout_marginTop="@dimen/d12"
+                        android:maxLines="3"
+                        android:lines="3"
+                        android:ellipsize="end"
+                        android:textColor="@color/tm_semantic_color_content_main_secondary"
+                        android:text="@{productComparisonData.suggestion.composition}"
+                        tools:text="Paracetamol (50mg) + Syllicylifomaldihide ( 100mg )"
+                        app:layout_constraintTop_toBottomOf="@+id/vSubApproval"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/vSubProductContain"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/d1"
+                        android:layout_marginTop="@dimen/d12"
+                        android:background="@color/tm_semantic_color_border_main_substitute_light"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSubProductContain"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvSubPricePerUnit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:bodyTextStyle="BodySmallRegular"
+                        android:layout_marginTop="@dimen/d12"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/tm_semantic_color_content_main_secondary"
+                        android:text="@{productComparisonData.suggestion.pricePerUnitLabel}"
+                        tools:text="₹7.57 / Tablet"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toBottomOf="@+id/vSubProductContain"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvSubDiscount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:bodyTextStyle="BodySmallSemiBold"
+                        android:layout_marginTop="@dimen/d4"
+                        android:background="@drawable/bg_green_container"
+                        android:textColor="@color/tm_semantic_color_content_primary"
+                        android:text="@{productComparisonData.product.subsSavingsPercentage + ` cheaper`}"
+                        tools:text="51.53% cheaper"
+                        android:paddingVertical="@dimen/d8"
+                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@+id/tvSubPricePerUnit"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_subsitute_tag"
+                    android:paddingStart="@dimen/d8"
+                    android:paddingEnd="@dimen/d8"
+                    android:paddingBottom="@dimen/d4"
+                    android:paddingTop="@dimen/d4"
+                    android:layout_gravity="end"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ivSubTag"
+                        android:layout_width="@dimen/d14"
+                        android:layout_height="@dimen/d14"
+                        android:src="@drawable/subsitute_icon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvSubTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Substitute"
+                        app:bodyTextStyle="BodySmallSemiBold"
+                        android:textColor="@color/tm_semantic_color_content_success_default"
+                        android:layout_marginStart="@dimen/d4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ivSubTag"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivMatch"
+                android:layout_width="@dimen/d48"
+                android:layout_height="@dimen/d48"
+                android:background="@drawable/match_icon"
+                android:visibility="visible"
+                tools:visibility="visible"
+                android:layout_marginTop="@dimen/d16"
+                app:layout_constraintTop_toBottomOf="@+id/clHeader"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

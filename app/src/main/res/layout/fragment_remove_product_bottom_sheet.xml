@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/d10"
+        android:background="@drawable/bg_bottomsheet_header"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        tools:context=".presentation.bottomsheet.cart.RemoveProductBottomSheet">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/d12"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="@dimen/d16"
+                android:layout_marginStart="@dimen/d16"
+                >
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ivClose"
+                    android:text="@string/delete_product"
+                    app:bodyTextStyle="BodyLargeSemiBold"
+                    android:gravity="start"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvTitle"
+                    android:src="@drawable/ic_close_reminder_sheet"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/deleteProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                android:text="@string/remove_product"
+                android:layout_marginTop="@dimen/d16"
+                android:layout_marginEnd="@dimen/d16"
+                android:layout_marginStart="@dimen/d16"
+                app:buttonType="SecondaryButton"
+                app:layout_constraintTop_toBottomOf="@+id/clTop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/notDeleteProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                android:text="@string/cancel"
+                android:layout_marginTop="@dimen/d16"
+                android:layout_marginEnd="@dimen/d16"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginBottom="@dimen/d16"
+                app:buttonType="DestructiveButton"
+                app:layout_constraintTop_toBottomOf="@+id/deleteProduct"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+

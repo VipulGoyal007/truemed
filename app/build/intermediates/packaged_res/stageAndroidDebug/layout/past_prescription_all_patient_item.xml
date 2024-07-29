@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+        
+    
+                 
+                                        
+                                                                                          
+
+                 
+                             
+                                                                                             
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/past_prescription_all_patient_item_0">
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_grey_color"
+            app:bodyTextStyle="BodySmallSemiBold"
+            android:layout_marginStart="@dimen/d8"
+            android:layout_marginVertical="@dimen/d12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:tag="binding_1"                            
+            tools:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPrescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d8"
+            android:orientation="vertical"
+            android:nestedScrollingEnabled="true"
+            android:animateLayoutChanges="false"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+            android:tag="binding_2"                                                     
+                                                                    
+                                         
+            app:spanCount="2"
+            tools:listitem="@layout/past_prescription_details" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

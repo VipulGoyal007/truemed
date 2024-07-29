@@ -1,0 +1,882 @@
+[
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_payment_option.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_payment_option.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/shimmer_horizontal_products.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_horizontal_products.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_filter.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_filter.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_error.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_error.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/dialog_rounded_corner.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_rounded_corner.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_refer_and_earn.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_refer_and_earn.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/upload_prescription_bottomsheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/upload_prescription_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_prescription.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_prescription.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_search_result.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_search_result.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/dialog_rx_coupon_suceess.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_rx_coupon_suceess.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_doctor_prescription.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_doctor_prescription.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_view_prescription.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_view_prescription.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_detailed_status.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_detailed_status.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_web_browser.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_web_browser.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/shimmer_compare.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_compare.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/prescription_details.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/prescription_details.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_policies_page.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_policies_page.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/search_result_rv_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/search_result_rv_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_video_faq.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_video_faq.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_reminder.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_reminder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/order_type_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/order_type_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/dialog_coupon_error.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_coupon_error.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/dialog_progressbar.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_progressbar.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_coupon.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_coupon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_blog_section_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_blog_section_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_replace_all_company_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_replace_all_company_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/category_type_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/category_type_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_add_address.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_add_address.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_otc_category.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_otc_category.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_save_number.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_save_number.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/dialog_rating_submitted.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_rating_submitted.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_compare_and_understand.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_compare_and_understand.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/edit_delete_bottomsheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/edit_delete_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_coupon_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_coupon_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_search_suggestion.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_search_suggestion.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/product_list_view_all_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/product_list_view_all_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/opt_for_subs_bottom_sheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/opt_for_subs_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/manage_address_card_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/manage_address_card_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_payment_status.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_payment_status.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_subs_bottom_sheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_subs_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_product_card_stacked_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_product_card_stacked_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_faq_view_all.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_faq_view_all.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_item_no_longer_available.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_item_no_longer_available.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_home_page.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_home_page.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_reorder.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_reorder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_reminder_delete.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_reminder_delete.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_order_summary.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_order_summary.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_logout_bottom_sheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_logout_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_time_interval_item_default.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_time_interval_item_default.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_wallet_tranasctions.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_wallet_tranasctions.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_payment_pending.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_payment_pending.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_prescription_action_card_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_prescription_action_card_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_login.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_location.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_location.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_doctor_prescription_order_summary.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_doctor_prescription_order_summary.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/item_video_p2.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/item_video_p2.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_addmore_prescription_order_summary.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_addmore_prescription_order_summary.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/cancel_order_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/cancel_order_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_testimonial_section_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_testimonial_section_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/custom_exo_controller_view.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/custom_exo_controller_view.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/shimmer_medicine_details.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_medicine_details.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/shimmer_search.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_search.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/past_prescription_bottomsheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/past_prescription_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/shimmer_account_screen.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_account_screen.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_view_prescription.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_view_prescription.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_manage_patient.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_manage_patient.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_order_summary_cart_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_order_summary_cart_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/banner_viewpager_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/banner_viewpager_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_remove_product_bottom_sheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_remove_product_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/shimmer_wallet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_wallet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_view_bill.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_view_bill.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_product_detail.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_product_detail.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/delete_image_bottom_sheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/delete_image_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_edit_profile.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_edit_profile.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_refer_and_earn.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_refer_and_earn.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/super_category_shop_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/super_category_shop_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/privacy_policy_bottomsheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/privacy_policy_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/search_result_updated_ui_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/search_result_updated_ui_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_coupon_offer.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_coupon_offer.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_choose_time_interval.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_choose_time_interval.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/shimmer_order_summary.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_order_summary.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/category_shop_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/category_shop_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_doctor_call.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_doctor_call.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_health_article_detail.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_health_article_detail.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_payment_carousel.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_payment_carousel.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/shimmer_my_order.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_my_order.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_product_detail.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_product_detail.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_remove_unavailable_product.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_remove_unavailable_product.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/custom_toast.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/custom_toast.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/health_article_bottomsheet_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/health_article_bottomsheet_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_edit_reminder.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_edit_reminder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/cart_order_confirmation_dialog.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/cart_order_confirmation_dialog.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_doctor_fraud.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_doctor_fraud.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_org_sub_compare.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_org_sub_compare.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/faq_group_child.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/faq_group_child.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/search_previous_viewed_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/search_previous_viewed_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_patient_reminder.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_patient_reminder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/terms_and_condition_bottomsheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/terms_and_condition_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_refer_earn.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_refer_earn.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/delivery_details_patient_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/delivery_details_patient_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_help.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_help.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_banner_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_banner_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_home.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_login_otp.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_login_otp.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/dialog_replace_savings.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_replace_savings.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/search_suggestion_recent_rv_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/search_suggestion_recent_rv_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/dialog_coupon_suceess.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_coupon_suceess.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_reorder_footer.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_reorder_footer.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/res_address.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/res_address.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/patient_type_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/patient_type_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/brand_type_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/brand_type_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_manage_address.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_manage_address.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_add_patient.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_add_patient.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_privacy_policy.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_privacy_policy.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_policy_detail.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_policy_detail.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_replace_bottom_sheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_replace_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_help.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_help.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_order_status.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_order_status.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_choose_custom_dates.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_choose_custom_dates.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_modification_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_modification_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_product_detail.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_product_detail.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/item_video_vertical_p2.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/item_video_vertical_p2.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/past_prescription_all_patient_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/past_prescription_all_patient_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_wallet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_wallet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_patient_medicines_chips_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_patient_medicines_chips_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/cancel_order_bottomsheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/cancel_order_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_account.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_account.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/search_result_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/search_result_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_super_category.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_super_category.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/sub_category_type_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/sub_category_type_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_payment.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_payment.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/shimmer_order_status.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_order_status.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_login.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_login.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_personal_care_category.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_personal_care_category.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/trending_search_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/trending_search_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/my_orders_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/my_orders_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/faq_group.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/faq_group.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/custom_notification_view_collapsed.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/custom_notification_view_collapsed.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/author_card_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/author_card_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_splash_screen.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_my_referrals.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_my_referrals.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_homepage_alert_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_homepage_alert_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_product_list_view_all.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_product_list_view_all.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/health_articles_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/health_articles_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_transaction_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_transaction_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/payment_options_list_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/payment_options_list_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_reorder_header.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_reorder_header.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_reorder.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_reorder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_my_orders.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_my_orders.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_personal_care_product.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_personal_care_product.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/shimmer_health_articles.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_health_articles.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_apply_coupon.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_apply_coupon.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/subs_med_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/subs_med_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/rv_otc_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/rv_otc_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/progress_bar_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/progress_bar_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/dialog_with_single_button.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_with_single_button.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/health_article_bottomsheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/health_article_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_orders.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_orders.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/shimmer_manage_patient.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_manage_patient.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_substitutes.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_substitutes.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_reminder_alert.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_reminder_alert.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_cart_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_cart_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_login_mobile_number.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_login_mobile_number.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_refer_now.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_refer_now.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/shimmer_home_page.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_home_page.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_health_articles.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_health_articles.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/shimmer_search_result_page_with_item_in_card.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/shimmer_search_result_page_with_item_in_card.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_alternate_number.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_alternate_number.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/calendar_layout.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/calendar_layout.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_chips_reminder_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_chips_reminder_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/dialog_coupon_saving.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/dialog_coupon_saving.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/subs_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/subs_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/home_adapter_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/home_adapter_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_view_bill_details.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_view_bill_details.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/help_category_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/help_category_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_replacing.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_replacing.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_payment_unsuccessful.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_payment_unsuccessful.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_doctor_call_missed.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_doctor_call_missed.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_bottom_sheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/reminder_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/reminder_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_cart.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_cart.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/saved_address_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/saved_address_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/product_details_slider_image_bs.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/product_details_slider_image_bs.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_delivery_details.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_delivery_details.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/upload_prescription_item_lay.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/upload_prescription_item_lay.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/res_patient_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/res_patient_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/health_article_chip_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/health_article_chip_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_help_subcategory.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_help_subcategory.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_product_card_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_product_card_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/fragment_reminder_bottom_sheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/fragment_reminder_bottom_sheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_myorder.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_myorder.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/custom_notification_view_expanded.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/custom_notification_view_expanded.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/past_prescription_details.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/past_prescription_details.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_payment_change_selection.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_payment_change_selection.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_replace_all_recocommended_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_replace_all_recocommended_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/manage_patient_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/manage_patient_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/composition_bottomsheet_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/composition_bottomsheet_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_ratings.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_ratings.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_substitute_info_card_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_substitute_info_card_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_composition_details.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_composition_details.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_non_active_order_status.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_non_active_order_status.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/update_patient_info_delivery_details.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/update_patient_info_delivery_details.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_reorder_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_reorder_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/search_trending_updated_ui_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/search_trending_updated_ui_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/sub_category_category_type_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/sub_category_category_type_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_rx_prescription.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_rx_prescription.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_callorder_action_card_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_callorder_action_card_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_replace_all_recocommended.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_replace_all_recocommended.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/do_not_have_bottomsheet.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/do_not_have_bottomsheet.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/login_banner_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/login_banner_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_switch_back_og.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_switch_back_og.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_cancel_order.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_cancel_order.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_reminder_time_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_reminder_time_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/bottomsheet_modification_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/bottomsheet_modification_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_help_subcategory_detail.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_help_subcategory_detail.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/item_tab_account.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/item_tab_account.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_cancel_sub_order.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_cancel_sub_order.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/adapter_footer_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/adapter_footer_item.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/activity_return_refund_web.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/activity_return_refund_web.xml"
+    },
+    {
+        "merged": "com.intellihealth.truemeds.app-mergeStageAndroidDebugResources-96:/layout/help_subcategory_item.xml",
+        "source": "com.intellihealth.truemeds.app-main-99:/layout/help_subcategory_item.xml"
+    }
+]

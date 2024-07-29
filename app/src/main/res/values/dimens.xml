@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="d220">220dp</dimen>
+    <dimen name="d156">156dp</dimen>
+    <dimen name="d192">192dp</dimen>
+    <dimen name="d140">140dp</dimen>
+    <dimen name="d132">132dp</dimen>
+    <dimen name="d10">10dp</dimen>
+    <dimen name="d5">5dp</dimen>
+    <dimen name="d8">8dp</dimen>
+    <dimen name="d1044">1044dp</dimen>
+    <dimen name="d37">37.5dp</dimen>
+    <dimen name="d276">276dp</dimen>
+    <dimen name="d212">212dp</dimen>
+    <dimen name="d64">64dp</dimen>
+    <dimen name="d125">125dp</dimen>
+    <dimen name="d43">43dp</dimen>
+    <dimen name="d504">504dp</dimen>
+    <dimen name="d294">294dp</dimen>
+    <dimen name="constraint_shadow_height">2dp</dimen>
+    <dimen name="d124">124dp</dimen>
+    <dimen name="d92">92dp</dimen>
+</resources>

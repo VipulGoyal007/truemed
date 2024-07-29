@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                            
+                                                                                             
+
+                 
+                            
+                            
+
+                 
+                                           
+                                                                                       
+           
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottomsheet_top_left_right_rounded"
+        android:backgroundTint="@color/tm_core_color_white" android:tag="layout/past_prescription_bottomsheet_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <View
+            android:id="@+id/viewDragHandle"
+            android:layout_width="@dimen/d50"
+            android:layout_height="@dimen/d4"
+            android:layout_marginTop="@dimen/d12"
+            android:background="@color/tm_core_color_gray_300"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d16"
+            android:layout_marginEnd="@dimen/d16"
+            android:text="@string/past_prescription"
+            android:textColor="@color/upload_prescription_text_color"
+            app:bodyTextStyle="BodyLargeSemiBold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageClose"
+            app:layout_constraintEnd_toStartOf="@+id/imageClose"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageClose"
+            app:title="@string/past_prescription"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageClose"
+            android:layout_width="@dimen/d32"
+            android:layout_height="@dimen/d32"
+            android:layout_marginTop="@dimen/d12"
+            android:layout_marginEnd="@dimen/d16"
+            android:src="@drawable/ic_close_black_with_white_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvHeader"
+            app:layout_constraintTop_toBottomOf="@+id/viewDragHandle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivShadow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d20"
+            android:layout_marginTop="@dimen/d16"
+            android:background="@drawable/bg_gradient_top"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topCardCtl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/ivShadow"
+            app:layout_constraintStart_toStartOf="@id/ivShadow"
+            app:layout_constraintTop_toBottomOf="@id/ivShadow">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mainCardCtl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/topHeaderCtl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/d16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.intellihealth.salt.views.dropdown.DropDownHeader
+                        android:id="@+id/dropDownHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/tvPatientNameHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_drop_down_default"
+                        android:padding="@dimen/d12"
+                        android:text="@string/patient_name"
+                        android:textColor="@color/tm_core_color_gray_800"
+                        android:visibility="gone"
+                        app:bodyTextStyle="BodyMediumSemiBold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvAllPatientPastPrescription"
+                    android:layout_width="0dp"
+                    android:layout_height="460dp"
+                    android:layout_marginHorizontal="@dimen/d8"
+                    android:layout_marginVertical="@dimen/d12"
+                    android:animateLayoutChanges="false"
+                    android:nestedScrollingEnabled="true"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/topHeaderCtl"
+                    tools:listitem="@layout/past_prescription_all_patient_item" />
+
+
+                <com.intellihealth.salt.views.dropdown.DropDownDefault
+                    android:id="@+id/dropDownDefault"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@id/topHeaderCtl"
+                    app:layout_constraintStart_toStartOf="@id/topHeaderCtl"
+                    app:layout_constraintTop_toBottomOf="@id/topHeaderCtl" />
+
+
+                <!--   <androidx.constraintlayout.widget.ConstraintLayout
+                       android:id="@+id/clDropDown"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/bg_drop_down_default"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent">
+
+
+
+                   </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--android:visibility="@{viewModel.isPastPrescriptionSelected ? View.VISIBLE : View.GONE}"
+-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/uploadCtl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d8"
+            android:layout_marginBottom="@dimen/d16"
+            android:tag="binding_1"                                                                     
+            app:layout_constraintEnd_toEndOf="@+id/topCardCtl"
+            app:layout_constraintStart_toStartOf="@+id/topCardCtl"
+            app:layout_constraintTop_toBottomOf="@+id/topCardCtl">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/bottomLine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d10"
+                android:background="@drawable/bg_gradient_bottom"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/uploadBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/d16"
+                android:tag="binding_2"                                                   
+                android:text="@string/upload"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="PrimaryButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bottomLine" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clProgress"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:tag="binding_3"                                                                  
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

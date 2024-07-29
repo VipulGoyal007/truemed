@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+                 
+                              
+                                                                                            
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/bottomsheet_reorder_footer_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:bodyTextStyle="BodySmallSemiBold"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintRight_toLeftOf="@+id/tvQty"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvQty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:bodyTextStyle="BodySmallSemiBold"
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:layout_constraintLeft_toRightOf="@+id/tvTotal"
+            app:layout_constraintRight_toLeftOf="@+id/tvTotalQty"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_weight="2.5"
+            android:visibility="invisible"/>
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvTotalQty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            android:gravity="end"
+            app:bodyTextStyle="BodySmallSemiBold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="2.5"
+            app:layout_constraintStart_toEndOf="@+id/tvQty"
+            app:layout_constraintTop_toTopOf="parent"
+            android:tag="binding_1"                     
+            tools:text="₹496.00" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

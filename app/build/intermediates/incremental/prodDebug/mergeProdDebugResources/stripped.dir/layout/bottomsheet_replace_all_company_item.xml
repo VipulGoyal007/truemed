@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                         
+                            
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRoot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d4"
+        android:layout_marginHorizontal="@dimen/d4" android:tag="layout/bottomsheet_replace_all_company_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivProduct"
+            android:layout_width="@dimen/d68"
+            android:layout_height="@dimen/d14"
+                                  
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/brand_icons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:tag="binding_1"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

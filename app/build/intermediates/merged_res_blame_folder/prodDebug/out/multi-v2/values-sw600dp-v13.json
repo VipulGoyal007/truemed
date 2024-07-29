@@ -1,0 +1,79 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.intellihealth.truemeds.app-mergeProdDebugResources-95:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/neosoft/.gradle/caches/transforms-3/83c396c66035be0c1de80e580637380a/transformed/jetified-clevertap-android-sdk-6.2.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,95,146,199,259,320,379,437,496,553,607",
+                        "endColumns": "39,50,52,59,60,58,57,58,56,53,51",
+                        "endOffsets": "90,141,194,254,315,374,432,491,548,602,654"
+                    },
+                    "to": {
+                        "startLines": "3,22,25,26,27,28,29,30,31,32,33",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "110,1312,1478,1531,1591,1652,1711,1769,1828,1885,1939",
+                        "endColumns": "39,50,52,59,60,58,57,58,56,53,51",
+                        "endOffsets": "145,1358,1526,1586,1647,1706,1764,1823,1880,1934,1986"
+                    }
+                },
+                {
+                    "source": "/Users/neosoft/.gradle/caches/transforms-3/19c8a09ffd74b79f29c840e470201e56/transformed/jetified-ui-2.1.13/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,110",
+                        "endColumns": "54,43",
+                        "endOffsets": "105,149"
+                    },
+                    "to": {
+                        "startLines": "2,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,150",
+                        "endColumns": "54,43",
+                        "endOffsets": "105,189"
+                    }
+                },
+                {
+                    "source": "/Users/neosoft/.gradle/caches/transforms-3/0e8480aa35153709b664aa32b41d887f/transformed/appcompat-1.6.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
+                    },
+                    "to": {
+                        "startLines": "5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "194,263,332,402,476,552,611,682",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "258,327,397,471,547,606,677,745"
+                    }
+                },
+                {
+                    "source": "/Users/neosoft/.gradle/caches/transforms-3/5e1048d4eb53c112ec427912a4a407e9/transformed/material-1.11.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,10,11,12,13,14",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,115,185,256,328,386,444,553,617,673,732,795",
+                        "endLines": "2,3,4,5,6,7,9,10,11,12,13,17",
+                        "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
+                        "endOffsets": "110,180,251,323,381,439,548,612,668,727,790,962"
+                    },
+                    "to": {
+                        "startLines": "13,14,15,16,17,18,19,21,23,24,34,35",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "750,810,880,951,1023,1081,1139,1248,1363,1419,1991,2054",
+                        "endLines": "13,14,15,16,17,18,20,21,23,24,34,38",
+                        "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
+                        "endOffsets": "805,875,946,1018,1076,1134,1243,1307,1414,1473,2049,2221"
+                    }
+                }
+            ]
+        }
+    ]
+}

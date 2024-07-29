@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.CouponViewModel" />
+        <variable
+            name="couponModel"
+            type="com.intellihealth.truemeds.data.model.coupon.CouponCodeResponse.Coupon" />
+
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingBottom="@dimen/d16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.intellihealth.salt.views.cards.CouponCtaCards
+            android:id="@+id/couponCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ctaCardsType="discountCoupon"
+            app:observeTimerValue="@{viewModel}"
+            app:couponModel="@{couponModel}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.presentation.viewmodel.OtcSuperCategoryViewModel","classAnnotations":[],"interfaces":["androidx.lifecycle.DefaultLifecycleObserver","androidx.lifecycle.LifecycleObserver"],"superClasses":["androidx.lifecycle.ViewModel","java.lang.Object"]}

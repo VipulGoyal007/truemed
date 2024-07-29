@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                                            
+                             
+
+                                                                              
+
+                 
+                                     
+                                                                                              
+
+                 
+                        
+                                                                                                  
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".presentation.activity.AddAddressActivity" android:tag="layout/activity_add_address_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.intellihealth.salt.views.MobileSectionHeaders
+            android:id="@+id/txtHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:translationZ="@dimen/d6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:tag="binding_1"                                              />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/contentScroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/d16"
+            android:layout_marginTop="@dimen/d24"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingBottom="@dimen/d16"
+            app:layout_constraintTop_toBottomOf="@+id/txtHeader">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtHeader">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/topLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/txtPinLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Pincode"
+                        android:textColor="@color/upload_prescription_text_color"
+                        app:bodyTextStyle="BodyMediumSemiBold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.intellihealth.salt.views.edittext.InputFieldLayout
+                        android:id="@+id/edtPinCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/d8"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        app:hintText="@string/pincode_hint_new"
+                        app:inputTypeLayout="number"
+                        app:layout_constraintEnd_toStartOf="@+id/btnCurrentLocation"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtPinLabel"
+                        app:maxLength="6"
+                        android:tag="binding_2"                              
+                        app:showButton="No"
+                        app:showIcon="No" />
+
+                    <com.intellihealth.salt.views.TextView
+                        android:id="@+id/txtPinErrorMsg"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/d8"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/error_msg_color"
+                        app:bodyTextStyle="BodySmallSemiBold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/edtPinCode"
+                        android:tag="binding_3"                                    />
+
+                    <com.intellihealth.salt.views.buttons.Button
+                        android:id="@+id/btnCurrentLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/d4"
+                        android:layout_marginStart="@dimen/d16"
+                        android:tag="binding_4"                                                  
+                        app:buttonSizeType="Medium"
+                        app:buttonTextStyle="ButtonMd"
+                        app:buttonType="SecondaryButton"
+                        app:iconLeft="@drawable/currentlocation"
+                        app:layout_constraintBottom_toBottomOf="@+id/edtPinCode"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/edtPinCode"
+                        app:layout_constraintTop_toTopOf="@+id/edtPinCode"
+                        app:title="@string/current_location" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <com.intellihealth.salt.views.edittext.InputFieldLayout
+                    android:id="@+id/edtAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    app:hintText="@string/address_line_1_hint"
+                    app:inputTypeLayout="capstext"
+                    app:label="@string/address_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/topLayout"
+                    app:maxLength="250"
+                    android:tag="binding_5"                                
+                                                                              
+                    app:showButton="No"
+                    app:showIcon="No" />
+
+                <com.intellihealth.salt.views.edittext.InputFieldLayout
+                    android:id="@+id/edtAddress2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    app:hintText="@string/address_line_2_hint"
+                    app:inputTypeLayout="capstext"
+                    app:label="@string/address_label2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtAddress"
+                    app:maxLength="250"
+                    android:tag="binding_6"                                 
+                                                                              
+                    app:showButton="No"
+                    app:showIcon="No" />
+
+                <com.intellihealth.salt.views.edittext.InputFieldLayout
+                    android:id="@+id/edtLandmark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    app:hintText="@string/landmark_hint"
+                    app:inputTypeLayout="capstext"
+                    app:label="@string/landmark_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtAddress2"
+                    app:maxLength="100"
+                    android:tag="binding_7"                                 
+                                                                          
+                    app:showButton="No"
+                    app:showIcon="No" />
+
+                <LinearLayout
+                    android:id="@+id/topLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d20"
+                    android:weightSum="1"
+                    app:layout_constraintTop_toBottomOf="@+id/edtLandmark">
+
+                    <com.intellihealth.salt.views.edittext.InputFieldLayout
+                        android:id="@+id/edtCity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/d5"
+                        android:layout_weight="0.5"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        app:hintText="@string/city_hint_new"
+                        app:inputTypeLayout="capstext"
+                        app:label="@string/city_label"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/edtState"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:maxLength="25"
+                        android:tag="binding_8"                             
+                        app:showButton="No"
+                        app:showIcon="No" />
+                    <!--  app:setManageAddressInputFieldData="@{model.customerCity}"-->
+
+                    <com.intellihealth.salt.views.edittext.InputFieldLayout
+                        android:id="@+id/edtState"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d5"
+                        android:layout_weight="0.5"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        app:hintText="@string/state_hint_new"
+                        app:inputTypeLayout="capstext"
+                        app:label="@string/state_label"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/edtCity"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:maxLength="25"
+                        android:tag="binding_9"                              
+                        app:showButton="No"
+                        app:showIcon="No" />
+                    <!--  app:setManageAddressInputFieldData="@{model.stateName}"-->
+                </LinearLayout>
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/txtSaveAs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d20"
+                    android:text="Save as"
+                    app:bodyTextStyle="BodyMediumSemiBold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/topLayout2" />
+
+                <com.intellihealth.salt.views.chip.Chip
+                    android:id="@+id/chipHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d12"
+                    app:chipSize="Large"
+                    app:chipTitle="Home"
+                    app:chipType="UnSelected"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSaveAs"
+                    android:tag="binding_10"                                />
+
+                <com.intellihealth.salt.views.chip.Chip
+                    android:id="@+id/chipOffice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d10"
+                    android:layout_marginTop="@dimen/d12"
+                    app:chipSize="Large"
+                    app:chipTitle="Office"
+                    app:chipType="UnSelected"
+                    app:layout_constraintStart_toEndOf="@+id/chipHome"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSaveAs"
+                    android:tag="binding_11"                                  />
+
+                <com.intellihealth.salt.views.chip.Chip
+                    android:id="@+id/chipOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d10"
+                    android:layout_marginTop="@dimen/d12"
+                    app:chipSize="Large"
+                    app:chipTitle="Other"
+                    app:chipType="UnSelected"
+                    app:layout_constraintStart_toEndOf="@+id/chipOffice"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSaveAs"
+                    android:tag="binding_12"                                 />
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/txtChipErrorMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d12"
+                    android:textColor="@color/error_msg_color"
+                    android:tag="binding_13"                                                                                                       
+                    app:bodyTextStyle="BodySmallSemiBold"
+                    app:layout_constraintStart_toStartOf="@+id/chipHome"
+                    app:layout_constraintTop_toBottomOf="@+id/chipOther"
+                                                                             />
+
+                <com.intellihealth.salt.views.edittext.InputFieldLayout
+                    android:id="@+id/etOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d20"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:visibility="gone"
+                    app:hintText="@string/enterHint"
+                    app:inputTypeLayout="text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtChipErrorMsg"
+                    app:maxLength="15"
+                    android:tag="binding_14"                              
+                    app:showButton="No"
+                    app:showIcon="No" />
+                <!--   app:setManageAddressInputFieldData="@{model.addressType}"-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <!--<androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBottomLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d10"
+            android:layout_marginTop="@dimen/d12"
+            android:background="@drawable/bg_gradient_bottom"
+            app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contentScroll" />-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+
+            android:elevation="@dimen/d16"
+            android:translationZ="@dimen/d8"
+            android:outlineProvider="paddedBounds">
+
+
+            <!--            <com.facebook.shimmer.ShimmerFrameLayout-->
+            <!--                android:id="@+id/shimmerLayout"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent">-->
+
+            <com.intellihealth.salt.views.buttons.Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/d16"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="PrimaryButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:tag="binding_15"                                                        />
+
+            <!--            </com.facebook.shimmer.ShimmerFrameLayout>-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

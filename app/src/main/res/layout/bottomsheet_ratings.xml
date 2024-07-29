@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="orderID"
+            type="String" />
+
+        <variable
+            name="isRatingsClicked"
+            type="Boolean" />
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.HomeViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottomsheet_header"
+        android:paddingVertical="@dimen/d16">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="@dimen/constraint_shadow_height"
+            android:paddingHorizontal="@dimen/d16"
+            android:paddingBottom="@dimen/d16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- <androidx.appcompat.widget.AppCompatImageView
+                 android:id="@+id/ivClose"
+                 android:layout_width="@dimen/d32"
+                 android:layout_height="@dimen/d32"
+                 android:clipToOutline="true"
+                 android:src="@drawable/ic_close_black_with_white_bg"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintTop_toTopOf="parent" />-->
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/btnSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonSizeType="Medium"
+                app:buttonTextStyle="ButtonMd"
+                app:buttonType="GhostButton"
+                app:removePadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/skip"
+                app:title="@string/skip" />
+
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate your experience"
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvOrderID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{`Order id #` + orderID }"
+                android:textColor="@color/tm_semantic_color_content_main_secondary"
+                app:bodyTextStyle="BodyLargeRegular"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+                tools:text="Order ID #123455321" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clRatingStar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clHeader">
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/ratingFeedback"
+
+                style="?android:attr/ratingBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:isIndicator="false"
+                android:paddingVertical="@dimen/d24"
+                android:progressTint="@color/tm_semantic_color_main_warning"
+                android:scaleX="1"
+                android:scaleY="1"
+
+                android:secondaryProgressTint="@color/tm_semantic_color_main_warning"
+                android:stepSize="1"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clDetailedFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/d15"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/clRatingStar">
+            <!--  android:visibility="@{ isRatingsClicked ? View.VISIBLE : View.GONE }"-->
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/d16"
+                android:text="What went well for you?"
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+
+            <com.intellihealth.salt.views.chip.Chip
+                android:id="@+id/chipCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginTop="@dimen/d16"
+                android:includeFontPadding="false"
+                android:tag="Customer support"
+                app:chipSize="Large"
+                app:chipTitle="Customer support"
+                app:chipType="UnSelected"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFeedback" />
+
+            <com.intellihealth.salt.views.chip.Chip
+                android:id="@+id/chipDiscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d8"
+                android:layout_marginTop="@dimen/d16"
+                android:includeFontPadding="false"
+                android:tag="Discounts"
+                app:chipSize="Large"
+                app:chipTitle="Discounts"
+                app:chipType="UnSelected"
+                app:layout_constraintStart_toEndOf="@+id/chipCustomer"
+                app:layout_constraintTop_toBottomOf="@+id/tvFeedback" />
+
+            <com.intellihealth.salt.views.chip.Chip
+                android:id="@+id/chipDeliveryTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginTop="@dimen/d8"
+                android:includeFontPadding="false"
+                android:tag="Delivery time"
+                app:chipSize="Large"
+                app:chipTitle="Delivery time"
+                app:chipType="UnSelected"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chipCustomer" />
+
+
+            <com.intellihealth.salt.views.chip.Chip
+                android:id="@+id/chipOrderExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d8"
+                android:layout_marginTop="@dimen/d8"
+                android:includeFontPadding="false"
+                android:tag="Order Experience"
+                app:chipSize="Large"
+                app:chipTitle="Order Experience"
+                app:chipType="UnSelected"
+                app:layout_constraintStart_toEndOf="@+id/chipDeliveryTime"
+                app:layout_constraintTop_toBottomOf="@+id/chipCustomer" />
+
+            <!--   <com.intellihealth.salt.views.chip.Chip
+                   android:id="@+id/chipDeliveryTime"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/d8"
+                   android:layout_marginTop="@dimen/d12"
+                   android:includeFontPadding="false"
+                   app:chipTitle="Delivery time"
+                   android:tag="Delivery time"
+                   app:chipType="UnSelected"
+                   app:chipSize="Large"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/chipMedicineQuality"/>-->
+
+            <com.intellihealth.salt.views.chip.Chip
+                android:id="@+id/chipMedicineQuality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d16"
+                android:layout_marginTop="@dimen/d8"
+                android:includeFontPadding="false"
+                android:tag="Medicine Quality"
+                app:chipSize="Large"
+                app:chipTitle="Medicine Quality"
+                app:chipType="UnSelected"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chipDeliveryTime" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvFeedbackError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d12"
+                android:paddingHorizontal="@dimen/d16"
+                android:text="@string/please_select_category"
+                android:textColor="@color/tm_core_color_red_500"
+                android:visibility="gone"
+                app:bodyTextStyle="BodyMediumSemiBold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chipMedicineQuality" />
+
+            <!--  <EditText
+                    android:id="@+id/tmFeedbackInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d100"
+                    android:ellipsize="end"
+                    android:layout_marginTop="@dimen/d32"
+                    android:layout_marginHorizontal="@dimen/d16"
+                    android:textColorHint="@color/tm_core_color_gray_600"
+                    android:textColor="@color/tm_core_color_gray_600"
+                    android:background="@drawable/other_box_bg"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    android:gravity="top|left"
+                    android:inputType="text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:padding="@dimen/d12"
+                    android:hint="@string/tell_us_more"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890"
+                    app:layout_constraintTop_toBottomOf="@+id/tvFeedbackError" />-->
+
+
+            <EditText
+                android:id="@+id/tmFeedbackInput"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d100"
+                android:paddingStart="@dimen/d12"
+                android:paddingEnd="@dimen/d12"
+                android:paddingTop="@dimen/d10"
+                android:layout_margin="@dimen/d16"
+                android:hint="@string/tell_us_more"
+                android:background="@drawable/other_box_bg"
+                android:gravity="top|left"
+                android:inputType="text"
+                android:textColorHint="@color/light_grey"
+                android:textColor="@color/tm_semantic_color_content_main_primary"
+                app:inputTypeLayout="text"
+                app:layout_constraintTop_toBottomOf="@+id/tvFeedbackError"
+                app:maxLength="255"
+                app:maxLine="4"
+                app:minLine="4"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:textSize="@dimen/d16"
+                />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tmFeedbackInputError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d4"
+                android:paddingHorizontal="@dimen/d16"
+                android:text="@string/please_enter_comment"
+                android:textColor="@color/tm_core_color_red_500"
+                android:visibility="gone"
+                app:bodyTextStyle="BodyMediumSemiBold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tmFeedbackInput" />
+
+            <com.intellihealth.salt.views.buttons.Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginTop="@dimen/d8"
+                app:buttonSizeType="Large"
+                app:buttonTextStyle="ButtonLg"
+                app:buttonType="PrimaryButton"
+                app:layout_constraintTop_toBottomOf="@+id/tmFeedbackInputError"
+                app:title="Submit" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

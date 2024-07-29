@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+                 
+                               
+                                                                                                     
+
+                 
+                       
+                                       
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/radioLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:tag="layout/adapter_reminder_time_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <com.intellihealth.salt.views.radiofield.RadioFieldLayout
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/d16"
+            android:layout_marginTop="@dimen/d16"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:tag="binding_1"                
+            app:radioLabel="title"
+            app:radioPosition="right" />
+
+
+<!--        <com.intellihealth.salt.views.TmTextView-->
+<!--            android:id="@+id/tmLabel"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@{reminderItem.title}"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/radio"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/radio"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/radio" />-->
+
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d16"
+            android:tag="binding_2"                        
+                                                                                      
+            app:layout_constraintBottom_toBottomOf="@+id/radio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/radio" />
+
+        <com.intellihealth.salt.views.cards.Divider
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1"
+            android:layout_marginHorizontal="@dimen/d16"
+            android:layout_marginTop="@dimen/d8"
+            android:visibility="gone"
+            app:dividerColor="@color/tm_core_color_gray_100"
+            app:dividerThickness="@dimen/d1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radio" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

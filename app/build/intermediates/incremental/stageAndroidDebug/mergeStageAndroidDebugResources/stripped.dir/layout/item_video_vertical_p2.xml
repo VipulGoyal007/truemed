@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                                                
+
+                 
+                       
+                                                                                                   
+
+                 
+                            
+                                                                                      
+
+                 
+                           
+                             
+
+                 
+                           
+                             
+
+                 
+                               
+                             
+
+           
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="4dp"
+        android:id="@+id/clBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="layout/item_video_vertical_p2_0"                                     
+        android:orientation="horizontal"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <!--            android:background="@{ selectedNext ? @drawable/background_vertical_video : @drawable/background_vertical_video_borderless }"
+
+
+-->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView26"
+            android:layout_width="127dp"
+            android:layout_height="184dp"
+            android:layout_margin="2dp"
+
+            android:background="@drawable/white_bg_corner_8"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginBottom="14dp"
+            android:tag="binding_1"                          
+            tools:background="@drawable/background_vertical_video" />
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+         

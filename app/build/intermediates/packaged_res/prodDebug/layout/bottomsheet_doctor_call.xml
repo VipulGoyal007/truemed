@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+                 
+                                 
+                                                                                           
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottomsheet_header" android:tag="layout/bottomsheet_doctor_call_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageClose"
+            android:layout_width="@dimen/d32"
+            android:layout_height="@dimen/d32"
+            android:layout_marginEnd="@dimen/d16"
+            android:layout_marginTop="@dimen/d16"
+            android:src="@drawable/ic_close_black_with_white_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageDoctorCall"
+            android:layout_width="@dimen/d116"
+            android:layout_height="@dimen/d116"
+            android:layout_marginEnd="@dimen/d16"
+            android:layout_marginTop="@dimen/d32"
+            android:src="@drawable/ic_doctor_call"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvHeaderDoctorCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/d16"
+            android:layout_marginTop="@dimen/d10"
+            app:bodyTextStyle="BodyXLargeSemiBold"
+            android:gravity="center_horizontal"
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageDoctorCall"
+            android:tag="binding_1"                
+            tools:text="" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvSubHeaderDoctorCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/d16"
+            android:layout_marginTop="@dimen/d10"
+            android:layout_marginBottom="@dimen/d32"
+            app:bodyTextStyle="BodyMediumRegular"
+            android:gravity="center_horizontal"
+            android:textColor="@color/tm_semantic_color_content_main_secondary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderDoctorCall"
+            android:tag="binding_2"                   
+            tools:text="Our doctor will call you within 20 mins to confirm the order" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

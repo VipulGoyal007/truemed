@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                       
+                                                                                                       
+
+                 
+                            
+                                                                                       
+
+                 
+                        
+                             
+                 
+                                  
+                                                                         
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainChipLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d8"
+        android:layout_marginEnd="@dimen/d8" android:tag="layout/search_result_updated_ui_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.intellihealth.salt.views.chip.Chip
+            android:id="@+id/chipName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            app:chipIconLeft="@drawable/ic_recently_searched_result"
+            app:chipType="UnSelected"
+            app:chipSize="Large"
+            android:tag="binding_1"               
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+<!--app:chipIconLeft="@{item.iconType == 1 ? @drawable/ic_trending_up : @drawable/ic_timer}"-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_faint_black_radius_6"
+            android:fontFamily="@font/inter_medium"
+            android:paddingStart="10dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="6dp"
+            android:text="@{ item.name }"
+            android:textColor="#8897A2"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    -->
+    <!--    android:onClick="@{ () -> viewmodel.onRecentItemClicked(item, index,``,``) }-->
+    <!--app:name="@{ item.name }"
+    android:visibility="@{ item.showHistoryIcon ? View.VISIBLE : index == 0 ? View.GONE : View.GONE }"
+
+    app:search="@{ viewmodel.searchQuery }"-->
+
+         

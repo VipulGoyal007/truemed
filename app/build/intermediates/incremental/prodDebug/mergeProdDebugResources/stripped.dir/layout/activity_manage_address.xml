@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                                         
+                                                                                              
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainCardCl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" android:tag="layout/activity_manage_address_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.intellihealth.salt.views.MobileSectionHeaders
+            android:id="@+id/mobileSectionHeadersTextWithIcons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_address"
+            app:iconRight="@drawable/plus"
+            android:background="@color/white"
+            android:translationZ="@dimen/d8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mobileSectionHeadersViewType="TextWithIcons" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:tag="binding_1"                                                              
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobileSectionHeadersTextWithIcons"
+            tools:visibility="gone">
+
+            <include layout="@layout/shimmer_manage_patient" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/manageAddressCardRv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/d8"
+            android:layout_marginTop="@dimen/d16"
+            android:layout_marginRight="@dimen/d8"
+            android:layout_marginBottom="@dimen/d8"
+            android:tag="binding_2"                                                                            
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="@+id/mobileSectionHeadersTextWithIcons"
+            app:layout_constraintStart_toStartOf="@id/mobileSectionHeadersTextWithIcons"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobileSectionHeadersTextWithIcons"
+                                                                                     
+                                                     
+            tools:listitem="@layout/manage_address_card_item" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/defaultCardCl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="binding_3"                                                                       
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/mainCardCl"
+            app:layout_constraintStart_toStartOf="@+id/mainCardCl"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/noAddressAddedYetImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/no_address_added_yet_icon"
+                app:layout_constraintEnd_toEndOf="@+id/defaultCardCl"
+                app:layout_constraintStart_toStartOf="@+id/defaultCardCl"
+                app:layout_constraintTop_toTopOf="@id/defaultCardCl" />
+
+            <com.intellihealth.salt.views.buttons.Button
+                android:id="@+id/addAddressBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d37"
+                android:layout_marginTop="@dimen/d32"
+                android:paddingVertical="@dimen/d12"
+                android:text="@string/add_new_address"
+                app:buttonSizeType="Medium"
+                app:buttonTextStyle="ButtonSm"
+                app:buttonType="PrimaryButton"
+                app:iconLeft="@drawable/ic_plus_icon"
+                app:layout_constraintEnd_toEndOf="@+id/noAddressAddedYetImg"
+                app:layout_constraintStart_toStartOf="@+id/noAddressAddedYetImg"
+                app:layout_constraintTop_toBottomOf="@+id/noAddressAddedYetImg"
+                app:title="@string/add_new_address" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

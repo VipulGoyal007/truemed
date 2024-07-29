@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvItem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:bodyTextStyle="BodySmallSemiBold"
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:layout_constraintHorizontal_weight="5"
+            app:layout_constraintRight_toLeftOf="@+id/tvQty"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/d16"
+            android:text="Item"
+            tools:text="Item" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvQty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:bodyTextStyle="BodySmallSemiBold"
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:layout_constraintLeft_toRightOf="@+id/tvItem"
+            app:layout_constraintRight_toLeftOf="@+id/tvPrice"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_weight="2.5"
+            android:layout_marginTop="@dimen/d16"
+            android:text="Qty"
+            tools:text="Qty" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:bodyTextStyle="BodySmallSemiBold"
+            android:gravity="end"
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvQty"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_weight="2.5"
+            android:layout_marginTop="@dimen/d16"
+            android:text="Price"
+            tools:text="Price" />
+
+
+        <com.intellihealth.salt.views.cards.Divider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/d16"
+            app:dividerColor="@color/tm_core_color_gray_100"
+            app:dividerThickness="@dimen/d1"
+            app:layout_constraintTop_toBottomOf="@+id/tvItem"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

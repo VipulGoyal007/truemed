@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                                    
+                                                                                              
+
+                 
+                            
+                                                                                     
+           
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_bottomsheet_header"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior" android:tag="layout/bottomsheet_privacy_policy_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottomsheet_header"
+            android:elevation="@dimen/constraint_shadow_height"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/viewDragHandle"
+                android:layout_width="@dimen/d50"
+                android:layout_height="@dimen/d4"
+                android:layout_marginVertical="@dimen/d12"
+                android:background="@color/tm_core_color_gray_300"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginVertical="@dimen/d16"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:maxLines="1"
+                android:tag="binding_1"                   
+                android:textColor="@color/tm_core_color_gray_800"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewDragHandle"
+                tools:text="Privacy policy"
+                tools:visibility="visible" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d16"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/tvAcceptPrivacy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clHeader">
+
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvBodyHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:layout_marginTop="@dimen/d16"
+                android:layout_marginBottom="@dimen/d16"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:maxLines="2"
+                android:paddingBottom="@dimen/d16"
+                android:tag="binding_2"                       
+                android:textColor="@color/tm_core_color_gray_800"
+                app:bodyTextStyle="BodyMediumSemiBold"
+                app:layout_constraintBottom_toTopOf="@+id/scrollableBodyContent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="(Applicable from  08/01/2022)"
+                tools:visibility="visible" />
+
+            <ScrollView
+                android:id="@+id/scrollableBodyContent"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_marginHorizontal="@dimen/d16"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/tvBodyHeader">
+
+
+                <com.intellihealth.salt.views.TextView
+                    android:id="@+id/tvBodyContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/d16"
+                    android:tag="binding_3"                        
+                    android:textColor="@color/tm_core_color_gray_800"
+                    app:bodyTextStyle="BodyMediumRegular"
+                    tools:text="PRIVACY POLICY\n
+
+1. Scope and Purpose\n
+
+1.1. This Privacy Policy governs what information Intellihealth Solutions Private Limited (“Truemeds”/ “We”/ “Us”/ “Our”/ “the Company”), as the owner and operator of the domain name www.truemeds.in, and internet based platform, and “Truemeds”, a mobile application (each individually, “Website” and “App” respectively, and together, “the Platforms”), collects from a user (“You”/ “Your” / “User”) of the Platforms in the course of providing Services (as defined in the Terms of Use available at https://www.truemeds.in/option/legals/tnc and how We use, process, store, deal, handle or disclose such information.\n
+
+1.2. Truemeds is fully committed to respecting confidentiality, protecting your privacy and ensuring the security of any personal information received from You or a registered medical practitioner authorized by You. We strictly adhere to the applicable laws on data protection India, and this Privacy Policy is especially published in accordance with: a. Section 43A of the Information Technology Act, 2000 (“IT Act”); b. Rule 4 of the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Information) Rules, 2011 (“RSP Rules”); c. Rule 3(1) of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021 (“Intermediary Guidelines”); and, d. Appendix 5 (Telemedicine Practice Guidelines) to the Indian Medical Council (Professional Conduct, Etiquette and Ethics) Regulations, 2002 introduced in 2020 (“Telemedicine Guidelines”) .
+
+1.3. This Privacy Policy is effective from 20th December, 2021. Any word capitalized and not defined in this Privacy Policy shall derive its meaning from the Terms of Use.
+
+2. General Terms
+
+2.1. Please read this Privacy Policy carefully before using the Website or App.
+
+2.2. By clicking “I Accept”, or when otherwise accessing or using the Platforms, You confirm that you have read, understood and agree to be bound the terms of this Privacy Policy including any terms incorporated by reference and expressly consent to the collection, use, storage, handling and disclosure of Your information as per this Privacy Policy.
+
+2.3. You hereby explicitly represent that any information provided by You on our Platforms or otherwise is voluntary and subject to this Privacy Policy. You agree that We will not be required to validate any information provided by You, unless otherwise offered by Us or required under applicable law.
+
+2.4. By accessing or using the Platforms, you hereby confirm that You have the capacity to enter into a legally binding contract under Indian law, and in particular, the Indian Contract Act, 1872.
+
+2.5. You represent that You are duly authorized as per applicable law by any third party (including a person under the age of 18 years) whose information you share with us. You hereby agree that Truemeds shall be acting as per your representation of authority and shall not make any independent enquiries to ascertain the genuineness of your authorization. Any liability in relation to your acts and omissions in this regard (including in sharing information) or resulting from consequent actions taken by us pursuant to your acts and omissions in accordance with this Privacy Policy shall also solely be borne by you.
+
+2.6. If You are accessing or using our Services on the Platforms from a location outside India, You do so at your own risk, and Truemeds shall not be liable for compliance with any applicable local laws.
+
+ 2.7. If You do not agree with any of the terms and conditions of this Privacy Policy, please do not proceed further to use the Website or the App or any Services.
+
+3. Information that We collect
+
+3.1. A User may have limited access to the Platforms and Services provided by Truemeds without creating an account on the Website or App. In order to access all features and benefits of the Services, a User is required to first create an account on the Platforms. The information required for registration is provided in the Terms of Use but may be updated from time to time. Other information requested on the registration page which is optional shall be indicated as such.
+
+3.2. During the course of You accessing or using the Platforms and availing Services, You may provide, or We may collect personal information, i.e., information which, either directly or indirectly, in combination with other information, is capable of identifying You or some other individual. Some of this personal information also qualifies as sensitive personal data or information (“SPDI”) as defined under the RSP Rules. Given below are the types of information that we may collect."
+                    tools:visibility="visible" />
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.intellihealth.salt.views.buttons.Button
+            android:id="@+id/tvAcceptPrivacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d16"
+            android:drawableStart="@color/white"
+            android:text="Accept"
+            app:buttonSizeType="Large"
+            app:buttonTextStyle="ButtonLg"
+            app:buttonType="PrimaryButton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_body"
+            app:title="Accept" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clProgress"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:tag="binding_4"                                                     
+            app:layout_constraintTop_toBottomOf="@id/clHeader"
+            tools:visibility="visible">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

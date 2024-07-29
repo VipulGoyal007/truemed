@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="pastPrescriptionModel"
+            type="com.intellihealth.truemeds.data.model.prescription.PastPrescriptions" />
+
+        <variable
+            name="viewModell"
+            type="com.intellihealth.truemeds.presentation.viewmodel.PrescriptionViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_grey_color"
+            app:bodyTextStyle="BodySmallSemiBold"
+            android:layout_marginStart="@dimen/d8"
+            android:layout_marginVertical="@dimen/d12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@{pastPrescriptionModel.createdDate}"
+            tools:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPrescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d8"
+            android:orientation="vertical"
+            android:nestedScrollingEnabled="true"
+            android:animateLayoutChanges="false"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+            app:setPastPrescriptionDetailsList="@{ pastPrescriptionModel.activeRxList }"
+            app:parentIndex="@{ pastPrescriptionModel.parentIndex }"
+            app:viewModel="@{viewModell}"
+            app:spanCount="2"
+            tools:listitem="@layout/past_prescription_details" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

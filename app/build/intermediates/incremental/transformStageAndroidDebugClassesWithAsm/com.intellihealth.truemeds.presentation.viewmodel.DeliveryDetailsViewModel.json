@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.presentation.viewmodel.DeliveryDetailsViewModel","classAnnotations":["dagger.hilt.android.lifecycle.HiltViewModel","kotlin.jvm.internal.SourceDebugExtension"],"interfaces":[],"superClasses":["com.intellihealth.truemeds.presentation.viewmodel.BaseViewModel","androidx.lifecycle.ViewModel","java.lang.Object"]}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+                 
+                        
+                                                                           
+           
+
+
+    <com.intellihealth.salt.views.SubstituteInfoCard
+        android:id="@+id/subsInfoCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mobileSectionHeadersViewType="OnlyText"  android:tag="layout/adapter_substitute_info_card_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+         

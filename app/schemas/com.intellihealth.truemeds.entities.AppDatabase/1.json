@@ -1,0 +1,283 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "cdf40754a7e238b1098213dc68a6c395",
+    "entities": [
+      {
+        "tableName": "cart",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`medicineId` TEXT NOT NULL, `medicineName` TEXT, `companyName` TEXT, `discount` TEXT, `mrp` TEXT, `addedQty` TEXT, `composition` TEXT, `subDiscountPercentage` TEXT, `subsSellingPrice` TEXT, `isSubFound` TEXT, `isFromApi` TEXT, `subsMedProductCode` TEXT, `subsMrp` TEXT, `subsMedName` TEXT, `subCompanyName` TEXT, `isColdStorage` TEXT, `drugType` TEXT, `originalPackSize` TEXT, `substitutePackSize` TEXT, `prescriptionRequired` TEXT, `maxCapped` TEXT, `subsReccommendedQty` TEXT, `originalCountryNm` TEXT, `subs_country_nm` TEXT, `subs_unit` TEXT, `original_unit` TEXT, `product_image_urls` TEXT, `original_company_addr` TEXT, `orgAvailable` TEXT, PRIMARY KEY(`medicineId`))",
+        "fields": [
+          {
+            "fieldPath": "medicineId",
+            "columnName": "medicineId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "medicineName",
+            "columnName": "medicineName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "companyName",
+            "columnName": "companyName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "discount",
+            "columnName": "discount",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mrp",
+            "columnName": "mrp",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "addedQty",
+            "columnName": "addedQty",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "composition",
+            "columnName": "composition",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subDiscountPercentage",
+            "columnName": "subDiscountPercentage",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subsSellingPrice",
+            "columnName": "subsSellingPrice",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isSubFound",
+            "columnName": "isSubFound",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isFromApi",
+            "columnName": "isFromApi",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subsMedProductCode",
+            "columnName": "subsMedProductCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subsMrp",
+            "columnName": "subsMrp",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subsMedName",
+            "columnName": "subsMedName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subCompanyName",
+            "columnName": "subCompanyName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isColdStorage",
+            "columnName": "isColdStorage",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "drugType",
+            "columnName": "drugType",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "originalPackSize",
+            "columnName": "originalPackSize",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "substitutePackSize",
+            "columnName": "substitutePackSize",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "prescriptionRequired",
+            "columnName": "prescriptionRequired",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "maxCapped",
+            "columnName": "maxCapped",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subsReccommendedQty",
+            "columnName": "subsReccommendedQty",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "originalCountryNm",
+            "columnName": "originalCountryNm",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subs_country_nm",
+            "columnName": "subs_country_nm",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subs_unit",
+            "columnName": "subs_unit",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "original_unit",
+            "columnName": "original_unit",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "product_image_urls",
+            "columnName": "product_image_urls",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "original_company_addr",
+            "columnName": "original_company_addr",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "orgAvailable",
+            "columnName": "orgAvailable",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "medicineId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "recent_medicine",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `medicineName` TEXT, `customerId` TEXT, `addedDateTime` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "medicineName",
+            "columnName": "medicineName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "customerId",
+            "columnName": "customerId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "addedDateTime",
+            "columnName": "addedDateTime",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "notification",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `not_title` TEXT, `not_desc` TEXT, `not_datetime` INTEGER NOT NULL, `userId` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "not_title",
+            "columnName": "not_title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "not_desc",
+            "columnName": "not_desc",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "not_datetime",
+            "columnName": "not_datetime",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userId",
+            "columnName": "userId",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"cdf40754a7e238b1098213dc68a6c395\")"
+    ]
+  }
+}

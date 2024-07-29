@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.intellihealth.truemeds.data.model.home.ChildCategoryModel" />
+
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_marginStart="@dimen/d24"
+    android:layout_height="wrap_content"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clCategory"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/d11"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/bg_unselected_category"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPrescription"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:padding="@dimen/d5"
+            android:scaleType="centerCrop"
+            app:setUrl="@{ model.image }"
+            app:placeHolder="@{@drawable/otc_placeholder}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.intellihealth.salt.views.TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="@dimen/d72"
+        android:layout_marginTop="@dimen/d4"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:minLines="2"
+        android:textColor="@color/tm_semantic_color_content_main_primary"
+        app:bodyTextStyle="BodySmallSemiBold"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clCategory"
+        android:text="@{ model.name }"
+        tools:text="All"
+        />
+
+    <com.intellihealth.salt.views.cards.Divider
+        android:id="@+id/divider"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        app:dividerColor="@color/color_blue"
+        android:foregroundGravity="center_horizontal"
+        app:dividerThickness="@dimen/d2"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/d16"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

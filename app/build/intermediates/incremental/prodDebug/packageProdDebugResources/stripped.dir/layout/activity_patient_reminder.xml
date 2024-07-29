@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+                                           
+
+                 
+                                    
+                                                                                         
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.activity.PatientReminderActivity" android:tag="layout/activity_patient_reminder_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.intellihealth.salt.views.MobileSectionHeaders
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:translationZ="@dimen/d8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mobileSectionHeadersViewType="TextWithCta" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/placeholderLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/d38"
+            android:tag="binding_1"                                                                    
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivPlaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_reminder_placeholder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvPlaceholder"
+                android:layout_width="@dimen/d0"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d2"
+                android:layout_marginTop="@dimen/d20"
+                android:gravity="center"
+                android:text="@string/set_an_order_reminder_and_never_run_out_of_medicines"
+                android:textColor="@color/tm_semantic_color_content_disabled"
+                android:visibility="visible"
+                app:bodyTextStyle="BodyLargeSemiBold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivPlaceholder"
+                tools:text="Set an order reminder and never run out of medicines."
+                tools:visibility="visible" />
+
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/addReminder"
+                android:layout_width="@dimen/d0"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/d2"
+                android:layout_marginTop="@dimen/d32"
+                android:text="@string/add_a_reminder"
+                android:visibility="visible"
+                app:buttonSizeType="Medium"
+                app:buttonTextStyle="ButtonMd"
+                app:buttonType="PrimaryButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPlaceholder"
+                tools:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvReminderList"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d0"
+            android:orientation="vertical"
+            android:clipToPadding="true"
+            android:layout_marginTop="@dimen/d12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header"
+            android:tag="binding_2"                     
+                                                                          
+            tools:listitem="@layout/adapter_reminder"
+                                                                                                       
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:tag="binding_3"                                                          
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

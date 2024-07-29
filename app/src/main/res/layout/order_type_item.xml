@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.intellihealth.truemeds.presentation.viewmodel.OrdersTabViewModel" />
+
+        <variable
+            name="itemPosition"
+            type="Integer" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraitMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d8"
+        android:layout_marginStart="@dimen/d8"
+        android:layout_marginEnd="@dimen/d8"
+        >
+
+        <com.intellihealth.salt.views.radiofield.RadioFieldLayout
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/customRadioOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="start"
+            app:radioLabel=""
+            android:onClick="@{ () -> viewModel.setRadioOrderClicked(itemPosition) }"
+            app:radioPosition="right"
+            app:selected="false" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

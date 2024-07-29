@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.data.repository.datasourceimpl.remote.VideoFaqRemoteDataSourceImpl","classAnnotations":[],"interfaces":["com.intellihealth.truemeds.data.repository.datasource.remote.VideoFaqRemoteDataSource"],"superClasses":["java.lang.Object"]}

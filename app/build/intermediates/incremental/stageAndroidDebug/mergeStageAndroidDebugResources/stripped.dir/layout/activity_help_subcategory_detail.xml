@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                            
+                                                                                     
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".presentation.activity.HelpSubCategoryDetailActivity" android:tag="layout/activity_help_subcategory_detail_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.intellihealth.salt.views.MobileSectionHeaders
+            android:id="@+id/tmTopHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:translationZ="@dimen/d8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:mobileSectionHeadersViewType="DefaultWithoutFill" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvSubCategoryTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d16"
+            android:paddingHorizontal="@dimen/d16"
+            android:text=""
+            android:textColor="@color/tm_core_color_gray_800"
+            app:bodyTextStyle="BodyLargeSemiBold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tmTopHeader" />
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvSubCategoryAnswer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d20"
+            android:paddingHorizontal="@dimen/d16"
+            android:text=""
+            android:textColor="@color/tm_core_color_gray_800"
+            app:bodyTextStyle="BodyMediumRegular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSubCategoryTitle" />
+
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/llBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d18"
+            android:gravity="center"
+            app:alignContent="center"
+            app:alignItems="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.intellihealth.salt.views.TextView
+                android:id="@+id/tvStillHaveQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/still_have_questions"
+                app:bodyTextStyle="BodySmallSemiBold" />
+
+            <com.intellihealth.salt.views.buttons.ButtonLite
+                android:id="@+id/btnLinkSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d2"
+                android:drawableStart="@color/white"
+                android:tag="binding_1"                                             
+                android:text="@string/contact_customer_support"
+                app:buttonSizeType="ExtraSmall"
+                app:buttonTextStyle="ButtonXs"
+                app:buttonType="GhostButton"
+                app:drawableTint="@color/button_selector_text_link"
+                app:iconRight="@drawable/ic_chevron_right"
+                app:removePadding="true" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

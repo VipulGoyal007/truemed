@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                   
+
+
+                                       
+             
+                        
+                                                                                        
+       
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="layout/activity_cancel_order_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <com.intellihealth.salt.views.MobileSectionHeaders
+        android:id="@+id/mobileSectionHeadersDefaultWithoutFill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/cancel_order"
+        android:tag="binding_1"                                    
+        app:mobileSectionHeadersViewType="DefaultWithoutFill" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d10"
+        android:background="@drawable/bg_gradient_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="@dimen/d5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mobileSectionHeadersDefaultWithoutFill" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/d8"
+        android:tag="binding_2"                                                 
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+        <include layout="@layout/shimmer_manage_patient" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.intellihealth.salt.views.TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/upload_prescription_text_color"
+        android:text="@string/why_do_you_want_to_cancel_the_order"
+        android:tag="binding_3"                                                                   
+        app:bodyTextStyle="BodyMediumSemiBold"
+        android:layout_marginTop="@dimen/d24"
+        android:layout_marginStart="@dimen/d16"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCancelOrder"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d24"
+        android:layout_marginBottom="@dimen/d4"
+        android:layout_marginHorizontal="@dimen/d16"
+        android:tag="binding_4"                                          
+                                    
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        tools:visibility="visible"
+                                                                                                  
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHeader"
+        tools:listitem="@layout/cancel_order_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+         

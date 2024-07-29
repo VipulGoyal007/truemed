@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                   
+
+    
+
+                 
+                        
+                            
+
+                 
+                          
+                            
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_bottomsheet_header"
+        android:paddingBottom="@dimen/d36" android:tag="layout/bottomsheet_error_0" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clHeader"
+            android:layout_width="match_parent"
+            android:paddingVertical="@dimen/d16"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottomsheet_header"
+            android:elevation="@dimen/constraint_shadow_height"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/d32"
+            android:layout_height="@dimen/d32"
+            android:clipToOutline="true"
+            android:layout_marginEnd="@dimen/d16"
+            android:src="@drawable/ic_close_black_with_white_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="binding_1"
+            android:paddingHorizontal="@dimen/d16"
+            android:textColor="@color/tm_semantic_color_content_main_primary"
+            app:bodyTextStyle="BodyLargeSemiBold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Sorry for the inconvenience " />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.intellihealth.salt.views.TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="binding_2"  
+            android:paddingHorizontal="@dimen/d16"
+            android:textColor="@color/tm_semantic_color_content_main_secondary"
+            app:bodyTextStyle="BodyMediumRegular"
+            android:layout_marginTop="@dimen/d16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clHeader"
+            tools:text="We take the quality standards very seriously. Our team will call you soon to resolve this." />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

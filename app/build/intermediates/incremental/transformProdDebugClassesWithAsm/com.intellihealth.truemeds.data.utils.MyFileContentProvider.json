@@ -1,0 +1,1 @@
+{"className":"com.intellihealth.truemeds.data.utils.MyFileContentProvider","classAnnotations":[],"interfaces":["android.content.ComponentCallbacks","android.content.ComponentCallbacks2"],"superClasses":["android.content.ContentProvider","java.lang.Object"]}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>Pill_Reminder_Variant</key>
+        <value>A</value>
+    </entry>
+    <entry>
+        <key>onboarding</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>ReOrder_Subs</key>
+        <value>A</value>
+    </entry>
+    <entry>
+        <key>isPrescriptionPopupRequired</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>subs_add_to_cart2</key>
+        <value>C</value>
+    </entry>
+    <entry>
+        <key>PDSearch_BlueGreenVariant</key>
+        <value>PDSearch_BlueWithPopup</value>
+    </entry>
+    <entry>
+        <key>summaryAB</key>
+        <value>a</value>
+    </entry>
+    <entry>
+        <key>PACKAGING_CHARGE</key>
+        <value>F</value>
+    </entry>
+    <entry>
+        <key>category</key>
+        <value>a</value>
+    </entry>
+    <entry>
+        <key>CancellationFlow</key>
+        <value>A</value>
+    </entry>
+    <entry>
+        <key>Subs_Add_To_Cart</key>
+        <value>C</value>
+    </entry>
+</defaultsMap>
